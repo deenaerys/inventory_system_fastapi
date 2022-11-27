@@ -27,10 +27,17 @@ app.mount("/templates", StaticFiles(directory="templates"), name="templates")
 
 
 @app.get("/")
-def home(request: Request, db: Session = Depends(get_db)):
+def login(request: Request, db: Session = Depends(get_db)):
     todos = db.query(models.Todo).all()
-    return templates.TemplateResponse("backend/index.html",
-                                      {"request": request, "todo_list": todos})
+    return templates.TemplateResponse("backend/login.html",{"request": request, "todo_list": todos})
+
+@app.get("/home")
+def home(request:Request, db:Session=Depends(get_db)):
+    return templates.TemplateResponse("backend/index.html",{"request":request})
+
+@app.get("/list_products")
+def list_products(request:Request, db:Session=Depends(get_db)):
+    return templates.TemplateResponse("backend/page-list-product.html",{"request":request})
 
 @app.post("/add")
 def add(request: Request, title: str = Form(...), db: Session = Depends(get_db)):

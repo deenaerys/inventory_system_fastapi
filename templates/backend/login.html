@@ -1,20 +1,17 @@
 
 
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>POS Dash | Responsive Bootstrap 4 Admin Dashboard Template</title>
+      <title>Inventory System</title>
       
-      <!-- Favicon -->
-      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">  </head>
+      <link rel="stylesheet" href="{{ url_for('templates', path='/assets/css/backend-plugin.min.css')}}">
+      <link rel="stylesheet" href="{{ url_for('templates',path='/assets/css/backend.css?v=1.0.0')}}">
+      <link rel="stylesheet" href="{{ url_for('templates',path='/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}">
+      <link rel="stylesheet" href="{{ url_for('templates',path='/assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css')}}">
+      <link rel="stylesheet" href="{{ url_for('templates',path='/assets/vendor/remixicon/fonts/remixicon.css')}}">  </head>
   <body class=" ">
     <!-- loader Start -->
     <div id="loading">
@@ -39,8 +36,8 @@
                                     <div class="row">
                                        <div class="col-lg-12">
                                           <div class="floating-label form-group">
-                                             <input class="floating-input form-control" type="email" placeholder=" ">
-                                             <label>Email</label>
+                                             <input class="floating-input form-control" type="text" placeholder=" ">
+                                             <label>Username</label>
                                           </div>
                                        </div>
                                        <div class="col-lg-12">
@@ -49,7 +46,8 @@
                                              <label>Password</label>
                                           </div>
                                        </div>
-                                       <div class="col-lg-6">
+                                      <!--
+                                        <div class="col-lg-6">
                                           <div class="custom-control custom-checkbox mb-3">
                                              <input type="checkbox" class="custom-control-input" id="customCheck1">
                                              <label class="custom-control-label control-label-1" for="customCheck1">Remember Me</label>
@@ -58,16 +56,20 @@
                                        <div class="col-lg-6">
                                           <a href="auth-recoverpw.html" class="text-primary float-right">Forgot Password?</a>
                                        </div>
+                                      -->
+                                       
                                     </div>
                                     <button type="submit" class="btn btn-primary">Sign In</button>
-                                    <p class="mt-3">
+                                  <!--
+                                      <p class="mt-3">
                                        Create an Account <a href="auth-sign-up.html" class="text-primary">Sign Up</a>
                                     </p>
+                                  -->
                                  </form>
                               </div>
                            </div>
                            <div class="col-lg-5 content-right">
-                              <img src="../assets/images/login/01.png" class="img-fluid image-right" alt="">
+                              <img src="{{url_for('templates',path='/assets/images/login/01.png')}}" class="img-fluid image-right" alt="">
                            </div>
                         </div>
                      </div>
@@ -79,18 +81,19 @@
       </div>
     
     <!-- Backend Bundle JavaScript -->
-    <script src="../assets/js/backend-bundle.min.js"></script>
+    
+    <script src="{{ url_for('templates',path='/assets/js/backend-bundle.min.js')}}"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="../assets/js/table-treeview.js"></script>
+    <script src="{{ url_for('templates',path='/assets/js/table-treeview.js')}}"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="../assets/js/customizer.js"></script>
+    <script src="{{ url_for('templates',path='/assets/js/customizer.js')}}"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/chart-custom.js"></script>
+    <script async src="{{url_for('templates',path='/assets/js/chart-custom.js')}}"></script>
     
     <!-- app JavaScript -->
-    <script src="../assets/js/app.js"></script>
+    <script src="{{url_for('templates',path='/assets/js/app.js')}}"></script>
   </body>
 </html>
