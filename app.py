@@ -23,21 +23,97 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
 app.mount("/templates", StaticFiles(directory="templates"), name="templates")
 
 
+# region LOGIN
 @app.get("/")
 def login(request: Request, db: Session = Depends(get_db)):
     todos = db.query(models.Todo).all()
-    return templates.TemplateResponse("backend/login.html",{"request": request, "todo_list": todos})
+    return templates.TemplateResponse("backend/login.html", {"request": request, "todo_list": todos})
+
+# endregion
+
+# region HOME DASHBOARD
+
 
 @app.get("/home")
-def home(request:Request, db:Session=Depends(get_db)):
-    return templates.TemplateResponse("backend/index.html",{"request":request})
+def home(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/index.html", {"request": request})
+
+# endregion
+
+# region PRODUCTS
+
 
 @app.get("/list_products")
-def list_products(request:Request, db:Session=Depends(get_db)):
-    return templates.TemplateResponse("backend/page-list-product.html",{"request":request})
+def list_products(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-list-product.html", {"request": request})
+
+
+@app.get("/add_product")
+def add_product(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-add-product.html", {"request": request})
+
+# endregion
+
+# region CATEGORIES
+
+
+@app.get("/list_categories")
+def list_categories(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-list-category.html", {"request": request})
+
+
+@app.get("/add_category")
+def add_product(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-add-category.html", {"request": request})
+
+# endregion
+
+# region SALES
+
+
+@app.get("/list_sales")
+def list_sales(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-list-sale.html", {"request": request})
+
+
+@app.get("/add_sale")
+def add_product(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-add-sale.html", {"request": request})
+# endregion
+
+# region PURCHASES
+
+
+@app.get("/list_puchases")
+def list_puchases(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-list-purchase.html", {"request": request})
+
+
+@app.get("/add_purchase")
+def add_product(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-add-purchase.html", {"request": request})
+
+# endregion
+
+# region RETURNS
+
+@app.get("/list_returns")
+def list_returns(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-list-returns.html", {"request": request})
+
+@app.get("/add_return")
+def add_return(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-add-return.html", {"request": request})
+# endregion
+
+
+# region OLD
+
 
 @app.post("/add")
 def add(request: Request, title: str = Form(...), db: Session = Depends(get_db)):
@@ -67,3 +143,5 @@ def delete(request: Request, todo_id: int, db: Session = Depends(get_db)):
 
     url = app.url_path_for("home")
     return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
+
+# endregion

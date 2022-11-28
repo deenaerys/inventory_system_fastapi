@@ -1,16 +1,19 @@
 
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Inventory System</title>
-    
-      <link rel="stylesheet" href="{{ url_for('templates', path='/assets/css/backend-plugin.min.css')}}">
-      <link rel="stylesheet" href="{{ url_for('templates',path='/assets/css/backend.css?v=1.0.0')}}">
-      <link rel="stylesheet" href="{{ url_for('templates',path='/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}">
-      <link rel="stylesheet" href="{{ url_for('templates',path='/assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css')}}">
-      <link rel="stylesheet" href="{{ url_for('templates',path='/assets/vendor/remixicon/fonts/remixicon.css')}}">  </head>
+      <title>POS Dash | Responsive Bootstrap 4 Admin Dashboard Template</title>
+      
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="{{url_for('templates',path='/assets/images/favicon.ico')}}" />
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/css/backend-plugin.min.css')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/css/backend.css?v=1.0.0')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/remixicon/fonts/remixicon.css')}}">  </head>
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -23,7 +26,7 @@
       
       <div class="iq-sidebar  sidebar-default ">
           <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
-              <a href="../backend/index.html" class="header-logo">
+              <a href="/home" class="header-logo">
                   <img src="{{url_for('templates',path='/assets/images/logo.png')}}" class="img-fluid rounded-normal light-logo" alt="logo"><h5 class="logo-title light-logo ml-3">POSDash</h5>
               </a>
               <div class="iq-menu-bt-sidebar ml-0">
@@ -34,7 +37,7 @@
               <nav class="iq-sidebar-menu">
                   <ul id="iq-sidebar-toggle" class="iq-menu">
                       <li class="active">
-                          <a href="{{url_for('templates',path='/backend/index.html')}}" class="svg-icon">                        
+                          <a href="/home" class="svg-icon">                        
                               <svg  class="svg-icon" id="p-dash1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                   <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>
                               </svg>
@@ -53,12 +56,12 @@
                           </a>
                           <ul id="product" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                               <li class="">
-                                  <a href="{{url_for('templates',path='/backend/page-list-product.html')}}">
+                                  <a href="/list_products">
                                       <i class="las la-minus"></i><span>List Product</span>
                                   </a>
                               </li>
                               <li class="">
-                                  <a href="../backend/page-add-product.html">
+                                  <a href="/add_product">
                                       <i class="las la-minus"></i><span>Add Product</span>
                                   </a>
                               </li>
@@ -76,12 +79,12 @@
                           </a>
                           <ul id="category" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                   <li class="">
-                                          <a href="../backend/page-list-category.html">
+                                          <a href="/list_categories">
                                               <i class="las la-minus"></i><span>List Category</span>
                                           </a>
                                   </li>
                                   <li class="">
-                                          <a href="../backend/page-add-category.html">
+                                          <a href="/add_category">
                                               <i class="las la-minus"></i><span>Add Category</span>
                                           </a>
                                   </li>
@@ -99,12 +102,12 @@
                           </a>
                           <ul id="sale" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                   <li class="">
-                                          <a href="../backend/page-list-sale.html">
+                                          <a href="/list_sales">
                                               <i class="las la-minus"></i><span>List Sale</span>
                                           </a>
                                   </li>
                                   <li class="">
-                                          <a href="../backend/page-add-sale.html">
+                                          <a href="/add_sale">
                                               <i class="las la-minus"></i><span>Add Sale</span>
                                           </a>
                                   </li>
@@ -209,7 +212,7 @@
                           <ul id="reports" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                           </ul>
                       </li>
-                      <!-- <li class=" ">
+                      <li class=" ">
                           <a href="#otherpage" class="collapsed" data-toggle="collapse" aria-expanded="false">
                               <svg class="svg-icon" id="p-dash9" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="7" y="7" width="3" height="9"></rect><rect x="14" y="7" width="3" height="5"></rect>
@@ -566,16 +569,16 @@
                                           </a>
                                   </li>
                           </ul>
-                      </li> -->
+                      </li>
                   </ul>
               </nav>
               <div id="sidebar-bottom" class="position-relative sidebar-bottom">
                   <div class="card border-none">
                       <div class="card-body p-0">
                           <div class="sidebarbottom-content">
-                              <!-- <div class="image"><img src="../assets/images/layouts/side-bkg.png" class="img-fluid" alt="side-bkg"></div>
+                              <div class="image"><img src="{{url_for('templates',path='/assets/images/layouts/side-bkg.png')}}" class="img-fluid" alt="side-bkg"></div>
                               <h6 class="mt-4 px-4 body-title">Get More Feature by Upgrading</h6>
-                              <button type="button" class="btn sidebar-bottom-btn mt-4">Go Premium</button> -->
+                              <button type="button" class="btn sidebar-bottom-btn mt-4">Go Premium</button>
                           </div>
                       </div>
                   </div>
@@ -587,7 +590,7 @@
               <nav class="navbar navbar-expand-lg navbar-light p-0">
                   <div class="iq-navbar-logo d-flex align-items-center justify-content-between">
                       <i class="ri-menu-line wrapper-menu"></i>
-                      <a href="../backend/index.html" class="header-logo">
+                      <a href="/home" class="header-logo">
                           <img src="{{url_for('templates',path='/assets/images/logo.png')}}" class="img-fluid rounded-normal" alt="logo">
                           <h5 class="logo-title ml-3">POSDash</h5>
       
@@ -607,35 +610,35 @@
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav ml-auto navbar-list align-items-center">
-                              <!-- <li class="nav-item nav-icon dropdown">
+                              <li class="nav-item nav-icon dropdown">
                                   <a href="#" class="search-toggle dropdown-toggle btn border add-btn"
                                       id="dropdownMenuButton02" data-toggle="dropdown" aria-haspopup="true"
                                       aria-expanded="false">
-                                      <img src="../assets/images/small/flag-01.png" alt="img-flag"
+                                      <img src="{{url_for('templates',path='/assets/images/small/flag-01.png')}}" alt="img-flag"
                                           class="img-fluid image-flag mr-2">En
                                   </a>
                                   <div class="iq-sub-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                       <div class="card shadow-none m-0">
                                           <div class="card-body p-3">
                                               <a class="iq-sub-card" href="#"><img
-                                                      src="../assets/images/small/flag-02.png" alt="img-flag"
+                                                      src="{{url_for('templates',path='/assets/images/small/flag-02.png')}}" alt="img-flag"
                                                       class="img-fluid mr-2">French</a>
                                               <a class="iq-sub-card" href="#"><img
-                                                      src="../assets/images/small/flag-03.png" alt="img-flag"
+                                                      src="{{url_for('templates',path='/assets/images/small/flag-03.png')}}" alt="img-flag"
                                                       class="img-fluid mr-2">Spanish</a>
                                               <a class="iq-sub-card" href="#"><img
-                                                      src="../assets/images/small/flag-04.png" alt="img-flag"
+                                                      src="{{url_for('templates',path='/assets/images/small/flag-04.png')}}" alt="img-flag"
                                                       class="img-fluid mr-2">Italian</a>
                                               <a class="iq-sub-card" href="#"><img
-                                                      src="../assets/images/small/flag-05.png" alt="img-flag"
+                                                      src="{{url_for('templates',path='/assets/images/small/flag-05.png')}}" alt="img-flag"
                                                       class="img-fluid mr-2">German</a>
                                               <a class="iq-sub-card" href="#"><img
-                                                      src="../assets/images/small/flag-06.png" alt="img-flag"
+                                                      src="{{url_for('templates',path='/assets/images/small/flag-06.png')}}" alt="img-flag"
                                                       class="img-fluid mr-2">Japanese</a>
                                           </div>
                                       </div>
                                   </div>
-                              </li> -->
+                              </li>
                               <li>
                                   <a href="#" class="btn border add-btn shadow-none mx-2 d-none d-md-block"
                                       data-toggle="modal" data-target="#new-order"><i class="las la-plus mr-2"></i>New
@@ -868,7 +871,7 @@
             <div class="col-lg-4">
                 <div class="card card-transparent card-block card-stretch card-height border-none">
                     <div class="card-body p-0 mt-lg-2 mt-0">
-                        <h3 class="mb-3">Hi Dee, Good Morning</h3>
+                        <h3 class="mb-3">Hi Graham, Good Morning</h3>
                         <p class="mb-0 mr-4">Your dashboard gives you views of key performance or business process.</p>
                     </div>
                 </div>
@@ -903,7 +906,7 @@
                                     </div>
                                     <div>
                                         <p class="mb-2">Total Cost</p>
-                                        <h4>₱ 4598</h4>
+                                        <h4>$ 4598</h4>
                                     </div>
                                 </div>
                                 <div class="iq-progress-bar mt-2">
@@ -1085,7 +1088,7 @@
                             <div class="style-text text-left">
                                 <h5 class="mb-2">Coffee Beans Packet</h5>
                                 <p class="mb-2">Total Sell : 45897</p>
-                                <p class="mb-0">Total Earned : ₱45,89 M</p>
+                                <p class="mb-0">Total Earned : $45,89 M</p>
                             </div>
                         </div>
                     </div>
@@ -1099,7 +1102,7 @@
                             <div class="style-text text-left">
                                 <h5 class="mb-2">Bottle Cup Set</h5>
                                 <p class="mb-2">Total Sell : 44359</p>
-                                <p class="mb-0">Total Earned : ₱45,50 M</p>
+                                <p class="mb-0">Total Earned : $45,50 M</p>
                             </div>
                         </div>
                     </div>
@@ -1111,7 +1114,7 @@
                         <div class="d-flex align-items-top justify-content-between">
                             <div class="">
                                 <p class="mb-0">Income</p>
-                                <h5>₱ 98,7800 K</h5>
+                                <h5>$ 98,7800 K</h5>
                             </div>
                             <div class="card-header-toolbar d-flex align-items-center">
                                 <div class="dropdown">
@@ -1136,7 +1139,7 @@
                         <div class="d-flex align-items-top justify-content-between">
                             <div class="">
                                 <p class="mb-0">Expenses</p>
-                                <h5>₱ 45,8956 K</h5>
+                                <h5>$ 45,8956 K</h5>
                             </div>
                             <div class="card-header-toolbar d-flex align-items-center">
                                 <div class="dropdown">
@@ -1191,7 +1194,7 @@
                                     <div class="progress-value text-secondary">46%</div>
                                 </div>
                                 <div class="progress-value ml-3 pr-5 border-right">
-                                    <h5>₱12,6598</h5>
+                                    <h5>$12,6598</h5>
                                     <p class="mb-0">Average Orders</p>
                                 </div>
                             </div>
@@ -1206,7 +1209,7 @@
                                     <div class="progress-value text-primary">46%</div>
                                 </div>
                                 <div class="progress-value ml-3">
-                                    <h5>₱59,8478</h5>
+                                    <h5>$59,8478</h5>
                                     <p class="mb-0">Top Orders</p>
                                 </div>
                             </div>
@@ -1243,14 +1246,13 @@
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    
-    <script src="{{ url_for('templates',path='/assets/js/backend-bundle.min.js')}}"></script>
+    <script src="{{url_for('templates',path='/assets/js/backend-bundle.min.js')}}"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="{{ url_for('templates',path='/assets/js/table-treeview.js')}}"></script>
+    <script src="{{url_for('templates',path='/assets/js/table-treeview.js')}}"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="{{ url_for('templates',path='/assets/js/customizer.js')}}"></script>
+    <script src="{{url_for('templates',path='/assets/js/customizer.js')}}"></script>
     
     <!-- Chart Custom JavaScript -->
     <script async src="{{url_for('templates',path='/assets/js/chart-custom.js')}}"></script>
@@ -1259,3 +1261,4 @@
     <script src="{{url_for('templates',path='/assets/js/app.js')}}"></script>
   </body>
 </html>
+

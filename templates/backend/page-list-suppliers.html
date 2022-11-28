@@ -7,12 +7,12 @@
       <title>POS Dash | Responsive Bootstrap 4 Admin Dashboard Template</title>
       
       <!-- Favicon -->
-      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-      <link rel="stylesheet" href="../assets/css/backend-plugin.min.css">
-      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0">
-      <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
-      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css">  </head>
+      <link rel="shortcut icon" href="{{url_for('templates',path='/assets/images/favicon.ico')}}" />
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/css/backend-plugin.min.css')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/css/backend.css?v=1.0.0')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/remixicon/fonts/remixicon.css')}}">  </head>
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -25,8 +25,8 @@
       
       <div class="iq-sidebar  sidebar-default ">
           <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
-              <a href="../backend/index.html" class="header-logo">
-                  <img src="../assets/images/logo.png" class="img-fluid rounded-normal light-logo" alt="logo"><h5 class="logo-title light-logo ml-3">POSDash</h5>
+              <a href="/home" class="header-logo">
+                  <img src="{{url_for('templates',path='/assets/images/logo.png')}}" class="img-fluid rounded-normal light-logo" alt="logo"><h5 class="logo-title light-logo ml-3">POSDash</h5>
               </a>
               <div class="iq-menu-bt-sidebar ml-0">
                   <i class="las la-bars wrapper-menu"></i>
@@ -36,7 +36,7 @@
               <nav class="iq-sidebar-menu">
                   <ul id="iq-sidebar-toggle" class="iq-menu">
                       <li class="">
-                          <a href="../backend/index.html" class="svg-icon">                        
+                          <a href="/home" class="svg-icon">                        
                               <svg  class="svg-icon" id="p-dash1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                   <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>
                               </svg>
@@ -55,12 +55,12 @@
                           </a>
                           <ul id="product" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                               <li class="">
-                                  <a href="../backend/page-list-product.html">
+                                  <a href="/list_products">
                                       <i class="las la-minus"></i><span>List Product</span>
                                   </a>
                               </li>
                               <li class="">
-                                  <a href="../backend/page-add-product.html">
+                                  <a href="/add_product">
                                       <i class="las la-minus"></i><span>Add Product</span>
                                   </a>
                               </li>
@@ -78,12 +78,12 @@
                           </a>
                           <ul id="category" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                   <li class="">
-                                          <a href="../backend/page-list-category.html">
+                                          <a href="/list_categories">
                                               <i class="las la-minus"></i><span>List Category</span>
                                           </a>
                                   </li>
                                   <li class="">
-                                          <a href="../backend/page-add-category.html">
+                                          <a href="/add_category">
                                               <i class="las la-minus"></i><span>Add Category</span>
                                           </a>
                                   </li>
@@ -101,12 +101,12 @@
                           </a>
                           <ul id="sale" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                   <li class="">
-                                          <a href="../backend/page-list-sale.html">
+                                          <a href="/list_sales">
                                               <i class="las la-minus"></i><span>List Sale</span>
                                           </a>
                                   </li>
                                   <li class="">
-                                          <a href="../backend/page-add-sale.html">
+                                          <a href="/add_sale">
                                               <i class="las la-minus"></i><span>Add Sale</span>
                                           </a>
                                   </li>
@@ -575,9 +575,9 @@
                   <div class="card border-none">
                       <div class="card-body p-0">
                           <div class="sidebarbottom-content">
-                              <!-- <div class="image"><img src="../assets/images/layouts/side-bkg.png" class="img-fluid" alt="side-bkg"></div>
+                              <div class="image"><img src="{{url_for('templates',path='/assets/images/layouts/side-bkg.png')}}" class="img-fluid" alt="side-bkg"></div>
                               <h6 class="mt-4 px-4 body-title">Get More Feature by Upgrading</h6>
-                              <button type="button" class="btn sidebar-bottom-btn mt-4">Go Premium</button> -->
+                              <button type="button" class="btn sidebar-bottom-btn mt-4">Go Premium</button>
                           </div>
                       </div>
                   </div>
@@ -589,8 +589,8 @@
               <nav class="navbar navbar-expand-lg navbar-light p-0">
                   <div class="iq-navbar-logo d-flex align-items-center justify-content-between">
                       <i class="ri-menu-line wrapper-menu"></i>
-                      <a href="../backend/index.html" class="header-logo">
-                          <img src="../assets/images/logo.png" class="img-fluid rounded-normal" alt="logo">
+                      <a href="/home" class="header-logo">
+                          <img src="{{url_for('templates',path='/assets/images/logo.png')}}" class="img-fluid rounded-normal" alt="logo">
                           <h5 class="logo-title ml-3">POSDash</h5>
       
                       </a>
@@ -609,35 +609,35 @@
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav ml-auto navbar-list align-items-center">
-                              <!-- <li class="nav-item nav-icon dropdown">
+                              <li class="nav-item nav-icon dropdown">
                                   <a href="#" class="search-toggle dropdown-toggle btn border add-btn"
                                       id="dropdownMenuButton02" data-toggle="dropdown" aria-haspopup="true"
                                       aria-expanded="false">
-                                      <img src="../assets/images/small/flag-01.png" alt="img-flag"
+                                      <img src="{{url_for('templates',path='/assets/images/small/flag-01.png')}}" alt="img-flag"
                                           class="img-fluid image-flag mr-2">En
                                   </a>
                                   <div class="iq-sub-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                       <div class="card shadow-none m-0">
                                           <div class="card-body p-3">
                                               <a class="iq-sub-card" href="#"><img
-                                                      src="../assets/images/small/flag-02.png" alt="img-flag"
+                                                      src="{{url_for('templates',path='/assets/images/small/flag-02.png')}}" alt="img-flag"
                                                       class="img-fluid mr-2">French</a>
                                               <a class="iq-sub-card" href="#"><img
-                                                      src="../assets/images/small/flag-03.png" alt="img-flag"
+                                                      src="{{url_for('templates',path='/assets/images/small/flag-03.png')}}" alt="img-flag"
                                                       class="img-fluid mr-2">Spanish</a>
                                               <a class="iq-sub-card" href="#"><img
-                                                      src="../assets/images/small/flag-04.png" alt="img-flag"
+                                                      src="{{url_for('templates',path='/assets/images/small/flag-04.png')}}" alt="img-flag"
                                                       class="img-fluid mr-2">Italian</a>
                                               <a class="iq-sub-card" href="#"><img
-                                                      src="../assets/images/small/flag-05.png" alt="img-flag"
+                                                      src="{{url_for('templates',path='/assets/images/small/flag-05.png')}}" alt="img-flag"
                                                       class="img-fluid mr-2">German</a>
                                               <a class="iq-sub-card" href="#"><img
-                                                      src="../assets/images/small/flag-06.png" alt="img-flag"
+                                                      src="{{url_for('templates',path='/assets/images/small/flag-06.png')}}" alt="img-flag"
                                                       class="img-fluid mr-2">Japanese</a>
                                           </div>
                                       </div>
                                   </div>
-                              </li> -->
+                              </li>
                               <li>
                                   <a href="#" class="btn border add-btn shadow-none mx-2 d-none d-md-block"
                                       data-toggle="modal" data-target="#new-order"><i class="las la-plus mr-2"></i>New
@@ -685,7 +685,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/01.jpg" alt="01">
+                                                                  src="{{url_for('templates',path='/assets/images/user/01.jpg')}}" alt="01">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -700,7 +700,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/02.jpg" alt="02">
+                                                                  src="{{url_for('templates',path='/assets/images/user/02.jpg')}}" alt="02">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -715,7 +715,7 @@
                                                       <div class="media align-items-center cust-card py-3">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/03.jpg" alt="03">
+                                                                  src="{{url_for('templates',path='/assets/images/user/03.jpg')}}" alt="03">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -760,7 +760,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/01.jpg" alt="01">
+                                                                  src="{{url_for('templates',path='/assets/images/user/01.jpg')}}" alt="01">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -775,7 +775,7 @@
                                                       <div class="media align-items-center cust-card py-3 border-bottom">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/02.jpg" alt="02">
+                                                                  src="{{url_for('templates',path='/assets/images/user/02.jpg')}}" alt="02">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -790,7 +790,7 @@
                                                       <div class="media align-items-center cust-card py-3">
                                                           <div class="">
                                                               <img class="avatar-50 rounded-small"
-                                                                  src="../assets/images/user/03.jpg" alt="03">
+                                                                  src="{{url_for('templates',path='/assets/images/user/03.jpg')}}" alt="03">
                                                           </div>
                                                           <div class="media-body ml-3">
                                                               <div class="d-flex align-items-center justify-content-between">
@@ -813,15 +813,15 @@
                               <li class="nav-item nav-icon dropdown caption-content">
                                   <a href="#" class="search-toggle dropdown-toggle" id="dropdownMenuButton4"
                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      <img src="../assets/images/user/1.png" class="img-fluid rounded" alt="user">
+                                      <img src="{{url_for('templates',path='/assets/images/user/1.png')}}" class="img-fluid rounded" alt="user">
                                   </a>
                                   <div class="iq-sub-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton">
                                       <div class="card shadow-none m-0">
                                           <div class="card-body p-0 text-center">
                                               <div class="media-body profile-detail text-center">
-                                                  <img src="../assets/images/page-img/profile-bg.jpg" alt="profile-bg"
+                                                  <img src="{{url_for('templates',path='/assets/images/page-img/profile-bg.jpg')}}" alt="profile-bg"
                                                       class="rounded-top img-fluid mb-4">
-                                                  <img src="../assets/images/user/1.png" alt="profile-img"
+                                                  <img src="{{url_for('templates',path='/assets/images/user/1.png')}}" alt="profile-img"
                                                       class="rounded profile-img img-fluid avatar-70">
                                               </div>
                                               <div class="p-3">
@@ -1188,18 +1188,19 @@
         </div>
     </footer>
     <!-- Backend Bundle JavaScript -->
-    <script src="../assets/js/backend-bundle.min.js"></script>
+    <script src="{{url_for('templates',path='/assets/js/backend-bundle.min.js')}}"></script>
     
     <!-- Table Treeview JavaScript -->
-    <script src="../assets/js/table-treeview.js"></script>
+    <script src="{{url_for('templates',path='/assets/js/table-treeview.js')}}"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script src="../assets/js/customizer.js"></script>
+    <script src="{{url_for('templates',path='/assets/js/customizer.js')}}"></script>
     
     <!-- Chart Custom JavaScript -->
-    <script async src="../assets/js/chart-custom.js"></script>
+    <script async src="{{url_for('templates',path='/assets/js/chart-custom.js')}}"></script>
     
     <!-- app JavaScript -->
-    <script src="../assets/js/app.js"></script>
+    <script src="{{url_for('templates',path='/assets/js/app.js')}}"></script>
   </body>
 </html>
+
