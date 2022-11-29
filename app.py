@@ -102,15 +102,37 @@ def add_product(request: Request, db: Session = Depends(get_db)):
 
 # region RETURNS
 
+
 @app.get("/list_returns")
 def list_returns(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("backend/page-list-returns.html", {"request": request})
+
 
 @app.get("/add_return")
 def add_return(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("backend/page-add-return.html", {"request": request})
 # endregion
 
+# region USERS
+
+@app.get("/list_users")
+def list_users(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-list-users.html", {"request": request})
+
+
+@app.get("/add_user_page")
+def add_user_page(request: Request, db: Session = Depends(get_db)):
+    return templates.TemplateResponse("backend/page-add-user.html", {"request": request})
+@app.post("/add_user")
+def add_user(request: Request, name: str = Form(...), db: Session = Depends(get_db)):
+    new_user=models.User(name=name)
+    db.add(new_user)
+    db.commit()
+    url=app.url_path_for("list_users")
+    return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
+
+
+# endregion
 
 # region OLD
 
