@@ -43,6 +43,12 @@ def login(request: Request, db: Session = Depends(get_db)):
 def home(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("backend/index.html", {"request": request})
 
+@app.get("/auth")
+def auth(request: Request, db: Session = Depends(get_db)):
+    # username = db.query(models.User).filter(models.User.username == username).first()
+    # password = db.query(models.User).filter(models.User.password == password).first()
+    url = app.url_path_for("home")
+    return RedirectResponse(url=url)#, status_code=status.HTTP_303_SEE_OTHER)
 # endregion
 
 # region PRODUCTS
