@@ -122,7 +122,6 @@ def list_users(request: Request, db: Session = Depends(get_db)):
     users = db.query(models.User).all()
     return templates.TemplateResponse("backend/page-list-users.html", {"request": request, "user_list": users})
 
-
 @app.get("/add_user_page")
 def add_user_page(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("backend/page-add-user.html", {"request": request})
