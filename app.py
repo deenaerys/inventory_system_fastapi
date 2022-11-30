@@ -135,6 +135,13 @@ def create_user(request: Request, name: str = Form(...),staff_code:str=Form(...)
     url = app.url_path_for("list_users")
     return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
 
+@app.get("/delete_user/{user_id}")
+def delete_user(request: Request, user_id: int, db: Session = Depends(get_db)):
+    user = db.query(models.User).filter(models.User.id == user_id).first()
+    db.delete(user)
+    db.commit()
+    url = app.url_path_for("list_users")
+    return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
 # endregion
 # region OLD
 
