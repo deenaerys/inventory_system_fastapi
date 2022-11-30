@@ -8,6 +8,8 @@ from routers import *
 import schema
 import models
 from database import SessionLocal, engine
+import crud
+from datetime import datetime
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -117,53 +119,26 @@ def add_return(request: Request, db: Session = Depends(get_db)):
 
 @app.get("/list_users")
 def list_users(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-list-users.html", {"request": request})
+    users = db.query(models.User).all()
+    return templates.TemplateResponse("backend/page-list-users.html", {"request": request, "user_list": users})
 
 
 @app.get("/add_user_page")
 def add_user_page(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("backend/page-add-user.html", {"request": request})
-@app.post("/add_user")
-def add_user(request: Request, name: str = Form(...), db: Session = Depends(get_db)):
-    new_user=models.User(name=name)
+
+@app.post("/create_user")
+def create_user(request: Request, name: str = Form(...),staff_code:str=Form(...),username:str=Form(...), password: str = Form(...),role:str=Form(...), db: Session = Depends(get_db)):
+    new_user = models.User(name=name,staff_code=staff_code,username=username,password=password,role=role)
     db.add(new_user)
     db.commit()
-    url=app.url_path_for("list_users")
+    url = app.url_path_for("list_users")
     return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
 
-
 # endregion
-
 # region OLD
 
 
-@app.post("/add")
-def add(request: Request, title: str = Form(...), db: Session = Depends(get_db)):
-    new_todo = models.Todo(title=title)
-    db.add(new_todo)
-    db.commit()
-
-    url = app.url_path_for("home")
-    return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
+    
 
 
-@app.get("/update/{todo_id}")
-def update(request: Request, todo_id: int, db: Session = Depends(get_db)):
-    todo = db.query(models.Todo).filter(models.Todo.id == todo_id).first()
-    todo.complete = not todo.complete
-    db.commit()
-
-    url = app.url_path_for("home")
-    return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
-
-
-@app.get("/delete/{todo_id}")
-def delete(request: Request, todo_id: int, db: Session = Depends(get_db)):
-    todo = db.query(models.Todo).filter(models.Todo.id == todo_id).first()
-    db.delete(todo)
-    db.commit()
-
-    url = app.url_path_for("home")
-    return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
-
-# endregion

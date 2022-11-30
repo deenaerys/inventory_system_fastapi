@@ -180,12 +180,12 @@
                                           </a>
                                   </li>
                                   <li class="">
-                                          <a href="../backend/page-list-users.html">
+                                          <a href="/list_users">
                                               <i class="las la-minus"></i><span>Users</span>
                                           </a>
                                   </li>
                                   <li class="active">
-                                          <a href="../backend/page-add-users.html">
+                                          <a href="/add_user_page">
                                               <i class="las la-minus"></i><span>Add Users</span>
                                           </a>
                                   </li>
@@ -865,7 +865,7 @@
               </div>
           </div>
       </div>      <div class="content-page">
-        <form class="ui form" action="/add_user" method="post">
+        <form class="ui form" action="/create_user" method="post">
             <div class="container-fluid add-form-list">
                 <div class="row">
                     <div class="col-sm-12">
@@ -876,19 +876,19 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <form action="page-list-users.html" data-toggle="validator">
+                                <form action="/create_user"  method="post" data-toggle="validator">
                                     <div class="row"> 
                                         <div class="col-md-6">                      
                                             <div class="form-group">
                                                 <label>Name *</label>
-                                                <input type="text" class="form-control" placeholder="Enter Name" required>
+                                                <input name="name" type="text" class="form-control" placeholder="Enter Name" required>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">                      
                                             <div class="form-group">
                                                 <label>Staff Code *</label>
-                                                <input type="password" class="form-control" placeholder="Enter Staff Code" required>
+                                                <input name="staff_code" type="password" class="form-control" placeholder="Enter Staff Code" required>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>     
@@ -920,14 +920,14 @@
                                         <div class="col-md-12">                      
                                             <div class="form-group">
                                                 <label>User Name *</label>
-                                                <input type="text" class="form-control" placeholder="Enter User Name" required>
+                                                <input name="username" type="text" class="form-control" placeholder="Enter User Name" required>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">                      
                                             <div class="form-group">
                                                 <label>Password *</label>
-                                                <input type="password" class="form-control" placeholder="Enter Password" required>
+                                                <input name="password" type="password" class="form-control" placeholder="Enter Password" required>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>  
@@ -942,18 +942,20 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Role *</label>
-                                                <select name="type" class="selectpicker form-control" data-style="py-0" required>
+                                                <select name="role" class="selectpicker form-control" data-style="py-0" required>
                                                     <option>User</option>
                                                     <option>Administrator</option>
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
+                                        <!--
+                                            <div class="col-md-12">
                                             <div class="checkbox d-inline-block mb-3">
-                                                 <input type="checkbox" class="checkbox-input mr-2" id="checkbox1" checked="">
+                                                 <input name="status" type="checkbox" class="checkbox-input mr-2" id="checkbox1" checked="">
                                                  <label for="checkbox1">Active</label>
                                              </div>
-                                         </div>                           
+                                         </div>
+                                        -->                           
                                     </div>                            
                                     <button type="submit" class="btn btn-primary mr-2">Add User</button>
                                     <button type="reset" class="btn btn-danger">Reset</button>
