@@ -888,10 +888,11 @@
                                         <div class="col-md-6">                      
                                             <div class="form-group">
                                                 <label>Staff Code *</label>
-                                                <input name="staff_code" type="password" class="form-control" placeholder="Enter Staff Code" required>
+                                                <input id="sc" oninput="check_sc()" name="staff_code" type="password" class="form-control" placeholder="Enter Staff Code" required>
                                                 <div class="help-block with-errors"></div>
                                             </div>
-                                        </div>     
+                                        </div>
+                                             
                                        <!--
                                          <div class="col-md-6">
                                             <div class="form-group">
@@ -920,21 +921,23 @@
                                         <div class="col-md-12">                      
                                             <div class="form-group">
                                                 <label>User Name *</label>
-                                                <input name="username" type="text" class="form-control" placeholder="Enter User Name" required>
+                                                <input id="myInput" oninput="check_uid()" name="username" type="text" class="form-control" placeholder="Enter User Name" required>
                                                 <div class="help-block with-errors"></div>
+                                               
                                             </div>
                                         </div>
+                                                                                                                     
                                         <div class="col-md-6">                      
                                             <div class="form-group">
                                                 <label>Password *</label>
-                                                <input name="password" type="password" class="form-control" placeholder="Enter Password" required>
+                                                <input id="pw1" name="password" type="password" class="form-control" placeholder="Enter Password" required>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>  
                                         <div class="col-md-6">                      
                                             <div class="form-group">
                                                 <label>Confirm Password *</label>
-                                                <input type="password" class="form-control" placeholder="Enter Confirm Password" required>
+                                                <input onfocusout="same_password()" id="pw2" type="password" class="form-control" placeholder="Enter Confirm Password" required>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div> 
@@ -959,6 +962,7 @@
                                     </div>                            
                                     <button type="submit" class="btn btn-primary mr-2">Add User</button>
                                     <button type="reset" class="btn btn-danger">Reset</button>
+                                   
                                 </form>
                             </div>
                         </div>
@@ -1003,6 +1007,54 @@
     
     <!-- app JavaScript -->
     <script src="{{url_for('templates',path='/assets/js/app.js')}}"></script>
+    <script>
+        function check_sc() {
+            var x = document.getElementById("sc").value;
+            if (x===""){return}
+            $.ajax({
+                url: "/find_staffcode/"+x,
+                type:"GET",
+                dataType:"json",
+                success:function(result){
+                    if (result==="exists"){
+                        Swal.fire('Staff Code Already Exists!','Please input a different code.','warning')
+                        document.getElementById('sc').value = '';
+                    }
+
+                }
+            })
+        }
+       
+        function check_uid() {
+            var x = document.getElementById("myInput").value;
+            if (x===""){return}
+            $.ajax({
+                url: "/find_username/"+x,
+                type:"GET",
+                dataType:"json",
+                success:function(result){
+                    if (result==="exists"){
+                        Swal.fire('Username Already Exists!','Please input a different username.','warning')
+                        document.getElementById('myInput').value = '';
+                    }
+
+                }
+            })
+        }
+        
+
+        function same_password(){
+            console.log('checking password')
+            var x=document.getElementById("pw1").value;
+            var y=document.getElementById("pw2").value;
+            if (x!=y){
+                Swal.fire('Password Mismatch','Please input password again.','warning');
+                document.getElementById('pw1').value='';
+                document.getElementById('pw2').value='';
+            }
+        }
+    </script>
+   
   </body>
 </html>
 

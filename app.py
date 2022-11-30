@@ -39,8 +39,6 @@ def login(request: Request, db: Session = Depends(get_db)):
 # endregion
 
 # region HOME DASHBOARD
-
-
 @app.get("/home")
 def home(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("backend/index.html", {"request": request})
@@ -125,6 +123,27 @@ def list_users(request: Request, db: Session = Depends(get_db)):
 @app.get("/add_user_page")
 def add_user_page(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("backend/page-add-user.html", {"request": request})
+
+@app.get("/find_username/{username}")
+async def find_username(username:str,request: Request, db: Session = Depends(get_db)):
+    username = db.query(models.User).filter(models.User.username == username).first()
+    msg=""
+    if not username:
+        msg="notfound"
+    else:
+        msg="exists"
+    return msg
+
+@app.get("/find_staffcode/{staff_code}")
+async def find_staffcode(staff_code:str,request: Request, db: Session = Depends(get_db)):
+    staff_code = db.query(models.User).filter(models.User.staff_code == staff_code).first()
+    msg=""
+    if not staff_code:
+        msg="notfound"
+    else:
+        msg="exists"
+    return msg
+
 
 @app.post("/create_user")
 def create_user(request: Request, name: str = Form(...),staff_code:str=Form(...),username:str=Form(...), password: str = Form(...),role:str=Form(...), db: Session = Depends(get_db)):
