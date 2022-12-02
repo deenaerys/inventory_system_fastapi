@@ -150,12 +150,17 @@ async def find_staffcode(staff_code:str,request: Request, db: Session = Depends(
         msg="exists"
     return msg
 
+@app.get("/get_user/{user_id}")
+def get_user(user_id:int,request:Request,db:Session=Depends(get_db)):
+    user=db.query(models.User).get(user_id)    
+    return templates.TemplateResponse("backend/page-edit-user.html", {"request": request,"userid":user.id,"name":user.name,"staff_code":user.staff_code,"username":user.username,"password":user.password,"role":user.role})
 
 @app.post("/create_user")
 def create_user(request: Request, name: str = Form(...),staff_code:str=Form(...),username:str=Form(...), password: str = Form(...),role:str=Form(...), db: Session = Depends(get_db)):
     new_user = models.User(name=name,staff_code=staff_code,username=username,password=password,role=role)
     db.add(new_user)
     db.commit()
+    db.close()        
     url = app.url_path_for("list_users")
     return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
 
@@ -164,10 +169,31 @@ def delete_user(request: Request, user_id: int, db: Session = Depends(get_db)):
     user = db.query(models.User).filter(models.User.id == user_id).first()
     db.delete(user)
     db.commit()
+    db.close()
     url = app.url_path_for("list_users")
     return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
+
+@app.post("/update_user/{user_id}")
+def update_user(request:Request,user_id:int,name: str = Form(...),staff_code:str=Form(...),username:str=Form(...), password: str = Form(...),role:str=Form(...),db:Session=Depends(get_db)):
+    user=db.query(models.User).get(user_id)
+    print('user',user.name)
+    
+    if user:       
+        user.name=name
+        user.staff_code=staff_code
+        user.usernamae=username
+        user.password=password
+        user.role=role
+        db.commit()
+   
+    db.close()
+    url = app.url_path_for("list_users")
+    return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
+
+
+
 # endregion
-# region OLD
+
 
 
     

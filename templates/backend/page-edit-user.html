@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}">
       <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css')}}">
       <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/remixicon/fonts/remixicon.css')}}">  </head>
-  <body onload="clear()" class="  ">
+  <body class="  ">
     <!-- loader Start -->
     <div id="loading">
           <div id="loading-center">
@@ -498,7 +498,7 @@
               </div>
           </div>
       </div>      <div class="content-page">
-        <form class="ui form" action="/create_user" method="post">
+        <form class="ui form" action="/update_user/{{userid}}" method="post">
             <div class="container-fluid add-form-list">
                 <div class="row">
                     <div class="col-sm-12">
@@ -514,14 +514,14 @@
                                         <div class="col-md-6">                      
                                             <div class="form-group">
                                                 <label>Name *</label>
-                                                <input name="name" type="text" class="form-control" placeholder="Enter Name" required>
+                                                <input value="{{name}}" name="name" type="text" class="form-control" placeholder="Enter Name" required>
                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">                      
                                             <div class="form-group">
                                                 <label>Staff Code *</label>
-                                                <input id="sc" oninput="check_sc()" name="staff_code" type="password" class="form-control" placeholder="Enter Staff Code" required>
+                                                <input value="{{staff_code}}" id="sc" onfocusout="check_sc()" name="staff_code" type="password" class="form-control" placeholder="Enter Staff Code" required>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
@@ -554,7 +554,7 @@
                                         <div class="col-md-12">                      
                                             <div class="form-group">
                                                 <label>User Name *</label>
-                                                <input id="myInput" oninput="check_uid()" name="username" type="text" class="form-control" placeholder="Enter User Name" required>
+                                                <input value="{{username}}" id="myInput" onfocusout="check_uid()" name="username" type="text" class="form-control" placeholder="Enter User Name" required>
                                                 <div class="help-block with-errors"></div>
                                                
                                             </div>
@@ -563,7 +563,7 @@
                                         <div class="col-md-6">                      
                                             <div class="form-group">
                                                 <label>Password *</label>
-                                                <input id="pw1" name="password" type="password" class="form-control" placeholder="Enter Password" required>
+                                                <input value="{{password}}" id="pw1" name="password" type="password" class="form-control" placeholder="Enter Password" required>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>  
@@ -578,7 +578,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Role *</label>
-                                                <select name="role" class="selectpicker form-control" data-style="py-0" required>
+                                                <select value="{{role}}" name="role" class="selectpicker form-control" data-style="py-0" required>
                                                     <option>User</option>
                                                     <option>Administrator</option>
                                                 </select>
@@ -593,8 +593,8 @@
                                          </div>
                                         -->                           
                                     </div>                            
-                                    <button type="submit" class="btn btn-primary mr-2">Add User</button>
-                                    <button id="reset_button" type="reset" class="btn btn-danger">Reset</button>
+                                    <button type="submit" class="btn btn-primary mr-2">Update User</button>
+                                    <button type="reset" class="btn btn-danger">Reset</button>
                                    
                                 </form>
                             </div>
@@ -682,19 +682,9 @@
             var y=document.getElementById("pw2").value;
             if (x!=y){
                 Swal.fire('Password Mismatch','Please input password again.','warning');
-                document.getElementById('pw1').value='';
                 document.getElementById('pw2').value='';
+                <!--document.getElementById('pw1').value='';-->
             }
-        }
-
-        function clear(){
-            
-            document.getElementsByName('name').value='';
-            document.getElementById('sc').value='';
-            document.getElementsByName('username').value='';
-            document.getElementsByName('password').value='';
-            document.getElementById('pw1').value='';
-            document.getElementById('pw2').value='';
         }
     </script>
    
