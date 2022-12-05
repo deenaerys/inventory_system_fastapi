@@ -11,6 +11,7 @@ from database import SessionLocal, engine
 import crud
 from datetime import datetime
 
+
 models.Base.metadata.create_all(bind=engine)
 
 templates = Jinja2Templates(directory="templates")
@@ -43,12 +44,22 @@ def login(request: Request, db: Session = Depends(get_db)):
 def home(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("backend/index.html", {"request": request})
 
-@app.get("/auth")
-def auth(request: Request, db: Session = Depends(get_db)):
-    # username = db.query(models.User).filter(models.User.username == username).first()
-    # password = db.query(models.User).filter(models.User.password == password).first()
-    url = app.url_path_for("home")
-    return RedirectResponse(url=url)#, status_code=status.HTTP_303_SEE_OTHER)
+@app.post("/auth/")
+def auth(request: Request,username:str= Form(...),password:str=Form(...), db: Session = Depends(get_db)):        
+    d_username=db.query(models.User).filter(models.User.username == username).first()
+    if d_username:
+        print('USERNAME FOUND')
+        if d_username.password==password:
+            url = app.url_path_for("home")
+            return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
+        
+        else:
+            print('Wrong Password')
+    else:
+        print("USERNAME NOT FOUND")
+    
+    
+    
 # endregion
 
 # region PRODUCTS
@@ -193,9 +204,5 @@ def update_user(request:Request,user_id:int,name: str = Form(...),staff_code:str
 
 
 # endregion
-
-
-
-    
 
 
