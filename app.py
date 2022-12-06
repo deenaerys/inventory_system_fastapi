@@ -40,26 +40,26 @@ def login(request: Request, db: Session = Depends(get_db)):
 # endregion
 
 # region HOME DASHBOARD
-@app.get("/home")
-def home(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/index.html", {"request": request})
-
-@app.post("/auth/")
+@app.post("/home")
 def auth(request: Request,username:str= Form(...),password:str=Form(...), db: Session = Depends(get_db)):        
     d_username=db.query(models.User).filter(models.User.username == username).first()
+    db.close()
     if d_username:
         print('USERNAME FOUND')
+        
         if d_username.password==password:
-            url = app.url_path_for("home")
-            return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
+            context={"request": request,
+                    "greetings":"Hello, " + d_username.name,
+                    "last_login":"Your last session was on "+ d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p ")}           
+            return templates.TemplateResponse("backend/index.html", context)
         
         else:
             print('Wrong Password')
+            return templates.TemplateResponse("backend/login.html",{"request":request,"error":"Invalid Username/Password"})
     else:
         print("USERNAME NOT FOUND")
-    
-    
-    
+        return templates.TemplateResponse("backend/login.html",{"request":request,"error":"Invalid Username/Password"})
+
 # endregion
 
 # region PRODUCTS
