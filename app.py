@@ -33,10 +33,22 @@ app.mount("/templates", StaticFiles(directory="templates"), name="templates")
 
 # region LOGIN
 @app.get("/")
-def login(request: Request, db: Session = Depends(get_db)):
-    todos = db.query(models.Todo).all()
-    return templates.TemplateResponse("backend/login.html", {"request": request, "todo_list": todos})
+def login(request: Request, db: Session = Depends(get_db)):    
+    return templates.TemplateResponse("backend/login.html", {"request": request})
+@app.get("/login")
+def login(request: Request, db: Session = Depends(get_db)):    
+    return templates.TemplateResponse("backend/login.html", {"request": request})
 
+@app.get("/signout/{user_id}")
+def signout(request: Request,user_id=int, db: Session = Depends(get_db)):
+    print('signout ',user_id)
+    user=db.query(models.User).get(user_id)  
+    print('signout ',user.id)
+    user.last_login=datetime.now()
+    db.commit()
+    db.close()
+    url = app.url_path_for("login")
+    return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
 # endregion
 
 # region HOME DASHBOARD
@@ -50,7 +62,11 @@ def auth(request: Request,username:str= Form(...),password:str=Form(...), db: Se
         if d_username.password==password:
             context={"request": request,
                     "greetings":"Hello, " + d_username.name,
-                    "last_login":"Your last session was on "+ d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p ")}           
+                    "last_login":"Your last session was on "+ d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p "),
+                    "name":d_username.name,
+                    "username":d_username.username,
+                    "user_id":d_username.id,
+                    "role":d_username.role}           
             return templates.TemplateResponse("backend/index.html", context)
         
         else:
