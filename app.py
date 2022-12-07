@@ -19,6 +19,7 @@ templates = Jinja2Templates(directory="templates")
 app = FastAPI()
 
 
+
 # Dependency
 def get_db():
     db = SessionLocal()
@@ -56,6 +57,8 @@ def signout(request: Request,user_id=int, db: Session = Depends(get_db)):
 def auth(request: Request,username:str= Form(...),password:str=Form(...), db: Session = Depends(get_db)):        
     d_username=db.query(models.User).filter(models.User.username == username).first()
     db.close()
+   
+
     if d_username:
         print('USERNAME FOUND')
         
@@ -97,12 +100,34 @@ def add_product(request: Request, db: Session = Depends(get_db)):
 
 @app.get("/list_categories")
 def list_categories(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-list-category.html", {"request": request})
+    categories = db.query(models.Category).all()
+    return templates.TemplateResponse("backend/page-list-category.html", {"request": request,"category_list":categories})
 
 
 @app.get("/add_category")
 def add_product(request: Request, db: Session = Depends(get_db)):
     return templates.TemplateResponse("backend/page-add-category.html", {"request": request})
+
+@app.get("/find_category/{category}")
+async def find_category(category:str,request: Request, db: Session = Depends(get_db)):
+    category = db.query(models.Category).filter(models.Category.category == category).first()
+    msg=""
+    if not category:
+        msg="notfound"
+    else:
+        msg="exists"
+    return msg
+
+@app.post("/create_category")
+def create_category(request: Request, category: str = Form(...),created_by=Form(...), db: Session = Depends(get_db)):
+    created_by=created_by
+    print('created_by' ,created_by)
+    new_category = models.Category(category=category,created_by=created_by)
+    db.add(new_category)
+    db.commit()
+    db.close()        
+    url = app.url_path_for("list_categories")
+    return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
 
 # endregion
 
@@ -147,6 +172,8 @@ def add_return(request: Request, db: Session = Depends(get_db)):
 # endregion
 
 # region USERS
+
+
 
 @app.get("/list_users")
 def list_users(request: Request, db: Session = Depends(get_db)):
