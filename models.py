@@ -1,4 +1,4 @@
-from sqlalchemy import BIGINT, Boolean, Column, Integer, String, DateTime
+from sqlalchemy import BIGINT, Boolean, Column, Integer, String, DateTime, Float
 from datetime import datetime
 from database import Base
 
@@ -19,6 +19,8 @@ class User(Base):
 # endregion
 
 # region CATEGORY
+
+
 class Category(Base):
     __tablename__ = "tblcategories"
     id = Column(BIGINT, primary_key=True, index=True,
@@ -29,6 +31,8 @@ class Category(Base):
 # endregion
 
 # region BRAND
+
+
 class Brand(Base):
     __tablename__ = "tblbrands"
     id = Column(BIGINT, primary_key=True, index=True,
@@ -38,8 +42,52 @@ class Brand(Base):
     created_by = Column(String(255))
 # endregion
 
+class Warehouse(Base):
+    __tablename__="tblwarehouse"
+    id = Column(BIGINT, primary_key=True, index=True,
+                autoincrement=True, nullable=False)
+    warehouse=Column(String(255))
+
+
+# region PRODUCT
+
+class Product(Base):
+    __tablename__ = "tblproducts"
+    id = Column(BIGINT, primary_key=True, index=True,
+                autoincrement=True, nullable=False)
+    barcode = Column(String(255))
+    brand = Column(String(255))
+    caption = Column(String(255))
+    product_name = Column(String(255))
+    description = Column(String(255))
+    size = Column(String(255))
+    unit = Column(String(255))
+    category = Column(String(255))
+    supplier = Column(String(255))
+    cost = Column(Float, default=0)
+    price_standard = Column(Float, default=0)
+    price_discounted = Column(Float, default=0)
+    price_dealer = Column(Float, default=0)
+    price_customer = Column(Float, default=0)
+    price_notax = Column(Float, default=0)
+    price_special = Column(Float, default=0)
+    stock_in = Column(BIGINT)
+    stock_out = Column(BIGINT)
+    stock_alert = Column(Integer)
+    item_code = Column(String(255))
+    item_name = Column(String(255))
+    image = Column(String(255))
+    warehouse = Column(String(255))
+    remarks = Column(String(255))
+    create_time = Column(DateTime, default=datetime.now())
+    created_by = Column(String(255))
+    update_time = Column(DateTime, default=datetime.now())
+    updated_by = Column(String(255))
+# endregion
 
 # region OLDCODE
+
+
 class Todo(Base):
     __tablename__ = "todos"
 

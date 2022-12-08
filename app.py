@@ -96,12 +96,164 @@ def auth(request: Request, username: str = Form(...), password: str = Form(...),
 
 @app.get("/list_products")
 def list_products(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-list-product.html", {"request": request})
-
+    products = db.query(models.Product).all()
+    
+    return templates.TemplateResponse("backend/page-list-product.html", {"request": request,"product_list":products})
 
 @app.get("/add_product")
-def add_product(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-add-product.html", {"request": request})
+async def add_product(request: Request, db: Session = Depends(get_db)):
+    categories = db.query(models.Category).all()
+    brands=db.query(models.Brand).all()
+    warehouses=db.query(models.Warehouse).all()
+    db.close()
+    context= {"request": request,"category_list":categories,"brand_list":brands,"warehouse_list":warehouses}
+    return templates.TemplateResponse("backend/page-add-product.html",context)
+
+@app.post("/create_product")
+def create_product(request: Request,
+                    product_name: str = Form(...),
+                    barcode: str = Form(...),
+                    warehouse: str = Form(...),
+                    category: str = Form(...),
+                    brand: str = Form(...),
+                    size: str = Form(...),
+                    unit: str = Form(...),
+                    cost: str = Form(...),
+                    price_standard: str = Form(...),
+                    stock_in: str = Form(...),
+                    stock_alert: str = Form(...),
+                    caption: str = Form(...),
+                    description: str = Form(...),
+                    db: Session = Depends(get_db)):
+
+    item_name=brand+" "+product_name+" "+size
+    ct=datetime.now()
+    ts=str(ct.timestamp())[0:10]
+    item_code=brand[0:3]+ts
+    if len(item_name)>255:
+        item_name=item_name[0:255]
+    item_name=item_name.upper()
+
+    created_by = request.session.get("my_name", None)
+    print('created_by', created_by)
+    new_product = models.Product(product_name=product_name,
+                                barcode=barcode,
+                                warehouse=warehouse,
+                                category=category,
+                                brand=brand,
+                                size=size,
+                                unit=unit,
+                                cost=cost,
+                                price_standard=price_standard,
+                                stock_in=stock_in,
+                                stock_alert=stock_alert,
+                                caption=caption,
+                                description=description,
+                                item_name=item_name,
+                                item_code=item_code,
+                                created_by=created_by)
+    db.add(new_product)
+    db.commit()
+    db.close()
+    url = app.url_path_for("list_products")
+    return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
+
+@app.get("/find_barcode/{barcode}")
+async def find_barcode(barcode: str, request: Request, db: Session = Depends(get_db)):
+    barcode = db.query(models.Product).filter(
+        models.Product.barcode == barcode).first()
+    msg = ""
+    if not barcode:
+        msg = "notfound"
+    else:
+        msg = "exists"
+    return msg
+
+@app.get("/delete_product/{product_id}")
+def delete_product(request: Request, product_id: int, db: Session = Depends(get_db)):
+    product = db.query(models.Product).filter(
+        models.Product.id == product_id).first()
+    db.delete(product)
+    db.commit()
+    db.close()
+    url = app.url_path_for("list_products")
+    return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
+
+@app.post("/update_product/{product_id}")
+def update_product(request: Request, product_id: int,
+                    product_name: str = Form(...),
+                    barcode: str = Form(...),
+                    warehouse: str = Form(...),
+                    category: str = Form(...),
+                    brand: str = Form(...),
+                    size: str = Form(...),
+                    unit: str = Form(...),
+                    cost: str = Form(...),
+                    price_standard: str = Form(...),
+                    stock_in: str = Form(...),
+                    stock_alert: str = Form(...),
+                    caption: str = Form(...),
+                    description: str = Form(...),
+                    db: Session = Depends(get_db)):
+    print('product_id', product_id)
+    d_product = db.query(models.Product).get(product_id)
+    print('d_product', d_product)
+    created_by = request.session.get("my_name", None)
+    if d_product:
+        d_product.product_name=product_name
+        d_product.barcode=barcode
+        d_product.warehouse=warehouse
+        d_product.category=category
+        d_product.brand=brand
+        d_product.size=size
+        d_product.unit=unit
+        d_product.cost=cost
+        d_product.price_standard=price_standard
+        d_product.stock_in=stock_in
+        d_product.stock_alert=stock_alert
+        d_product.caption=caption
+        d_product.description=description       
+        d_product.update_time = datetime.now()
+        d_product.updated_by = created_by
+        db.commit()
+
+    db.close()
+    url = app.url_path_for("list_products")
+    return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
+
+
+@app.get("/get_product/{product_id}")
+async def get_product(product_id: int, request: Request, db: Session = Depends(get_db)):
+    product = db.query(models.Product).get(product_id)
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    productid = product.id
+    print("productid", productid)
+    categories = db.query(models.Category).all()
+    brands=db.query(models.Brand).all()
+    warehouses=db.query(models.Warehouse).all()
+
+   
+    context = {"request": request, "productid": productid,
+                "product_name": product.product_name.replace(" ","_"),
+                "barcode": product.barcode,
+                "warehouse": product.warehouse,
+                "category": product.category,
+                "brand": product.brand,
+                "size": product.size,
+                "unit": product.unit,
+                "cost": product.cost,
+                "price_standard": product.price_standard,
+                "stock_in": product.stock_in,
+                "stock_alert": product.stock_alert,
+                "caption": product.caption.replace(" ","_"),
+                "description": product.description.replace(" ","_"),
+                "category_list":categories,"brand_list":brands,"warehouse_list":warehouses,
+                "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
+  
+    return templates.TemplateResponse("backend/page-edit-product.html", context)
 
 # endregion
 
@@ -193,7 +345,6 @@ def get_category(category_id: int, request: Request, db: Session = Depends(get_d
     return templates.TemplateResponse("backend/page-edit-category.html", context)
 # endregion
 
-
 # region BRANDS
 @app.get("/list_brands")
 def list_brands(request: Request, db: Session = Depends(get_db)):
@@ -277,8 +428,6 @@ def get_category(brand_id: int, request: Request, db: Session = Depends(get_db))
     return templates.TemplateResponse("backend/page-edit-brand.html", context)
 
 # endregion
-
-
 
 # region SALES
 

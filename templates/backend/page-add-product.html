@@ -511,103 +511,137 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="page-list-product.html" data-toggle="validator">
+                        <form action="/create_product" method="post" data-toggle="validator">
                             <div class="row">
-                                <div class="col-md-12">
+                               
+                                <div class="col-md-12">                      
                                     <div class="form-group">
-                                        <label>Product Type *</label>
-                                        <select name="type" class="selectpicker form-control" data-style="py-0">
-                                            <option>Standard</option>
-                                            <option>Combo</option>
-                                            <option>Digital</option>
-                                            <option>Service</option>
-                                        </select>
-                                    </div> 
-                                </div>  
-                                <div class="col-md-6">                      
-                                    <div class="form-group">
-                                        <label>Name *</label>
-                                        <input type="text" class="form-control" placeholder="Enter Name" data-errors="Please Enter Name." required>
+                                        <label>Product Name *</label>
+                                        <input name="product_name" type="text" class="form-control" placeholder="Enter Product Name" data-errors="Please Enter Product Name." required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>    
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Code *</label>
-                                        <input type="text" class="form-control" placeholder="Enter Code" data-errors="Please Enter Code." required>
+                                        <label>Barcode *</label>
+                                        <input id="myInput" oninput="check_barcode()" name="barcode" type="text" class="form-control" placeholder="Scan or Enter Barcode" data-errors="Please Scan or Enter Barcode." required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"> 
+                                    <div class="form-group">
+                                        <label>Warehouse *</label>
+                                        <select name="warehouse" class="selectpicker form-control" data-style="py-0">
+                                          
+                                            {% for warehouse in warehouse_list %}
+                                           
+                                            <option>{{warehouse.warehouse}}</option>
+                                            
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div> 
+                                <div class="col-md-6"> 
+                                    <div class="form-group">
+                                        <label>Category *</label>
+                                        <select name="category" class="selectpicker form-control" data-style="py-0">
+                                          
+                                            {% for category in category_list %}
+                                           
+                                            <option>{{category.category}}</option>
+                                            
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"> 
+                                    <div class="form-group">
+                                        <label>Brand *</label>
+                                        <select name="brand" class="selectpicker form-control" data-style="py-0">
+                                          
+                                            {% for brand in brand_list %}
+                                           
+                                            <option>{{brand.brand}}</option>
+                                            
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Size *</label>
+                                        <input name="size" type="text" class="form-control" placeholder="Enter Size" data-errors="Please Enter Size" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div> 
                                 <div class="col-md-6"> 
                                     <div class="form-group">
-                                        <label>Barcode Symbology *</label>
-                                        <select name="type" class="selectpicker form-control" data-style="py-0">
-                                            <option>CREM01</option>
-                                            <option>UM01</option>
-                                            <option>SEM01</option>
-                                            <option>COF01</option>
-                                            <option>FUN01</option>
-                                            <option>DIS01</option>
-                                            <option>NIS01</option>
-                                        </select>
-                                    </div>
-                                </div> 
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Category *</label>
-                                        <select name="type" class="selectpicker form-control" data-style="py-0">
-                                            <option>Beauty</option>
-                                            <option>Grocery</option>
-                                            <option>Food</option>
-                                            <option>Furniture</option>
-                                            <option>Shoes</option>
-                                            <option>Frames</option>
-                                            <option>Jewellery</option>
+                                        <label>Unit</label>
+                                        <select name="unit" class="selectpicker form-control" data-style="py-0">
+                                                                                   
+                                            <option>pc.</option>
+                                            <option>mL</option>
+                                            <option>L</option>
+                                            <option>cm</option>
+                                            <option>m</option>
+                                            <option>ft.</option>
+                                           
+                                            
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Cost *</label>
-                                        <input type="text" class="form-control" placeholder="Enter Cost" data-errors="Please Enter Cost." required>
+                                        <input name="cost" type="text" class="form-control" placeholder="Enter Cost" data-errors="Please Enter Cost." required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Price *</label>
-                                        <input type="text" class="form-control" placeholder="Enter Price" data-errors="Please Enter Price." required>
+                                        <input name="price_standard" type="text" class="form-control" placeholder="Enter Price" data-errors="Please Enter Price." required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">                                    
                                     <div class="form-group">
-                                        <label>Tax Method *</label>
-                                        <select name="type" class="selectpicker form-control" data-style="py-0">
-                                            <option>Exclusive</option>
-                                            <option>Inclusive</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">                                    
-                                    <div class="form-group">
-                                        <label>Quantity *</label>
-                                        <input type="text" class="form-control" placeholder="Enter Quantity" required>
+                                        <label>In-Stock *</label>
+                                        <input name="stock_in" type="text" class="form-control" placeholder="Enter In-Stock" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">                                    
+                                    <div class="form-group">
+                                        <label>Alert Count for Stock *</label>
+                                        <input name="stock_alert" type="text" class="form-control" placeholder="Enter Alert Count for Stock" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Caption</label>
+                                        <input name="caption" type="text" class="form-control" placeholder="Enter Caption" data-errors="Please Enter Caption">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Description</label>
+                                        <input name="description" type="text" class="form-control" placeholder="Enter Description" data-errors="Please Enter Description">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                               
+                                <!--<div class="col-md-12">
                                     <div class="form-group">
                                         <label>Image</label>
                                         <input type="file" class="form-control image-file" name="pic" accept="image/*">
                                     </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label>Description / Product Details</label>
-                                        <textarea class="form-control" rows="4"></textarea>
-                                    </div>
-                                </div>
+                                </div>-->
+                               
                             </div>                            
                             <button type="submit" class="btn btn-primary mr-2">Add Product</button>
                             <button type="reset" class="btn btn-danger">Reset</button>
@@ -654,6 +688,24 @@
     
     <!-- app JavaScript -->
     <script src="{{url_for('templates',path='/assets/js/app.js')}}"></script>
+    <script>
+        function check_barcode(){
+            var x = document.getElementById("myInput").value;
+            if (x===""){return}
+            $.ajax({
+                url: "/find_barcode/"+x,
+                type:"GET",
+                dataType:"json",
+                success:function(result){
+                    if (result==="exists"){
+                        Swal.fire('Barcode Already Exists!','Please input a different barcode.','warning')
+                        document.getElementById('myInput').value = '';
+                    }
+
+                }
+            })
+        }
+    </script>
   </body>
 </html>
 
