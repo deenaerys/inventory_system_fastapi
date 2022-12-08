@@ -458,13 +458,15 @@
                                                       class="rounded profile-img img-fluid avatar-70">
                                               </div>
                                               <div class="p-3">
-                                                  <h5 class="mb-1">JoanDuo@property.com</h5>
-                                                  <p class="mb-0">Since 10 march, 2020</p>
-                                                  <div class="d-flex align-items-center justify-content-center mt-3">
-                                                      <a href="../app/user-profile.html" class="btn border mr-2">Profile</a>
-                                                      <a href="/" class="btn border">Sign Out</a>
-                                                  </div>
-                                              </div>
+                                                <h5 class="mb-1">{{name}}</h5>
+                                                <h5 hidden class="mb-1">{{username}}</h5>
+                                                <h5 hidden class="mb-1">{{user_id}}</h5>
+                                                <p class="mb-0">{{role}}</p>
+                                                <div class="d-flex align-items-center justify-content-center mt-3">
+                                                    <!--<a href="../app/user-profile.html" class="btn border mr-2">Profile</a>-->
+                                                    <a href="/signout/{{user_id}}" class="btn border">Sign Out</a>
+                                                </div>
+                                            </div>
                                           </div>
                                       </div>
                                   </div>
@@ -505,7 +507,7 @@
                         <div class="card">
                             <div class="card-header d-flex justify-content-between">
                                 <div class="header-title">
-                                    <h4 class="card-title">Add Users</h4>
+                                    <h4 class="card-title">Edit Users</h4>
                                 </div>
                             </div>
                             <div class="card-body">

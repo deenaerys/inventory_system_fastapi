@@ -510,13 +510,13 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="page-list-category.html" data-toggle="validator">
+                        <form action="/create_category" method="post" data-toggle="validator">
                             <div class="row">                                
                                
                                 <div class="col-md-12">                      
                                     <div class="form-group">
                                         <label>Category *</label>
-                                        <input id="myInput" oninput="check_category()" type="text" class="form-control" placeholder="Enter Category" required>
+                                        <input name="category" id="myInput" oninput="check_category()" type="text" class="form-control" placeholder="Enter Category" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>                                 

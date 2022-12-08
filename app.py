@@ -10,13 +10,14 @@ import models
 from database import SessionLocal, engine
 import crud
 from datetime import datetime
-
+from starlette.middleware.sessions import SessionMiddleware
 
 models.Base.metadata.create_all(bind=engine)
 
 templates = Jinja2Templates(directory="templates")
 
 app = FastAPI()
+app.add_middleware(SessionMiddleware, secret_key="some-random-string", max_age=None)
 
 
 
@@ -57,8 +58,10 @@ def signout(request: Request,user_id=int, db: Session = Depends(get_db)):
 def auth(request: Request,username:str= Form(...),password:str=Form(...), db: Session = Depends(get_db)):        
     d_username=db.query(models.User).filter(models.User.username == username).first()
     db.close()
-   
-
+    request.session["my_id"]=d_username.id
+    request.session["my_name"]=d_username.name
+    request.session["my_username"]=d_username.username
+    request.session["my_role"]=d_username.role
     if d_username:
         print('USERNAME FOUND')
         
@@ -78,6 +81,8 @@ def auth(request: Request,username:str= Form(...),password:str=Form(...), db: Se
     else:
         print("USERNAME NOT FOUND")
         return templates.TemplateResponse("backend/login.html",{"request":request,"error":"Invalid Username/Password"})
+
+
 
 # endregion
 
@@ -101,7 +106,13 @@ def add_product(request: Request, db: Session = Depends(get_db)):
 @app.get("/list_categories")
 def list_categories(request: Request, db: Session = Depends(get_db)):
     categories = db.query(models.Category).all()
-    return templates.TemplateResponse("backend/page-list-category.html", {"request": request,"category_list":categories})
+    my_id=request.session.get("my_id",None)
+    my_name=request.session.get("my_name",None)
+    my_username=request.session.get("my_username",None)
+    my_role=request.session.get("my_role",None)
+    context={"request": request,"category_list":categories,"name":my_name,"username":my_username,"user_id":my_id,"role":my_role}
+
+    return templates.TemplateResponse("backend/page-list-category.html", context)
 
 
 @app.get("/add_category")
@@ -119,8 +130,9 @@ async def find_category(category:str,request: Request, db: Session = Depends(get
     return msg
 
 @app.post("/create_category")
-def create_category(request: Request, category: str = Form(...),created_by=Form(...), db: Session = Depends(get_db)):
-    created_by=created_by
+def create_category(request: Request, category: str = Form(...), db: Session = Depends(get_db)):
+    print('category', category)
+    created_by=request.session.get("my_name", None)
     print('created_by' ,created_by)
     new_category = models.Category(category=category,created_by=created_by)
     db.add(new_category)
@@ -129,6 +141,43 @@ def create_category(request: Request, category: str = Form(...),created_by=Form(
     url = app.url_path_for("list_categories")
     return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
 
+
+@app.get("/delete_category/{category_id}")
+def delete_user(request: Request, category_id: int, db: Session = Depends(get_db)):
+    category = db.query(models.Category).filter(models.Category.id == category_id).first()
+    db.delete(category)
+    db.commit()
+    db.close()
+    url = app.url_path_for("list_categories")
+    return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
+
+@app.post("/update_category/{category_id}")
+def update_category(request:Request,category_id:int,category: str = Form(...),db:Session=Depends(get_db)):
+    print('category_id',category_id)
+    d_category=db.query(models.Category).get(category_id)
+    print('category',category)    
+    created_by=request.session.get("my_name", None)
+    if category:       
+        d_category.category=category
+        d_category.create_time=datetime.now()
+        d_category.created_by=created_by        
+        db.commit()
+   
+    db.close()
+    url = app.url_path_for("list_categories")
+    return RedirectResponse(url=url, status_code=status.HTTP_302_FOUND)
+
+@app.get("/get_category/{category_id}")
+def get_user(category_id:int,request:Request,db:Session=Depends(get_db)):
+    category=db.query(models.Category).get(category_id)
+    my_id=request.session.get("my_id",None)
+    my_name=request.session.get("my_name",None)
+    my_username=request.session.get("my_username",None)
+    my_role=request.session.get("my_role",None)
+    categorid=category.id
+    print("categorid",categorid)
+    context={"request": request,"categorid":categorid,"category":category.category,"name":my_name,"username":my_username,"user_id":my_id,"role":my_role}     
+    return templates.TemplateResponse("backend/page-edit-category.html", context)
 # endregion
 
 # region SALES
@@ -177,7 +226,7 @@ def add_return(request: Request, db: Session = Depends(get_db)):
 
 @app.get("/list_users")
 def list_users(request: Request, db: Session = Depends(get_db)):
-    users = db.query(models.User).all()
+    users = db.query(models.User).all()    
     return templates.TemplateResponse("backend/page-list-users.html", {"request": request, "user_list": users})
 
 @app.get("/add_user_page")
