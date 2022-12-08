@@ -78,15 +78,16 @@ def auth(request: Request, username: str = Form(...), password: str = Form(...),
     d_username = db.query(models.User).filter(
         models.User.username == username).first()
     db.close()
-    request.session["my_id"] = d_username.id
-    request.session["my_name"] = d_username.name
-    request.session["my_username"] = d_username.username
-    request.session["my_role"] = d_username.role
-    request.session["my_login"] = str(d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p "))
+    
     if d_username:
         print('USERNAME FOUND')
 
         if d_username.password == password:
+            request.session["my_id"] = d_username.id
+            request.session["my_name"] = d_username.name
+            request.session["my_username"] = d_username.username
+            request.session["my_role"] = d_username.role
+            request.session["my_login"] = str(d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p "))
             context = {"request": request,
                        "greetings": "Hello, " + d_username.name,
                        "last_login": "Your last session was on " + d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p "),
