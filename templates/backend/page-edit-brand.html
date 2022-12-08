@@ -59,7 +59,7 @@
                                       <i class="las la-minus"></i><span>List Product</span>
                                   </a>
                               </li>
-                              <li class="active">
+                              <li class="">
                                   <a href="/add_product">
                                       <i class="las la-minus"></i><span>Add Product</span>
                                   </a>
@@ -82,14 +82,14 @@
                                               <i class="las la-minus"></i><span>List Category</span>
                                           </a>
                                   </li>
-                                  <li class="">
+                                  <li class="active">
                                           <a href="/add_category">
                                               <i class="las la-minus"></i><span>Add Category</span>
                                           </a>
                                   </li>
                           </ul>
                       </li>
-                    
+                      
                       <li class=" ">
                           <a href="#sale" class="collapsed" data-toggle="collapse" aria-expanded="false">
                               <svg class="svg-icon" id="p-dash4" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -212,10 +212,10 @@
                           <ul id="reports" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                           </ul>
                       </li>
-                  
+                     
                   </ul>
               </nav>
-          
+             
               <div class="p-3"></div>
           </div>
           </div>      <div class="iq-top-navbar">
@@ -507,109 +507,24 @@
                 <div class="card">
                     <div class="card-header d-flex justify-content-between">
                         <div class="header-title">
-                            <h4 class="card-title">Add Product</h4>
+                            <h4 class="card-title">Update brand</h4>
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="page-list-product.html" data-toggle="validator">
-                            <div class="row">
-                                <div class="col-md-12">
+                        <form action="/update_brand/{{brandid}}" method="post" data-toggle="validator">
+                            <div class="row">                                
+                               
+                                <div class="col-md-12">                      
                                     <div class="form-group">
-                                        <label>Product Type *</label>
-                                        <select name="type" class="selectpicker form-control" data-style="py-0">
-                                            <option>Standard</option>
-                                            <option>Combo</option>
-                                            <option>Digital</option>
-                                            <option>Service</option>
-                                        </select>
-                                    </div> 
-                                </div>  
-                                <div class="col-md-6">                      
-                                    <div class="form-group">
-                                        <label>Name *</label>
-                                        <input type="text" class="form-control" placeholder="Enter Name" data-errors="Please Enter Name." required>
+                                        <label>Brand *</label>
+                                        <input value="{{brand}}" name="brand" id="myInput" oninput="check_brand()" type="text" class="form-control" placeholder="Enter Brand" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                </div>    
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Code *</label>
-                                        <input type="text" class="form-control" placeholder="Enter Code" data-errors="Please Enter Code." required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div> 
-                                <div class="col-md-6"> 
-                                    <div class="form-group">
-                                        <label>Barcode Symbology *</label>
-                                        <select name="type" class="selectpicker form-control" data-style="py-0">
-                                            <option>CREM01</option>
-                                            <option>UM01</option>
-                                            <option>SEM01</option>
-                                            <option>COF01</option>
-                                            <option>FUN01</option>
-                                            <option>DIS01</option>
-                                            <option>NIS01</option>
-                                        </select>
-                                    </div>
-                                </div> 
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Category *</label>
-                                        <select name="type" class="selectpicker form-control" data-style="py-0">
-                                            <option>Beauty</option>
-                                            <option>Grocery</option>
-                                            <option>Food</option>
-                                            <option>Furniture</option>
-                                            <option>Shoes</option>
-                                            <option>Frames</option>
-                                            <option>Jewellery</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Cost *</label>
-                                        <input type="text" class="form-control" placeholder="Enter Cost" data-errors="Please Enter Cost." required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Price *</label>
-                                        <input type="text" class="form-control" placeholder="Enter Price" data-errors="Please Enter Price." required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label>Tax Method *</label>
-                                        <select name="type" class="selectpicker form-control" data-style="py-0">
-                                            <option>Exclusive</option>
-                                            <option>Inclusive</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">                                    
-                                    <div class="form-group">
-                                        <label>Quantity *</label>
-                                        <input type="text" class="form-control" placeholder="Enter Quantity" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label>Image</label>
-                                        <input type="file" class="form-control image-file" name="pic" accept="image/*">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label>Description / Product Details</label>
-                                        <textarea class="form-control" rows="4"></textarea>
-                                    </div>
-                                </div>
+                                </div>                                 
+                                
+                                                               
                             </div>                            
-                            <button type="submit" class="btn btn-primary mr-2">Add Product</button>
+                            <button type="submit" class="btn btn-primary mr-2">Update brand</button>
                             <button type="reset" class="btn btn-danger">Reset</button>
                         </form>
                     </div>
@@ -654,6 +569,25 @@
     
     <!-- app JavaScript -->
     <script src="{{url_for('templates',path='/assets/js/app.js')}}"></script>
-  </body>
+    
+    <script>
+        function check_brand(){
+            var x = document.getElementById("myInput").value;
+            if (x===""){return}
+            $.ajax({
+                url: "/find_brand/"+x,
+                type:"GET",
+                dataType:"json",
+                success:function(result){
+                    if (result==="exists"){
+                        Swal.fire('Brand Already Exists!','Please input a different brand.','warning')
+                        
+                    }
+
+                }
+            })
+        }
+    </script>
+</body>
 </html>
 
