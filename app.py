@@ -57,7 +57,21 @@ def signout(request: Request, user_id=int, db: Session = Depends(get_db)):
 # endregion
 
 # region HOME DASHBOARD
-
+@app.get("/dashboard")
+def dashboard(request:Request,db:Session=Depends(get_db)):
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    context = {"request": request,
+                       "greetings": "Hello, " + my_name,
+                       "last_login": "Your last session was on " + my_login,
+                       "name": my_name,
+                       "username": my_username,
+                       "user_id": my_id,
+                       "role": my_role}
+    return templates.TemplateResponse("backend/index.html", context)
 
 @app.post("/home")
 def auth(request: Request, username: str = Form(...), password: str = Form(...), db: Session = Depends(get_db)):
@@ -68,6 +82,7 @@ def auth(request: Request, username: str = Form(...), password: str = Form(...),
     request.session["my_name"] = d_username.name
     request.session["my_username"] = d_username.username
     request.session["my_role"] = d_username.role
+    request.session["my_login"] = str(d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p "))
     if d_username:
         print('USERNAME FOUND')
 
@@ -97,8 +112,22 @@ def auth(request: Request, username: str = Form(...), password: str = Form(...),
 @app.get("/list_products")
 def list_products(request: Request, db: Session = Depends(get_db)):
     products = db.query(models.Product).all()
+    db.close()
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    context={"request": request,
+            "greetings": "Hello, " + my_name,
+            "last_login": "Your last session was on " + my_login,
+            "name": my_name,
+            "username": my_username,
+            "user_id": my_id,
+            "role": my_role,
+            "product_list":products}
     
-    return templates.TemplateResponse("backend/page-list-product.html", {"request": request,"product_list":products})
+    return templates.TemplateResponse("backend/page-list-product.html", context)
 
 @app.get("/add_product")
 async def add_product(request: Request, db: Session = Depends(get_db)):
@@ -106,7 +135,19 @@ async def add_product(request: Request, db: Session = Depends(get_db)):
     brands=db.query(models.Brand).all()
     warehouses=db.query(models.Warehouse).all()
     db.close()
-    context= {"request": request,"category_list":categories,"brand_list":brands,"warehouse_list":warehouses}
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    context= {"request": request,
+            "greetings": "Hello, " + my_name,
+            "last_login": "Your last session was on " + my_login,
+            "name": my_name,
+            "username": my_username,
+            "user_id": my_id,
+            "role": my_role,
+            "category_list":categories,"brand_list":brands,"warehouse_list":warehouses}
     return templates.TemplateResponse("backend/page-add-product.html",context)
 
 @app.post("/create_product")
@@ -229,6 +270,7 @@ async def get_product(product_id: int, request: Request, db: Session = Depends(g
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
     my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
     productid = product.id
     print("productid", productid)
     categories = db.query(models.Category).all()
@@ -251,6 +293,7 @@ async def get_product(product_id: int, request: Request, db: Session = Depends(g
                 "caption": product.caption.replace(" ","_"),
                 "description": product.description.replace(" ","_"),
                 "category_list":categories,"brand_list":brands,"warehouse_list":warehouses,
+                "last_login": "Your last session was on " + my_login,
                 "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
   
     return templates.TemplateResponse("backend/page-edit-product.html", context)
@@ -267,7 +310,8 @@ def list_categories(request: Request, db: Session = Depends(get_db)):
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
     my_role = request.session.get("my_role", None)
-    context = {"request": request, "category_list": categories, "name": my_name,
+    my_login=request.session.get("my_login",None)
+    context = {"request": request, "category_list": categories, "name": my_name,"last_login": "Your last session was on " + my_login,
                "username": my_username, "user_id": my_id, "role": my_role}
 
     return templates.TemplateResponse("backend/page-list-category.html", context)
@@ -275,7 +319,14 @@ def list_categories(request: Request, db: Session = Depends(get_db)):
 
 @app.get("/add_category")
 def add_product(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-add-category.html", {"request": request})
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    context = {"request": request, "name": my_name,"last_login": "Your last session was on " + my_login,
+               "username": my_username, "user_id": my_id, "role": my_role}
+    return templates.TemplateResponse("backend/page-add-category.html", context)
 
 
 @app.get("/find_category/{category}")
@@ -338,9 +389,10 @@ def get_category(category_id: int, request: Request, db: Session = Depends(get_d
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
     my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
     categorid = category.id
     print("categorid", categorid)
-    context = {"request": request, "categorid": categorid, "category": category.category,
+    context = {"request": request, "categorid": categorid, "category": category.category,"last_login": "Your last session was on " + my_login,
                "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
     return templates.TemplateResponse("backend/page-edit-category.html", context)
 # endregion
@@ -353,7 +405,8 @@ def list_brands(request: Request, db: Session = Depends(get_db)):
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
     my_role = request.session.get("my_role", None)
-    context = {"request": request, "brand_list": brands, "name": my_name,
+    my_login=request.session.get("my_login",None)
+    context = {"request": request, "brand_list": brands, "name": my_name,"last_login": "Your last session was on " + my_login,
                "username": my_username, "user_id": my_id, "role": my_role}
 
     return templates.TemplateResponse("backend/page-list-brand.html", context)
@@ -361,7 +414,14 @@ def list_brands(request: Request, db: Session = Depends(get_db)):
 
 @app.get("/add_brand")
 def add_product(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-add-brand.html", {"request": request})
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    context = {"request": request, "name": my_name,"last_login": "Your last session was on " + my_login,
+               "username": my_username, "user_id": my_id, "role": my_role}
+    return templates.TemplateResponse("backend/page-add-brand.html", context)
 
 @app.get("/find_brand/{brand}")
 async def find_brand(brand: str, request: Request, db: Session = Depends(get_db)):
@@ -415,15 +475,16 @@ def update_brand(request: Request, brand_id: int, brand: str = Form(...), db: Se
 
 
 @app.get("/get_brand/{brand_id}")
-def get_category(brand_id: int, request: Request, db: Session = Depends(get_db)):
+def get_brand(brand_id: int, request: Request, db: Session = Depends(get_db)):
     brand = db.query(models.Brand).get(brand_id)
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
     my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
     brandid = brand.id
     print("brandid", brandid)
-    context = {"request": request, "brandid": brandid, "brand": brand.brand,
+    context = {"request": request, "brandid": brandid, "brand": brand.brand,"last_login": "Your last session was on " + my_login,
                "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
     return templates.TemplateResponse("backend/page-edit-brand.html", context)
 
@@ -434,12 +495,28 @@ def get_category(brand_id: int, request: Request, db: Session = Depends(get_db))
 
 @app.get("/list_sales")
 def list_sales(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-list-sale.html", {"request": request})
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)    
+    
+    context = {"request": request, "last_login": "Your last session was on " + my_login,
+               "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
+    return templates.TemplateResponse("backend/page-list-sale.html", context)
 
 
 @app.get("/add_sale")
 def add_product(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-add-sale.html", {"request": request})
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)    
+    
+    context = {"request": request, "last_login": "Your last session was on " + my_login,
+               "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
+    return templates.TemplateResponse("backend/page-add-sale.html", context)
 # endregion
 
 # region PURCHASES
@@ -447,12 +524,28 @@ def add_product(request: Request, db: Session = Depends(get_db)):
 
 @app.get("/list_puchases")
 def list_puchases(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-list-purchase.html", {"request": request})
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)    
+    
+    context = {"request": request, "last_login": "Your last session was on " + my_login,
+               "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
+    return templates.TemplateResponse("backend/page-list-purchase.html", context)
 
 
 @app.get("/add_purchase")
-def add_product(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-add-purchase.html", {"request": request})
+def add_purchase(request: Request, db: Session = Depends(get_db)):
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)    
+    
+    context = {"request": request, "last_login": "Your last session was on " + my_login,
+               "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
+    return templates.TemplateResponse("backend/page-add-purchase.html", context)
 
 # endregion
 
@@ -461,12 +554,28 @@ def add_product(request: Request, db: Session = Depends(get_db)):
 
 @app.get("/list_returns")
 def list_returns(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-list-returns.html", {"request": request})
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)    
+    
+    context = {"request": request, "last_login": "Your last session was on " + my_login,
+               "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
+    return templates.TemplateResponse("backend/page-list-returns.html", context)
 
 
 @app.get("/add_return")
 def add_return(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-add-return.html", {"request": request})
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)    
+    
+    context = {"request": request, "last_login": "Your last session was on " + my_login,
+               "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
+    return templates.TemplateResponse("backend/page-add-return.html", context)
 # endregion
 
 # region USERS
@@ -475,12 +584,29 @@ def add_return(request: Request, db: Session = Depends(get_db)):
 @app.get("/list_users")
 def list_users(request: Request, db: Session = Depends(get_db)):
     users = db.query(models.User).all()
-    return templates.TemplateResponse("backend/page-list-users.html", {"request": request, "user_list": users})
+    db.close()
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)    
+    
+    context = {"request": request,"user_list": users, "last_login": "Your last session was on " + my_login,
+               "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
+    return templates.TemplateResponse("backend/page-list-users.html", context)
 
 
 @app.get("/add_user_page")
 def add_user_page(request: Request, db: Session = Depends(get_db)):
-    return templates.TemplateResponse("backend/page-add-user.html", {"request": request})
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)    
+    
+    context = {"request": request, "last_login": "Your last session was on " + my_login,
+               "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
+    return templates.TemplateResponse("backend/page-add-user.html",context)
 
 
 @app.get("/find_username/{username}")
@@ -510,7 +636,17 @@ async def find_staffcode(staff_code: str, request: Request, db: Session = Depend
 @app.get("/get_user/{user_id}")
 def get_user(user_id: int, request: Request, db: Session = Depends(get_db)):
     user = db.query(models.User).get(user_id)
-    return templates.TemplateResponse("backend/page-edit-user.html", {"request": request, "userid": user.id, "name": user.name, "staff_code": user.staff_code, "username": user.username, "password": user.password, "role": user.role})
+    db.close()
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)    
+    
+    context = {"request": request, "last_login": "Your last session was on " + my_login,
+               "name": my_name, "username": my_username, "user_id": my_id, "role": my_role,
+               "userid": user.id, "name": user.name, "staff_code": user.staff_code, "username": user.username, "password": user.password, "role": user.role}
+    return templates.TemplateResponse("backend/page-edit-user.html", context)
 
 
 @app.post("/create_user")
