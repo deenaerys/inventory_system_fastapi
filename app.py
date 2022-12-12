@@ -73,10 +73,11 @@ def dashboard(request:Request,db:Session=Depends(get_db)):
                        "role": my_role}
     return templates.TemplateResponse("backend/index.html", context)
 
+
+
 @app.post("/home")
 def auth(request: Request, username: str = Form(...), password: str = Form(...), db: Session = Depends(get_db)):
-    d_username = db.query(models.User).filter(
-        models.User.username == username).first()
+    d_username = db.query(models.User).filter(models.User.username == username).first()
     db.close()
     
     if d_username:
@@ -103,6 +104,33 @@ def auth(request: Request, username: str = Form(...), password: str = Form(...),
     else:
         print("USERNAME NOT FOUND")
         return templates.TemplateResponse("backend/login.html", {"request": request, "error": "Invalid Username/Password"})
+
+@app.post("/main")
+def main(request: Request, code: str = Form(...),db: Session = Depends(get_db)):
+    d_username = db.query(models.User).filter(models.User.staff_code == code).first()
+    db.close()
+    
+    if d_username:
+        print('CODE FOUND')
+        request.session["my_id"] = d_username.id
+        request.session["my_name"] = d_username.name
+        request.session["my_username"] = d_username.username
+        request.session["my_role"] = d_username.role
+        request.session["my_login"] = str(d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p "))
+        context = {"request": request,
+                       "greetings": "Hello, " + d_username.name,
+                       "last_login": "Your last session was on " + d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p "),
+                       "name": d_username.name,
+                       "username": d_username.username,
+                       "user_id": d_username.id,
+                       "role": d_username.role}
+        return templates.TemplateResponse("backend/index.html", context)
+      
+    else:
+        print("CODE NOT FOUND")
+        return templates.TemplateResponse("backend/login.html", {"request": request, "error": "Invalid Code"})
+
+
 
 
 # endregion
