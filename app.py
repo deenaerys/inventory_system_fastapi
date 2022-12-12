@@ -138,6 +138,7 @@ def main(request: Request, code: str = Form(...),db: Session = Depends(get_db)):
 # region PRODUCTS
 
 
+
 @app.get("/list_products")
 def list_products(request: Request, db: Session = Depends(get_db)):
     products = db.query(models.Product).all()
@@ -228,15 +229,32 @@ def create_product(request: Request,
     url = app.url_path_for("list_products")
     return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
 
+@app.get("/find_product/{barcode}")
+async def find_product(barcode: str, request: Request, db: Session = Depends(get_db)):
+    product = db.query(models.Product).filter(
+        models.Product.barcode == barcode).first()
+    
+    
+    if not product:
+        return "NOTFOUND"
+        
+    else:
+        return product
+        
+    
+
 @app.get("/find_barcode/{barcode}")
 async def find_barcode(barcode: str, request: Request, db: Session = Depends(get_db)):
     barcode = db.query(models.Product).filter(
         models.Product.barcode == barcode).first()
+    
     msg = ""
     if not barcode:
         msg = "notfound"
+        
     else:
         msg = "exists"
+        
     return msg
 
 @app.get("/delete_product/{product_id}")
