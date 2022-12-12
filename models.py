@@ -1,4 +1,4 @@
-from sqlalchemy import BIGINT, Boolean, Column, Integer, String, DateTime, Float
+from sqlalchemy import BIGINT, Boolean, Column, Integer, String, DateTime, Float, Text
 from datetime import datetime
 from database import Base
 
@@ -42,14 +42,40 @@ class Brand(Base):
     created_by = Column(String(255))
 # endregion
 
+# region WAREHOUSE
+
+
 class Warehouse(Base):
-    __tablename__="tblwarehouse"
+
+    __tablename__ = "tblwarehouse"
     id = Column(BIGINT, primary_key=True, index=True,
                 autoincrement=True, nullable=False)
-    warehouse=Column(String(255))
+    warehouse = Column(String(255))
+ # endregion
 
+# region ORDER
+class Order(Base):
+    __tablename__ = "tblorders"
+    id = Column(BIGINT, primary_key=True, index=True,
+                autoincrement=True, nullable=False)
+    order_id = Column(String(255))
+    item_barcode = Column(String(255))
+    item_name = Column(String(255))
+    item_code = Column(String(255))
+    quantity = Column(Float, default=1)
+    buyer_name = Column(String(255))
+    buyer_address = Column(Text)
+    total_amount = Column(Float, default=0)
+    fee = Column(Float, default=0)
+    charge = Column(Float, default=0)
+    sale_invoice = Column(String(255))
+    remarks = Column(Text)
+    create_time = Column(DateTime, default=datetime.now())
+    created_by = Column(String(255))
+# endregion
 
 # region PRODUCT
+
 
 class Product(Base):
     __tablename__ = "tblproducts"

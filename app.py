@@ -73,6 +73,27 @@ def dashboard(request:Request,db:Session=Depends(get_db)):
                        "role": my_role}
     return templates.TemplateResponse("backend/index.html", context)
 
+# region "ORDER"
+@app.get("/order")
+def order(request:Request,db:Session=Depends(get_db)):
+    ct=datetime.now()
+    ts=str(ct.timestamp())[0:10]
+    order_id=ts
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    context = {"request": request,
+                       "greetings": "Hello, " + my_name,
+                       "last_login": "Your last session was on " + my_login,
+                       "name": my_name,
+                       "username": my_username,
+                       "user_id": my_id,
+                       "role": my_role,
+                       "order_id":order_id}
+    return templates.TemplateResponse("backend/order.html", context)
+# endregion
 
 
 @app.post("/home")
