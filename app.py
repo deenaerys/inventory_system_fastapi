@@ -233,8 +233,7 @@ def create_product(request: Request,
 async def find_product(barcode: str, request: Request, db: Session = Depends(get_db)):
     product = db.query(models.Product).filter(
         models.Product.barcode == barcode).first()
-    
-    
+        
     if not product:
         return "NOTFOUND"
         
