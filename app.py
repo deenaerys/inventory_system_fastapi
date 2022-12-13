@@ -99,6 +99,9 @@ def order(request:Request,db:Session=Depends(get_db)):
                        "role": my_role,
                        "order_id":order_id}
     return templates.TemplateResponse("backend/order.html", context)
+
+
+
 # endregion
 
 
@@ -231,6 +234,11 @@ def create_product(request: Request,
     if len(item_name)>255:
         item_name=item_name[0:255]
     item_name=item_name.upper()
+    if not caption:
+        caption='caption'
+    if not description:
+        description='description'
+
 
     created_by = request.session.get("my_name", None)
     print('created_by', created_by)
@@ -265,7 +273,11 @@ async def find_product(barcode: str, request: Request, db: Session = Depends(get
         return "NOTFOUND"
         
     else:
-        return product
+        barcode=product.barcode
+        item_name=product.item_name
+        price_standard="{:.2f}".format(product.price_standard)        
+       
+        return str(barcode)+"~"+str(item_name)+"~"+str(price_standard)
         
     
 
