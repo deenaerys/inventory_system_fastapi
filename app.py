@@ -100,6 +100,23 @@ def order(request:Request,db:Session=Depends(get_db)):
                        "order_id":order_id}
     return templates.TemplateResponse("backend/order.html", context)
 
+@app.post("/add_order/{orderid}/{barcode}/{item_name}/{qty}/{price}/{amt}")
+async def add_order(request:Request,orderid:str,barcode:str,item_name:str,qty:str,price:str,amt:str,db:Session=Depends(get_db)):   
+    my_name = request.session.get("my_name", None)
+    new_order = models.Order(order_id=orderid,
+                            item_barcode =barcode,
+                            item_name = item_name,    
+                            quantity = qty, 
+                            price = price,
+                            amount = amt,
+                            create_time =datetime.now(),
+                            created_by = my_name)
+    db.add(new_order)
+    db.commit()
+    db.close()   
+   
+    
+
 
 
 # endregion

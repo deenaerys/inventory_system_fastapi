@@ -488,29 +488,11 @@
      <div class="container-fluid">
         <div class="row">
             <div id="order_id" class="col-lg-12">
-                Order ID # {{order_id}}
+                Order ID # {{order_id}} 
             </div>          
 
         </div>
-        <div class="row">                                
-                               
-            <div class="col-md-6">                      
-                <div class="form-group">
-                    <label>Buyer's Name *</label>
-                    <input name="buyer_name" id="buyer_name" type="text" class="form-control" placeholder="Enter buyer's name" required>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">                      
-                <div class="form-group">
-                    <label>Buyer's Address *</label>
-                    <input name="buyer_address" id="buyer_address" type="text" class="form-control" placeholder="Enter buyer's address" required>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>                                 
-            
-                                           
-        </div>
+             
         <div class="table-responsive">
             <table id="datatable" class="table table-sm">
                <thead>
@@ -519,7 +501,7 @@
                      <th>Item Name</th>
                      <th>Quantity</th>
                      <th>Price</th>
-                     <th>Amount</th>
+                     <th>Amount</th>                   
                      
                   </tr>
                </thead>
@@ -529,6 +511,61 @@
             </table>
            
         </div>
+        <hr>
+        <div class="class-body">
+            <form action="#" method="post" data-toggle="validator">
+            <div class="row">                                
+                               
+                <div class="col-md-6">                      
+                    <div class="form-group">
+                        <label>Name of Buyer *</label>
+                        <input name="buyer_name" id="buyer_name" type="text" class="form-control" placeholder="Enter buyer's name" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">                      
+                    <div class="form-group">
+                        <label>Address of Buyer *</label>
+                        <input name="buyer_address" id="buyer_address" type="text" class="form-control" placeholder="Enter buyer's address" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>                               
+                <div class="col-md-6">                      
+                    <div class="form-group">
+                        <label>Fee</label>
+                        <input value="0.00" step="0.01" name="fee" id="fee" type="number" class="form-control" placeholder="Enter fee">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">                      
+                    <div class="form-group">
+                        <label>Charge</label>
+                        <input value="0.00" step="0.01" name="charge" id="charge" type="number" class="form-control" placeholder="Enter charge">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">                      
+                    <div class="form-group">
+                        <label>Sales Invoice *</label>
+                        <input name="invoice" id="invoice" type="text" class="form-control" placeholder="Enter sales invoice" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">                      
+                    <div class="form-group">
+                        <label>Remarks </label>
+                        <input name="remarks" id="remarks" type="text" class="form-control" placeholder="Enter remarks">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                          
+                                               
+            </div>
+          </form>
+
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Save Order</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
         
            
            
@@ -578,6 +615,8 @@
 
         
           var table = document.getElementById("datatable");
+          var order=document.getElementById("order_id");
+          var orderid=order.innerHTML;
           var row = table.insertRow(1);
           var cell1 = row.insertCell(0);
           var cell2 = row.insertCell(1);
@@ -595,7 +634,13 @@
           cell4.innerHTML = price;
           cell5.innerHTML = amount.toFixed(2);
           
+          add_order(orderid,barcode,item_name,qty,price,amount);
+
+
+          
         }
+
+        
 
 
         function find_item(){
@@ -628,7 +673,24 @@
             find_item();
         }
         });
+
+        function add_order(orderid,barcode,item_name,qty,price,amount){
+            $.ajax({
+                url: "/add_order/"orderid+"/"+barcode+"/"+item_name+"/"+qty+"/"+price+"/"+amount,
+                type:"POST",
+                dataType:"json",
+                success:function(result){
+                    alert(result);
+                }
+            })
+        }
+
+
+
+       
     </script>
+
+   
 
   </body>
 </html>
