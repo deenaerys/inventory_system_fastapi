@@ -75,15 +75,21 @@ def dashboard(request:Request,db:Session=Depends(get_db)):
 
 # region "ORDER"
 @app.get("/order")
-def order(request:Request,db:Session=Depends(get_db)):
-    ct=datetime.now()
-    ts=str(ct.timestamp())[0:10]
-    order_id=ts
+def order(request:Request,db:Session=Depends(get_db)):    
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
     my_role = request.session.get("my_role", None)
     my_login=request.session.get("my_login",None)
+    ct=datetime.now()
+    ts=str(ct.timestamp())[0:10]
+    if len(str(my_id))<2:
+        pref='{:0>2}'.format(int(my_id))       
+        
+    else:
+        pref=my_id
+       
+    order_id=pref+ts
     context = {"request": request,
                        "greetings": "Hello, " + my_name,
                        "last_login": "Your last session was on " + my_login,
