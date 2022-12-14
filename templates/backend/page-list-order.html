@@ -481,11 +481,21 @@
                               <tbody>
                                 {% for order in order_list %}
                                 
-                                {% if 'Created' in order.status %}
                                 
                                  <tr >
+                                   <!-- <td hidden>{{order.id}}</td>-->
                                     <td>{{order.order_id}}</td>
-                                    <td>{{order.status}}</td>
+                                    {% if 'Created' in order.status %}
+                                    <td><div class="badge badge-info">{{order.status}}</div></td>
+                                    {% elif 'Delivered' in order.status %}
+                                    <td><div class="badge badge-success">{{order.status}}</div></td>
+                                    {% elif 'Returned' in order.status %}
+                                    <td><div class="badge badge-danger">{{order.status}}</div></td>
+                                    {% elif 'Cancelled' in order.status %}
+                                    <td><div class="badge badge-dark">{{order.status}}</div></td>
+                                    {% else %}
+                                    <td><div class="badge badge-warning">{{order.status}}</div></td>
+                                    {% endif %}
                                     <td>{{order.details}}</td>
                                     <td>{{order.update_time}}</td>
                                     <td>{{order.buyer_name}}</td>
@@ -498,58 +508,7 @@
                                         </div>
                                     </td>
                                  </tr>
-                                {% elif 'Delivered' in order.status %}
-                                <tr class="bg-success">
-                                    <td>{{order.order_id}}</td>
-                                    <td>{{order.status}}</td>
-                                    <td>{{order.details}}</td>
-                                    <td>{{order.update_time}}</td>
-                                    <td>{{order.buyer_name}}</td>
-                                    <td>
-                                        <div class="d-flex align-items-center list-action">                                    
-                                            <a class="badge bg-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
-                                                href="#"><i class="ri-pencil-line mr-0"></i></a>
-                                            <a class="badge bg-warning mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"
-                                                href="#"><i class="ri-delete-bin-line mr-0"></i></a>
-                                        </div>
-                                    </td>
-                                 </tr>
-                                 {% elif 'Returned' in order.status %}
-                                 <tr class="bg-danger">
-                                     <td>{{order.order_id}}</td>
-                                     <td>{{order.status}}</td>
-                                     <td>{{order.details}}</td>
-                                     <td>{{order.update_time}}</td>
-                                     <td>{{order.buyer_name}}</td>
-                                     <td>
-                                         <div class="d-flex align-items-center list-action">                                    
-                                             <a class="badge bg-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
-                                                 href="#"><i class="ri-pencil-line mr-0"></i></a>
-                                             <a class="badge bg-warning mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"
-                                                 href="#"><i class="ri-delete-bin-line mr-0"></i></a>
-                                         </div>
-                                     </td>
-                                  </tr>
- 
-
-                                {% else %}
-                                <tr class="bg-info">
-                                    <td>{{order.order_id}}</td>
-                                    <td>{{order.status}}</td>
-                                    <td>{{order.details}}</td>
-                                    <td>{{order.update_time}}</td>
-                                    <td>{{order.buyer_name}}</td>
-                                    <td>
-                                        <div class="d-flex align-items-center list-action">                                    
-                                            <a class="badge bg-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
-                                                href="#"><i class="ri-pencil-line mr-0"></i></a>
-                                            <a class="badge bg-warning mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"
-                                                href="#"><i class="ri-delete-bin-line mr-0"></i></a>
-                                        </div>
-                                    </td>
-                                 </tr>
-
-                                {% endif %} 
+                                
                                 {% endfor %} 
                               </tbody>
                              
