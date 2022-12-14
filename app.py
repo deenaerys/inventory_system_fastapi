@@ -165,9 +165,7 @@ def order(request:Request,db:Session=Depends(get_db)):
 @app.post("/add_order/{barcode}/{item_name}/{qty}/{price}/{amt}")
 async def add_order(request:Request,barcode:str,item_name:str,qty:str,price:str,amt:str,db:Session=Depends(get_db)):   
     my_name = request.session.get("my_name", None)
-    my_order = request.session.get("my_order",None)
-    print('order_id',my_order)
-    print('add_order',barcode,item_name,qty,price,amt)
+    my_order = request.session.get("my_order",None)    
     new_order = models.Order(order_id=my_order,
                             item_barcode =barcode,
                             item_name = item_name,    
@@ -184,7 +182,7 @@ async def add_order(request:Request,barcode:str,item_name:str,qty:str,price:str,
 @app.post("/save_order/")
 async def save_order(request:Request,total_count:str=Form(...),total_amount:str=Form(...),buyer_name:str= Form(...),buyer_address:str= Form(...),fee:str= Form(...),charge:str= Form(...),sale_invoice:str= Form(...),remarks:str= Form(...),db:Session=Depends(get_db)):
     my_order = request.session.get("my_order",None)
-    print('my_order',my_order)
+    my_name=request.session.get("my_name",None)    
     order = db.query(models.Order).get(my_order)
     order = db.query(models.Order).filter(models.Order.order_id== my_order).first()
     if order:
@@ -195,14 +193,53 @@ async def save_order(request:Request,total_count:str=Form(...),total_amount:str=
         order.fee=fee
         order.charge=charge
         order.sale_invoice=sale_invoice
-        order.remarks=remarks    
+        order.remarks=remarks
+        order.create_time=datetime.now()
+       
+        
         db.commit()
-    else:
-        print('order not found')    
+        
+
+        orderstatus=models.OrderStatus(
+            order_id=my_order,
+            status='Created',
+            details=my_name,
+            total_amount = total_amount,
+            total_count=total_count,
+            buyer_name=buyer_name,
+            buyer_address=buyer_address,
+            fee=fee,
+            charge=charge,
+            sale_invoice=sale_invoice,
+            remarks=remarks,
+            update_time=datetime.now(),
+            created_by=my_name)
+        db.add(orderstatus)  
+        db.commit()
+        
     db.close()
-    url = app.url_path_for("order")
+    url = app.url_path_for("list_orders")
     return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
 
+@app.get("/list_orders")
+def list_orders(request: Request, db: Session = Depends(get_db)):
+    orders = db.query(models.OrderStatus).all()
+    db.close()
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    context={"request": request,
+            "greetings": "Hello, " + my_name,
+            "last_login": "Your last session was on " + my_login,
+            "name": my_name,
+            "username": my_username,
+            "user_id": my_id,
+            "role": my_role,
+            "order_list":orders}
+    
+    return templates.TemplateResponse("backend/page-list-order.html", context)
 
 
 # endregion
