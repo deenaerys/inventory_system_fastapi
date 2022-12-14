@@ -68,14 +68,32 @@ class Order(Base):
     total_amount = Column(Float,default=0)
     total_count=Column(Float,default=0)
     buyer_name = Column(String(255))
-    buyer_address = Column(Text)
-    total_amount = Column(Float, default=0)
+    buyer_address = Column(Text)   
     fee = Column(Float, default=0)
     charge = Column(Float, default=0)
     sale_invoice = Column(String(255))
     remarks = Column(Text)
     create_time = Column(DateTime, default=datetime.now())
     created_by = Column(String(255))
+
+class OrderStatus(Base):
+    __tablename__ = "tblorderstatus"
+    id = Column(BIGINT, primary_key=True, index=True,
+                autoincrement=True, nullable=False)
+    order_id = Column(String(255))
+    status=Column(String(255))
+    details=Column(Text)
+    update_time=Column(DateTime, default=datetime.now())  
+    total_amount = Column(Float,default=0)
+    total_count=Column(Float,default=0)
+    buyer_name = Column(String(255))
+    buyer_address = Column(Text)   
+    fee = Column(Float, default=0)
+    charge = Column(Float, default=0)
+    sale_invoice = Column(String(255))
+    remarks = Column(Text)
+    create_time = Column(DateTime, default=datetime.now())
+    created_by = Column(String(255))    
 # endregion
 
 # region PRODUCT
