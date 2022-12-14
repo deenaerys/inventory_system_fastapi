@@ -14,7 +14,7 @@
       <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}">
       <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css')}}">
       <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/remixicon/fonts/remixicon.css')}}">  </head>
-  <body class="  ">
+  <body class="  " onload="clear_values()">
     <!-- loader Start -->
     <div id="loading">
           <div id="loading-center">
@@ -627,6 +627,10 @@
     <script>
         var total_amount=0;
         var total_count=0;
+        function clear_values(){
+            total_amount=0;
+            total_count=0;
+        }
         function myFunction(msg) {
             product=msg.split("~")
 
