@@ -73,55 +73,6 @@ def dashboard(request:Request,db:Session=Depends(get_db)):
                        "role": my_role}
     return templates.TemplateResponse("backend/index.html", context)
 
-# region "ORDER"
-@app.get("/order")
-def order(request:Request,db:Session=Depends(get_db)):    
-    my_id = request.session.get("my_id", None)
-    my_name = request.session.get("my_name", None)
-    my_username = request.session.get("my_username", None)
-    my_role = request.session.get("my_role", None)
-    my_login=request.session.get("my_login",None)
-    ct=datetime.now()
-    ts=str(ct.timestamp())[0:10]
-    if len(str(my_id))<2:
-        pref='{:0>2}'.format(int(my_id))       
-        
-    else:
-        pref=my_id
-       
-    order_id=pref+ts
-    context = {"request": request,
-                       "greetings": "Hello, " + my_name,
-                       "last_login": "Your last session was on " + my_login,
-                       "name": my_name,
-                       "username": my_username,
-                       "user_id": my_id,
-                       "role": my_role,
-                       "order_id":order_id}
-    return templates.TemplateResponse("backend/order.html", context)
-
-@app.post("/add_order/{orderid}/{barcode}/{item_name}/{qty}/{price}/{amt}")
-async def add_order(request:Request,orderid:str,barcode:str,item_name:str,qty:str,price:str,amt:str,db:Session=Depends(get_db)):   
-    my_name = request.session.get("my_name", None)
-    new_order = models.Order(order_id=orderid,
-                            item_barcode =barcode,
-                            item_name = item_name,    
-                            quantity = qty, 
-                            price = price,
-                            amount = amt,
-                            create_time =datetime.now(),
-                            created_by = my_name)
-    db.add(new_order)
-    db.commit()
-    db.close()   
-   
-    
-
-
-
-# endregion
-
-
 @app.post("/home")
 def auth(request: Request, username: str = Form(...), password: str = Form(...), db: Session = Depends(get_db)):
     d_username = db.query(models.User).filter(models.User.username == username).first()
@@ -182,10 +133,81 @@ def main(request: Request, code: str = Form(...),db: Session = Depends(get_db)):
 
 # endregion
 
+
+# region "ORDER"
+@app.get("/order")
+def order(request:Request,db:Session=Depends(get_db)):    
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    ct=datetime.now()
+    ts=str(ct.timestamp())[0:10]
+    if len(str(my_id))<2:
+        pref='{:0>2}'.format(int(my_id))       
+        
+    else:
+        pref=my_id
+       
+    order_id=pref+ts
+    request.session["my_order"] = order_id
+    context = {"request": request,
+                       "greetings": "Hello, " + my_name,
+                       "last_login": "Your last session was on " + my_login,
+                       "name": my_name,
+                       "username": my_username,
+                       "user_id": my_id,
+                       "role": my_role,
+                       "order_id":order_id}
+    return templates.TemplateResponse("backend/order.html", context)
+
+@app.post("/add_order/{barcode}/{item_name}/{qty}/{price}/{amt}")
+async def add_order(request:Request,barcode:str,item_name:str,qty:str,price:str,amt:str,db:Session=Depends(get_db)):   
+    my_name = request.session.get("my_name", None)
+    my_order = request.session.get("my_order",None)
+    print('order_id',my_order)
+    print('add_order',barcode,item_name,qty,price,amt)
+    new_order = models.Order(order_id=my_order,
+                            item_barcode =barcode,
+                            item_name = item_name,    
+                            quantity = qty, 
+                            price = price,
+                            amount = amt,
+                            create_time =datetime.now(),
+                            created_by = my_name)
+    db.add(new_order)
+    db.commit()
+    db.close()   
+   
+    
+@app.post("/save_order/")
+async def save_order(request:Request,total_count:str=Form(...),total_amount:str=Form(...),buyer_name:str= Form(...),buyer_address:str= Form(...),fee:str= Form(...),charge:str= Form(...),sale_invoice:str= Form(...),remarks:str= Form(...),db:Session=Depends(get_db)):
+    my_order = request.session.get("my_order",None)
+    print('my_order',my_order)
+    order = db.query(models.Order).get(my_order)
+    order = db.query(models.Order).filter(models.Order.order_id== my_order).first()
+    if order:
+        order.total_count = total_count
+        order.total_amount= total_amount
+        order.buyer_name=buyer_name
+        order.buyer_address=buyer_address
+        order.fee=fee
+        order.charge=charge
+        order.sale_invoice=sale_invoice
+        order.remarks=remarks    
+        db.commit()
+    else:
+        print('order not found')    
+    db.close()
+    url = app.url_path_for("order")
+    return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
+
+
+
+# endregion
+
 # region PRODUCTS
-
-
-
 @app.get("/list_products")
 def list_products(request: Request, db: Session = Depends(get_db)):
     products = db.query(models.Product).all()
@@ -403,8 +425,6 @@ async def get_product(product_id: int, request: Request, db: Session = Depends(g
 # endregion
 
 # region CATEGORIES
-
-
 @app.get("/list_categories")
 def list_categories(request: Request, db: Session = Depends(get_db)):
     categories = db.query(models.Category).all()
@@ -593,8 +613,6 @@ def get_brand(brand_id: int, request: Request, db: Session = Depends(get_db)):
 # endregion
 
 # region SALES
-
-
 @app.get("/list_sales")
 def list_sales(request: Request, db: Session = Depends(get_db)):
     my_id = request.session.get("my_id", None)
@@ -622,8 +640,6 @@ def add_product(request: Request, db: Session = Depends(get_db)):
 # endregion
 
 # region PURCHASES
-
-
 @app.get("/list_puchases")
 def list_puchases(request: Request, db: Session = Depends(get_db)):
     my_id = request.session.get("my_id", None)
@@ -652,8 +668,6 @@ def add_purchase(request: Request, db: Session = Depends(get_db)):
 # endregion
 
 # region RETURNS
-
-
 @app.get("/list_returns")
 def list_returns(request: Request, db: Session = Depends(get_db)):
     my_id = request.session.get("my_id", None)
@@ -681,8 +695,6 @@ def add_return(request: Request, db: Session = Depends(get_db)):
 # endregion
 
 # region USERS
-
-
 @app.get("/list_users")
 def list_users(request: Request, db: Session = Depends(get_db)):
     users = db.query(models.User).all()
