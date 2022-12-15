@@ -41,7 +41,17 @@
                             <div class="row">
                                 <label>Order ID # <label>
                                 <label id="os">{{order_id}}</label>                                                  
-                                 
+                                {% if 'Created' in orderstatus.status %}
+                                <div class="badge badge-info">{{orderstatus.status}}</div>
+                                {% elif 'Delivered' in orderstatus.status %}
+                                <div class="badge badge-success">{{orderstatus.status}}</div>
+                                {% elif 'Returned' in orderstatus.status %}
+                                <div class="badge badge-danger">{{orderstatus.status}}</div>
+                                {% elif 'Cancelled' in orderstatus.status %}
+                                <div class="badge badge-dark">{{orderstatus.status}}</div>
+                                {% else %}
+                                <div class="badge badge-warning">{{orderstatus.status}}</div>
+                                {% endif %}
                             </div>
                             <div class="row">
                                 <label>Created: {{orderstatus.create_time}} by {{orderstatus.created_by}}</label>
