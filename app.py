@@ -241,7 +241,21 @@ def list_orders(request: Request, db: Session = Depends(get_db)):
     
     return templates.TemplateResponse("backend/page-list-order.html", context)
 
+@app.get('/order_slip/{order_id}')
+async def order_slip(request: Request,order_id:str, db: Session = Depends(get_db)):
+    my_name = request.session.get("my_name", None)
+    order = db.query(models.Order).filter(models.Order.order_id == order_id).all()
+    orderstatus=db.query(models.OrderStatus).filter(models.OrderStatus.order_id==order_id).first()
+    
 
+
+    context={"request":request,
+             "my_name":my_name,
+             "order_list":order,
+             "orderstatus":orderstatus,
+             "order_id":order_id}
+
+    return templates.TemplateResponse("backend/order_slip.html",context)
 # endregion
 
 # region PRODUCTS
