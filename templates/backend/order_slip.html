@@ -25,10 +25,17 @@
     <div class="wrapper">     
    
     <div class="content-page">
+
+        
      <div class="container-fluid add-form-list">
         <div class="row">
+           
             <div class="col-sm-12">
                 <div class="card">
+                    <div class="row">
+                        <button id="btnback" onclick="goback()" type="submit" class="btn btn-primary mr-2">BACK</button>
+            
+                    </div> 
                     
                     <div class="card-body">                      
                             <div class="row">
@@ -142,7 +149,12 @@
        function printme(){
         var x=document.getElementById("btnprint");
         x.style.display ="none";
+        document.getElementById("btnback").style.display="none";
         window.print();
+        history.back();
+       }
+
+       function goback(){
         history.back();
        }
             
