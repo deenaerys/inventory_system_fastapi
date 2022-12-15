@@ -1,0 +1,155 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Inventory System</title>
+      
+      <!-- Favicon -->
+      <script src="{{url_for('templates',path='/assets/js/barcode.js')}}"></script>
+      <link rel="shortcut icon" href="{{url_for('templates',path='/assets/images/favicon.ico')}}" />
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/css/backend-plugin.min.css')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/css/backend.css?v=1.0.0')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css')}}">
+      <link rel="stylesheet" href="{{url_for('templates',path='/assets/vendor/remixicon/fonts/remixicon.css')}}">  </head>
+  <body class="  ">
+    <!-- loader Start -->
+    <div id="loading">
+          <div id="loading-center">
+          </div>
+    </div>
+    <!-- loader END -->
+    <!-- Wrapper Start -->
+    <div class="wrapper">     
+   
+    <div class="content-page">
+     <div class="container-fluid add-form-list">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    
+                    <div class="card-body">                      
+                            <div class="row">
+                                <label>Order ID # {{order_id}}</label>                                                  
+                                 
+                            </div>
+                            <div class="row">
+                                <label>Created: {{orderstatus.create_time}} by {{orderstatus.created_by}}</label>
+
+                            </div>
+                           
+                            <div class="row">
+                                <label>Buyer: {{orderstatus.buyer_name}} | {{orderstatus.buyer_address}}</label>
+                            </div>
+                            <div class="row">
+                                <label>Sales Invoice: {{orderstatus.sale_invoice}}</label>
+                            </div>
+                            <div class="row">
+                                <label>Fee: {{orderstatus.fee}}</label>
+                                
+                            </div>
+                            <div class="row">
+                                <label>Charge: {{orderstatus.charge}}</label>
+                            </div>
+                            <div class="row">
+                                <label>Remarks: {{orderstatus.remarks}}</label>
+
+                            </div>
+
+                            <div class="card-body">
+                                <table id="datatable" class="table table-sm">
+                                    <thead>
+                                        <tr class="ligth">
+                                           <th>Item Name</th>
+                                           <th>Barcode</th>
+                                           <th>Quantity</th>
+                                           <th>Price</th>
+                                           <th>Amount</th>                                           
+                                        </tr>
+                                     </thead>
+                                     <tbody>
+                                        {% for order in order_list %}
+                                        <tr>
+                                            <td>{{order.item_name}}</td>
+                                            <td>{{order.item_barcode}}</td>
+                                            <td>{{order.quantity}}</td>
+                                            <td>{{order.price}}</td>
+                                            <td>{{order.amount}}</td>
+                                        </tr>
+                                        
+
+                                        {% endfor %}
+                                     </tbody>
+                                </table>
+                            </div>                            
+                            <hr>
+                             <div class="row">
+                                <label>TOTAL ITEMS: {{orderstatus.total_count}}</label>
+                             </div>
+                            <div class="row">
+                                <label>TOTAL AMOUNT: {{orderstatus.total_amount}}</label>
+                            </div>
+                            <div class="row">
+                                <svg id="barcode"></svg>     
+                                <script>JsBarcode("#barcode", {{order_id}});</script>
+
+                            </div>
+
+                            <div class="row">
+                                <button id="btnprint" onclick="printme()"type="submit" class="btn btn-primary mr-2">PRINT</button>
+
+                            </div>                         
+                           
+                           
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page end  -->
+    </div>
+      </div>
+    </div>
+    <!-- Wrapper End-->
+   
+    <!-- Backend Bundle JavaScript -->
+    <script src="{{url_for('templates',path='/assets/js/backend-bundle.min.js')}}"></script>
+    
+    <!-- Table Treeview JavaScript -->
+    <script src="{{url_for('templates',path='/assets/js/table-treeview.js')}}"></script>
+    
+    <!-- Chart Custom JavaScript -->
+    <script src="{{url_for('templates',path='/assets/js/customizer.js')}}"></script>
+    
+    <!-- Chart Custom JavaScript -->
+    <script async src="{{url_for('templates',path='/assets/js/chart-custom.js')}}"></script>
+    
+    <!-- app JavaScript -->
+    <script src="{{url_for('templates',path='/assets/js/app.js')}}"></script>
+    
+    <script>
+       function printme(){
+        var x=document.getElementById("btnprint");
+        x.style.display ="none";
+        window.print();
+        history.back();
+       }
+            
+    </script>
+    <style>
+        @media print {
+            @page {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            @page :footer {
+                display: none;
+            }      
+        }
+
+    </style>
+  </body>
+</html>
+
