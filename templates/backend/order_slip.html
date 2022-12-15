@@ -32,7 +32,8 @@
                     
                     <div class="card-body">                      
                             <div class="row">
-                                <label>Order ID # {{order_id}}</label>                                                  
+                                <label>Order ID # <label>
+                                <label id="os">{{order_id}}</label>                                                  
                                  
                             </div>
                             <div class="row">
@@ -92,8 +93,16 @@
                                 <label>TOTAL AMOUNT: {{orderstatus.total_amount}}</label>
                             </div>
                             <div class="row">
-                                <svg id="barcode"></svg>     
-                                <script>JsBarcode("#barcode", {{order_id}});</script>
+                                <svg id="barcode"></svg>
+                                    
+                                <script>
+                                    var os=document.getElementById("os");
+                                    
+                                    var ost=os.innerHTML;
+                                                             
+                                                          
+                                    JsBarcode("#barcode", ost);
+                                </script>
 
                             </div>
 
