@@ -256,6 +256,26 @@ async def order_slip(request: Request,order_id:str, db: Session = Depends(get_db
              "order_id":order_id}
 
     return templates.TemplateResponse("backend/order_slip.html",context)
+
+@app.get('/get_order/{order_id}')
+async def get_order(request: Request,order_id:str,db:Session=Depends(get_db)):
+    orderstatus=db.query(models.OrderStatus).filter(models.OrderStatus.order_id==order_id).first()
+    os=orderstatus.status
+    print('os',os)
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    context={"request": request,
+            "greetings": "Hello, " + my_name,
+            "last_login": "Your last session was on " + my_login,
+            "name": my_name,
+            "username": my_username,
+            "user_id": my_id,
+            "role": my_role,
+            "orderstatus":orderstatus,"os":os}
+    return templates.TemplateResponse("backend/page-edit-order.html", context)
 # endregion
 
 # region PRODUCTS
