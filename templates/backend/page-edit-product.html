@@ -504,8 +504,8 @@
                                 <div class="col-md-6"> 
                                     <div class="form-group">
                                         <label>Warehouse *</label>
-                                        <select value={{warehouse}} name="warehouse" class="selectpicker form-control" data-style="py-0">
-                                          
+                                        <select name="warehouse" class="selectpicker form-control" data-style="py-0">
+                                            <option>{{warehouse}}</option>
                                             {% for warehouse in warehouse_list %}
                                            
                                             <option>{{warehouse.warehouse}}</option>
@@ -517,8 +517,8 @@
                                 <div class="col-md-6"> 
                                     <div class="form-group">
                                         <label>Category *</label>
-                                        <select value={{category}} name="category" class="selectpicker form-control" data-style="py-0">
-                                          
+                                        <select  name="category" class="selectpicker form-control" data-style="py-0">
+                                            <option>{{category}}</option>
                                             {% for category in category_list %}
                                            
                                             <option>{{category.category}}</option>
@@ -530,8 +530,8 @@
                                 <div class="col-md-6"> 
                                     <div class="form-group">
                                         <label>Brand *</label>
-                                        <select value={{brand}} name="brand" class="selectpicker form-control" data-style="py-0">
-                                          
+                                        <select name="brand" class="selectpicker form-control" data-style="py-0">
+                                            <option>{{brand}}</option>
                                             {% for brand in brand_list %}
                                            
                                             <option>{{brand.brand}}</option>
@@ -551,8 +551,8 @@
                                 <div class="col-md-6"> 
                                     <div class="form-group">
                                         <label>Unit</label>
-                                        <select value={{unit}} name="unit" class="selectpicker form-control" data-style="py-0">
-                                                                                   
+                                        <select name="unit" class="selectpicker form-control" data-style="py-0">
+                                            <option>{{unit}}</option>                                       
                                             <option>pc.</option>
                                             <option>mL</option>
                                             <option>L</option>
