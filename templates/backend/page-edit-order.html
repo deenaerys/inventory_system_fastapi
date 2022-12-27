@@ -498,12 +498,12 @@
        
         <hr>
         <div class="class-body">
-            <form action="/save_order" method="post" data-toggle="validator">
+            <form action="/update_order/{{orderstatus.order_id}}" method="post" data-toggle="validator">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label>Status</label>
-                        <select name="order_status" class="selectpicker form-control" data-style="py-0">
+                        <label>Status *</label>
+                        <select id="order_status" name="order_status" class="selectpicker form-control" data-style="py-0">
                             <option>{{orderstatus.status}}</option>
                             <option>Created</option>
                             <option>Delivered</option>
@@ -514,7 +514,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label>Details</label>
+                        <label>Details *</label>
                         <input name="details" id="details" type="text" class="form-control" placeholder="Enter details" required>
 
                     </div>
@@ -522,14 +522,14 @@
                 </div> 
                 <div class="col-md-6">                      
                     <div class="form-group">
-                        <label>Total Items</label>
+                        <label>Total Items *</label>
                         <input value="{{orderstatus.total_count}}" step="0.01" name="total_count" id="total_count" type="number" class="form-control" placeholder="Enter Total Items" required>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="col-md-6">                      
                     <div class="form-group">
-                        <label>Total Amount</label>
+                        <label>Total Amount *</label>
                         <input value="{{orderstatus.total_amount}}" step="0.01" name="total_amount" id="total_amount" type="number" class="form-control" placeholder="Enter Total Amount" required>
                         <div class="help-block with-errors"></div>
                     </div>
@@ -572,7 +572,7 @@
                 </div>
                 <div class="col-md-6">                      
                     <div class="form-group">
-                        <label>Remarks </label>
+                        <label>Remarks *</label>
                         <input value={{orderstatus.remarks}} name="remarks" id="remarks" type="text" class="form-control" placeholder="Enter remarks" required>
                         <div class="help-block with-errors"></div>
                     </div>

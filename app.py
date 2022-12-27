@@ -179,13 +179,26 @@ async def add_order(request:Request,barcode:str,item_name:str,qty:str,price:str,
     db.close()   
    
     
-@app.post("/save_order/")
-async def save_order(request:Request,total_count:str=Form(...),total_amount:str=Form(...),buyer_name:str= Form(...),buyer_address:str= Form(...),fee:str= Form(...),charge:str= Form(...),sale_invoice:str= Form(...),remarks:str= Form(...),db:Session=Depends(get_db)):
-    my_order = request.session.get("my_order",None)
-    my_name=request.session.get("my_name",None)    
-    order = db.query(models.Order).get(my_order)
-    order = db.query(models.Order).filter(models.Order.order_id== my_order).first()
+@app.post("/update_order/{order_id}")
+async def save_order(request:Request,
+                    order_id:str,
+                    order_status:str=Form(...),
+                    details:str=Form(...),
+                    total_count:str=Form(...),
+                    total_amount:str=Form(...),
+                    buyer_name:str= Form(...),
+                    buyer_address:str= Form(...),
+                    fee:str= Form(...),
+                    charge:str= Form(...),
+                    sale_invoice:str= Form(...),
+                    remarks:str= Form(...),
+                    db:Session=Depends(get_db)): 
+               
+    order = db.query(models.OrderStatus).filter(models.OrderStatus.order_id== order_id).first()
     if order:
+        order.status=order_status
+        order.details=details
+        order.update_time=datetime.now()
         order.total_count = total_count
         order.total_amount= total_amount
         order.buyer_name=buyer_name
@@ -193,31 +206,10 @@ async def save_order(request:Request,total_count:str=Form(...),total_amount:str=
         order.fee=fee
         order.charge=charge
         order.sale_invoice=sale_invoice
-        order.remarks=remarks
-        order.create_time=datetime.now()
-       
-        
+        order.remarks=remarks      
         db.commit()
-        
-
-        orderstatus=models.OrderStatus(
-            order_id=my_order,
-            status='Created',
-            details=my_name,
-            total_amount = total_amount,
-            total_count=total_count,
-            buyer_name=buyer_name,
-            buyer_address=buyer_address,
-            fee=fee,
-            charge=charge,
-            sale_invoice=sale_invoice,
-            remarks=remarks,
-            update_time=datetime.now(),
-            created_by=my_name)
-        db.add(orderstatus)  
-        db.commit()
-        
     db.close()
+    
     url = app.url_path_for("list_orders")
     return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
 
