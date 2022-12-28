@@ -206,12 +206,46 @@ async def save_order(request:Request,
         order.fee=fee
         order.charge=charge
         order.sale_invoice=sale_invoice
-        order.remarks=remarks      
+        order.remarks=remarks            
         db.commit()
+
+        if order_status=="Packed":less_stock(db,order_id)
+        if order_status=="Cancelled":return_stock(db,order_id)
+       
+       
+       
+
     db.close()
     
     url = app.url_path_for("list_orders")
     return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)
+
+def less_stock(db,order_id):
+    items=db.query(models.Order).filter(models.Order.order_id==order_id).all()
+    for item in items:
+        barcode=item.item_barcode
+        less=item.quantity
+        instock=db.query(models.Product).filter(models.Product.barcode==barcode).first()
+           
+        if instock:
+            instock.stock_in-=less
+            instock.update_time=datetime.now()
+            instock.updated_by=order_id
+            db.commit()
+
+def return_stock(db,order_id):
+    items=db.query(models.Order).filter(models.Order.order_id==order_id).all()
+    for item in items:
+        barcode=item.item_barcode
+        ret=item.quantity
+        instock=db.query(models.Product).filter(models.Product.barcode==barcode).first()
+           
+        if instock:
+            instock.stock_in+=ret
+            instock.update_time=datetime.now()
+            instock.updated_by=order_id
+            db.commit()
+
 
 @app.get("/list_orders")
 def list_orders(request: Request, db: Session = Depends(get_db)):

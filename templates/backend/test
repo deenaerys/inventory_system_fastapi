@@ -1,0 +1,2 @@
+# items_count=db.query(models.Order).filter(models.Order.order_id==order_id).count()
+# print("items count for order", order_id, items_count)

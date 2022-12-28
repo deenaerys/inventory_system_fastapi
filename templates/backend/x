@@ -1,0 +1,20 @@
+d_product = db.query(models.Product).get(product_id)
+print('d_product', d_product)
+created_by = request.session.get("my_name", None)
+if d_product:
+    d_product.product_name=product_name
+    d_product.barcode=barcode
+    d_product.warehouse=warehouse
+    d_product.category=category
+    d_product.brand=brand
+    d_product.size=size
+    d_product.unit=unit
+    d_product.cost=cost
+    d_product.price_standard=price_standard
+    d_product.stock_in=stock_in
+    d_product.stock_alert=stock_alert
+    d_product.caption=caption
+    d_product.description=description       
+    d_product.update_time = datetime.now()
+    d_product.updated_by = created_by
+    db.commit()
