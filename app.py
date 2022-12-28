@@ -210,10 +210,7 @@ async def save_order(request:Request,
         db.commit()
 
         if order_status=="Packed":less_stock(db,order_id)
-        if order_status=="Cancelled":return_stock(db,order_id)
-       
-       
-       
+        if order_status=="Cancelled":return_stock(db,order_id)    
 
     db.close()
     
