@@ -232,9 +232,9 @@
                       </a>
                   </div>
                   <div class="iq-search-bar device-search">
-                      <form action="#" class="searchbox">
+                      <form action="/search_product" class="searchbox">
                           <a class="search-link" href="#"><i class="ri-search-line"></i></a>
-                          <input type="text" class="text search-input" placeholder="Search here...">
+                          <input autofocus name="param" type="text" class="text search-input" placeholder="Search product barcode here...">
                       </form>
                   </div>
                   <div class="d-flex align-items-center">
@@ -414,11 +414,11 @@
     </div>      <div class="content-page">
      <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-sm-12">
                 <div class="d-flex flex-wrap flex-wrap align-items-center justify-content-between mb-4">
                     <div>
                         <h4 class="mb-3">Product List</h4>
-                        <p class="mb-0">The product list effectively dictates product presentation and provides space<br> to list your products and offering in the most appealing way.</p>
+                       
                     </div>
                     <a href="/add_product" class="btn btn-primary add-list"><i class="las la-plus mr-3"></i>Add Product</a>
                 </div>
@@ -428,7 +428,7 @@
                 <table class="data-tables table mb-0 tbl-server-info">
                     <thead class="bg-white text-uppercase">
                         <tr class="ligth ligth-data">
-                            
+                            <th>ID</th>                           
                             <th>Product Name</th>
                             <th>Barcode</th>
                             <th>Brand</th>
@@ -439,15 +439,16 @@
                             <th>Quantity</th>
                             <th>Description</th>
                             <th>Action</th>
+                           
                         </tr>
                     </thead>
                     <tbody class="ligth-body">
                         {% for product in product_list %}
                         
                         <tr>
-                            <td hidden>{{product.id}}</td>
-                            <td hidden>{{product.image}}</td>                                                     
-                           
+                            
+                                                                                
+                            <td >{{product.id}}</td>
                             <td>
                                 <div class="d-flex align-items-center">
                                     <!--<img src="{{url_for('templates',path='/assets/images/table/product/01.jpg')}}" class="img-fluid rounded avatar-50 mr-3" alt="image">-->
@@ -474,6 +475,7 @@
                                         href="#"><i class="ri-delete-bin-line mr-0"></i></a>
                                 </div>
                             </td>
+                           
                         </tr>
                         {% endfor %}
                        

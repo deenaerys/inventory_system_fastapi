@@ -306,8 +306,7 @@ async def get_order(request: Request,order_id:str,db:Session=Depends(get_db)):
 
 @app.get("/search_order")
 async def search_order(request:Request,db:Session=Depends(get_db),param: Optional[str] = None):
-    orders = db.query(models.OrderStatus).filter(models.OrderStatus.order_id.like(param+"%"))
-    print("search_order",orders)
+    orders = db.query(models.OrderStatus).filter(models.OrderStatus.order_id.like(param+"%"))    
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
@@ -332,6 +331,25 @@ async def search_order(request:Request,db:Session=Depends(get_db),param: Optiona
 def list_products(request: Request, db: Session = Depends(get_db)):
     products = db.query(models.Product).all()
     db.close()
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    context={"request": request,
+            "greetings": "Hello, " + my_name,
+            "last_login": "Your last session was on " + my_login,
+            "name": my_name,
+            "username": my_username,
+            "user_id": my_id,
+            "role": my_role,
+            "product_list":products}
+    
+    return templates.TemplateResponse("backend/page-list-product.html", context)
+
+@app.get("/search_product")
+async def search_product(request:Request,db:Session=Depends(get_db),param: Optional[str] = None):
+    products = db.query(models.Product).filter(models.Product.barcode.like(param+"%"))    
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
