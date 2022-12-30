@@ -15,6 +15,7 @@ from starlette.middleware.sessions import SessionMiddleware
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from typing import Optional
+from sqlalchemy import desc
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -180,11 +181,43 @@ async def add_order(request:Request,barcode:str,item_name:str,qty:str,price:str,
                             created_by = my_name)
     db.add(new_order)
     db.commit()
-    db.close()   
+    db.close()
+
+@app.post("/save_order/{order_id}")
+async def save_order(request:Request,
+                    order_id:str,                                    
+                    total_count:str=Form(...),
+                    total_amount:str=Form(...),
+                    buyer_name:str= Form(...),
+                    buyer_address:str= Form(...),
+                    fee:str= Form(...),
+                    charge:str= Form(...),
+                    sale_invoice:str= Form(...),
+                    remarks:str= Form(...),
+                    db:Session=Depends(get_db)): 
+    my_name = request.session.get("my_name", None)           
+    new_orderstatus=models.OrderStatus(order_id=order_id,
+                                        total_amount=total_amount,
+                                        total_count=total_count,
+                                        buyer_name=buyer_name,
+                                        buyer_address=buyer_address,
+                                        fee=fee,
+                                        charge=charge,
+                                        sale_invoice=sale_invoice,
+                                        remarks=remarks,
+                                        create_time=datetime.now(),
+                                        created_by=my_name,
+                                        status="Created",details=my_name)
+    db.add(new_orderstatus)
+    db.commit()
+    db.close()
+    
+    url = app.url_path_for("list_orders")
+    return RedirectResponse(url=url, status_code=status.HTTP_303_SEE_OTHER)   
    
     
 @app.post("/update_order/{order_id}")
-async def save_order(request:Request,
+async def update_order(request:Request,
                     order_id:str,
                     order_status:str=Form(...),
                     details:str=Form(...),
