@@ -233,6 +233,7 @@ def less_stock(db,order_id):
             instock.update_time=datetime.now()
             instock.updated_by=order_id
             db.commit()
+    db.close()
 
 def return_stock(db,order_id):
     items=db.query(models.Order).filter(models.Order.order_id==order_id).all()
@@ -246,7 +247,7 @@ def return_stock(db,order_id):
             instock.update_time=datetime.now()
             instock.updated_by=order_id
             db.commit()
-
+    db.close()
 
 @app.get("/list_orders")
 def list_orders(request: Request, db: Session = Depends(get_db)):
@@ -272,7 +273,9 @@ def list_orders(request: Request, db: Session = Depends(get_db)):
 async def order_slip(request: Request,order_id:str, db: Session = Depends(get_db)):
     my_name = request.session.get("my_name", None)
     order = db.query(models.Order).filter(models.Order.order_id == order_id).all()
-    orderstatus=db.query(models.OrderStatus).filter(models.OrderStatus.order_id==order_id).first()  
+    orderstatus=db.query(models.OrderStatus).filter(models.OrderStatus.order_id==order_id).first()
+    db.close()
+
 
     context={"request":request,
              "my_name":my_name,
@@ -286,7 +289,7 @@ async def order_slip(request: Request,order_id:str, db: Session = Depends(get_db
 async def get_order(request: Request,order_id:str,db:Session=Depends(get_db)):
     orderstatus=db.query(models.OrderStatus).filter(models.OrderStatus.order_id==order_id).first()
     os=orderstatus.status
-    print('os',os)
+    db.close()
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
@@ -306,7 +309,8 @@ async def get_order(request: Request,order_id:str,db:Session=Depends(get_db)):
 
 @app.get("/search_order")
 async def search_order(request:Request,db:Session=Depends(get_db),param: Optional[str] = None):
-    orders = db.query(models.OrderStatus).filter(models.OrderStatus.order_id.like(param+"%"))    
+    orders = db.query(models.OrderStatus).filter(models.OrderStatus.order_id.like(param+"%"))
+    db.close()    
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
@@ -349,7 +353,8 @@ def list_products(request: Request, db: Session = Depends(get_db)):
 
 @app.get("/search_product")
 async def search_product(request:Request,db:Session=Depends(get_db),param: Optional[str] = None):
-    products = db.query(models.Product).filter(models.Product.barcode.like(param+"%"))    
+    products = db.query(models.Product).filter(models.Product.barcode.like(param+"%"))
+    db.close()    
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
@@ -445,7 +450,7 @@ def create_product(request: Request,
 async def find_product(barcode: str, request: Request, db: Session = Depends(get_db)):
     product = db.query(models.Product).filter(
         models.Product.barcode == barcode).first()
-        
+    db.close()    
     if not product:
         return "NOTFOUND"
         
@@ -464,6 +469,7 @@ async def find_barcode(barcode: str, request: Request, db: Session = Depends(get
         models.Product.barcode == barcode).first()
     
     msg = ""
+    db.close()
     if not barcode:
         msg = "notfound"
         
@@ -528,6 +534,7 @@ def update_product(request: Request, product_id: int,
 @app.get("/get_product/{product_id}")
 async def get_product(product_id: int, request: Request, db: Session = Depends(get_db)):
     product = db.query(models.Product).get(product_id)
+    
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
@@ -538,6 +545,7 @@ async def get_product(product_id: int, request: Request, db: Session = Depends(g
     categories = db.query(models.Category).all()
     brands=db.query(models.Brand).all()
     warehouses=db.query(models.Warehouse).all()
+    db.close()
 
    
     context = {"request": request, "productid": productid,
@@ -568,6 +576,7 @@ async def update_stock(request: Request,db: Session = Depends(get_db)):
     quantity=req[3]
     remarks=req[5]
     item=db.query(models.Product).filter(models.Product.barcode==barcode).first()
+    db.close()
     if item:
         item.stock_in+=int(quantity)
         item.remarks=remarks
@@ -586,6 +595,7 @@ async def update_stock(request: Request,db: Session = Depends(get_db)):
 @app.get("/list_categories")
 def list_categories(request: Request, db: Session = Depends(get_db)):
     categories = db.query(models.Category).all()
+    db.close()
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
@@ -613,6 +623,7 @@ def add_product(request: Request, db: Session = Depends(get_db)):
 async def find_category(category: str, request: Request, db: Session = Depends(get_db)):
     category = db.query(models.Category).filter(
         models.Category.category == category).first()
+    db.close()
     msg = ""
     if not category:
         msg = "notfound"
@@ -665,13 +676,14 @@ def update_category(request: Request, category_id: int, category: str = Form(...
 @app.get("/get_category/{category_id}")
 def get_category(category_id: int, request: Request, db: Session = Depends(get_db)):
     category = db.query(models.Category).get(category_id)
+    db.close()
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
     my_role = request.session.get("my_role", None)
     my_login=request.session.get("my_login",None)
     categorid = category.id
-    print("categorid", categorid)
+   
     context = {"request": request, "categorid": categorid, "category": category.category,"last_login": "Your last session was on " + my_login,
                "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
     return templates.TemplateResponse("backend/page-edit-category.html", context)
@@ -681,6 +693,7 @@ def get_category(category_id: int, request: Request, db: Session = Depends(get_d
 @app.get("/list_brands")
 def list_brands(request: Request, db: Session = Depends(get_db)):
     brands = db.query(models.Brand).all()
+    db.close()
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
@@ -707,6 +720,7 @@ def add_product(request: Request, db: Session = Depends(get_db)):
 async def find_brand(brand: str, request: Request, db: Session = Depends(get_db)):
     brand = db.query(models.Brand).filter(
         models.Brand.brand == brand).first()
+    db.close()
     msg = ""
     if not brand:
         msg = "notfound"
@@ -741,7 +755,7 @@ def delete_brand(request: Request, brand_id: int, db: Session = Depends(get_db))
 def update_brand(request: Request, brand_id: int, brand: str = Form(...), db: Session = Depends(get_db)):
     print('brand_id', brand_id)
     d_brand = db.query(models.Brand).get(brand_id)
-    print('brand', d_brand)
+   
     created_by = request.session.get("my_name", None)
     if d_brand:
         d_brand.brand = brand
@@ -757,6 +771,7 @@ def update_brand(request: Request, brand_id: int, brand: str = Form(...), db: Se
 @app.get("/get_brand/{brand_id}")
 def get_brand(brand_id: int, request: Request, db: Session = Depends(get_db)):
     brand = db.query(models.Brand).get(brand_id)
+    db.close()
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
@@ -867,6 +882,19 @@ def list_users(request: Request, db: Session = Depends(get_db)):
                "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
     return templates.TemplateResponse("backend/page-list-users.html", context)
 
+@app.get("/search_name")
+async def search_order(request:Request,db:Session=Depends(get_db),param: Optional[str] = None):
+    users = db.query(models.User).filter(models.User.name.like(param+"%"))
+    db.close()
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)    
+    
+    context = {"request": request,"user_list": users, "last_login": "Your last session was on " + my_login,
+               "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
+    return templates.TemplateResponse("backend/page-list-users.html", context)
 
 @app.get("/add_user_page")
 def add_user_page(request: Request, db: Session = Depends(get_db)):
@@ -886,6 +914,7 @@ async def find_username(username: str, request: Request, db: Session = Depends(g
     username = db.query(models.User).filter(
         models.User.username == username).first()
     msg = ""
+    db.close()
     if not username:
         msg = "notfound"
     else:
@@ -898,6 +927,7 @@ async def find_staffcode(staff_code: str, request: Request, db: Session = Depend
     staff_code = db.query(models.User).filter(
         models.User.staff_code == staff_code).first()
     msg = ""
+    db.close()
     if not staff_code:
         msg = "notfound"
     else:
