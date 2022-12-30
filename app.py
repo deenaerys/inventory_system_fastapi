@@ -12,6 +12,9 @@ import crud
 from datetime import datetime
 from starlette.middleware.sessions import SessionMiddleware
 
+from fastapi.encoders import jsonable_encoder
+from fastapi.responses import JSONResponse
+
 models.Base.metadata.create_all(bind=engine)
 
 templates = Jinja2Templates(directory="templates")
@@ -515,6 +518,26 @@ async def get_product(product_id: int, request: Request, db: Session = Depends(g
                 "name": my_name, "username": my_username, "user_id": my_id, "role": my_role}
   
     return templates.TemplateResponse("backend/page-edit-product.html", context)
+
+@app.post("/update_stock")
+async def update_stock(request: Request,db: Session = Depends(get_db)):
+    req=await request.body()
+    req=req.decode("utf-8").replace(",",":").replace('"',"").replace("{","").replace("}","").split(":")       
+    barcode=req[1]
+    quantity=req[3]
+    remarks=req[5]
+    item=db.query(models.Product).filter(models.Product.barcode==barcode).first()
+    if item:
+        item.stock_in+=int(quantity)
+        item.remarks=remarks
+        db.commit()
+        result = jsonable_encoder("OK")
+        
+    else:
+        result= jsonable_encoder("NOT FOUND")
+
+    return JSONResponse(content=result)
+
 
 # endregion
 
