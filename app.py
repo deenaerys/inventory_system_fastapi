@@ -14,6 +14,7 @@ from starlette.middleware.sessions import SessionMiddleware
 
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
+from typing import Optional
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -271,9 +272,7 @@ def list_orders(request: Request, db: Session = Depends(get_db)):
 async def order_slip(request: Request,order_id:str, db: Session = Depends(get_db)):
     my_name = request.session.get("my_name", None)
     order = db.query(models.Order).filter(models.Order.order_id == order_id).all()
-    orderstatus=db.query(models.OrderStatus).filter(models.OrderStatus.order_id==order_id).first()
-    
-
+    orderstatus=db.query(models.OrderStatus).filter(models.OrderStatus.order_id==order_id).first()  
 
     context={"request":request,
              "my_name":my_name,
@@ -302,6 +301,30 @@ async def get_order(request: Request,order_id:str,db:Session=Depends(get_db)):
             "role": my_role,
             "orderstatus":orderstatus,"os":os}
     return templates.TemplateResponse("backend/page-edit-order.html", context)
+
+
+
+@app.get("/search_order")
+async def search_order(request:Request,db:Session=Depends(get_db),param: Optional[str] = None):
+    orders = db.query(models.OrderStatus).filter(models.OrderStatus.order_id.like(param+"%"))
+    print("search_order",orders)
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    context={"request": request,
+            "greetings": "Hello, " + my_name,
+            "last_login": "Your last session was on " + my_login,
+            "name": my_name,
+            "username": my_username,
+            "user_id": my_id,
+            "role": my_role,
+            "order_list":orders}
+    
+    return templates.TemplateResponse("backend/page-list-order.html", context)
+
+
 # endregion
 
 # region PRODUCTS
