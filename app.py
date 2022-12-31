@@ -206,6 +206,7 @@ async def save_order(request:Request,
                                         sale_invoice=sale_invoice,
                                         remarks=remarks,
                                         create_time=datetime.now(),
+                                        update_time=datetime.now(),
                                         created_by=my_name,
                                         status="Created",details=my_name)
     db.add(new_orderstatus)
