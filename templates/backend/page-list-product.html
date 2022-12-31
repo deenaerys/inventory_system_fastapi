@@ -464,7 +464,12 @@
                             <td>{{product.size}}</td>
                             <td>{{product.caption}}</td>
                             <td >{{product.price_standard}}</td>
+                            {% if product.stock_in<= product.stock_alert %}
+                            <td class="bg-danger">{{product.stock_in}}</td>
+                            {% else %}
                             <td>{{product.stock_in}}</td>
+                            {% endif %}
+                           
                             <td>{{product.description}}</td>
                             <td>
                                 <div class="d-flex align-items-center list-action">
