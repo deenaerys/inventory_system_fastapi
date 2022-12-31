@@ -40,7 +40,7 @@ app.mount("/templates", StaticFiles(directory="templates"), name="templates")
 
 # region LOGIN
 @app.get("/")
-def login(request: Request, db: Session = Depends(get_db)):
+def login(request: Request, db: Session = Depends(get_db)):    
     return templates.TemplateResponse("backend/login.html", {"request": request})
 
 
@@ -69,6 +69,7 @@ def dashboard(request:Request,db:Session=Depends(get_db)):
     my_username = request.session.get("my_username", None)
     my_role = request.session.get("my_role", None)
     my_login=request.session.get("my_login",None)
+    
     context = {"request": request,
                        "greetings": "Hello, " + my_name,
                        "last_login": "Your last session was on " + my_login,
@@ -92,6 +93,7 @@ def auth(request: Request, username: str = Form(...), password: str = Form(...),
             request.session["my_username"] = d_username.username
             request.session["my_role"] = d_username.role
             request.session["my_login"] = str(d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p "))
+            
             context = {"request": request,
                        "greetings": "Hello, " + d_username.name,
                        "last_login": "Your last session was on " + d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p "),
@@ -120,6 +122,7 @@ def main(request: Request, code: str = Form(...),db: Session = Depends(get_db)):
         request.session["my_username"] = d_username.username
         request.session["my_role"] = d_username.role
         request.session["my_login"] = str(d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p "))
+        
         context = {"request": request,
                        "greetings": "Hello, " + d_username.name,
                        "last_login": "Your last session was on " + d_username.last_login.strftime("%A %b. %d, %Y at %I:%M %p "),
@@ -622,6 +625,30 @@ async def update_stock(request: Request,db: Session = Depends(get_db)):
 
     return JSONResponse(content=result)
 
+def low_stocks():
+    with engine.connect() as con:
+        rs=con.execute("SELECT * FROM tblproducts WHERE stock_in<=stock_alert")
+        con.close()
+        return rs
+
+@app.get("/lowstock")
+def lowstock(request: Request, db: Session = Depends(get_db)):
+    LS=low_stocks()
+    my_id = request.session.get("my_id", None)
+    my_name = request.session.get("my_name", None)
+    my_username = request.session.get("my_username", None)
+    my_role = request.session.get("my_role", None)
+    my_login=request.session.get("my_login",None)
+    context={"request": request,
+            "greetings": "Hello, " + my_name,
+            "last_login": "Your last session was on " + my_login,
+            "name": my_name,
+            "username": my_username,
+            "user_id": my_id,
+            "role": my_role,
+            "lowstock":LS}
+    
+    return templates.TemplateResponse("backend/page-list-lowstock.html", context)
 
 # endregion
 
