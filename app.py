@@ -214,6 +214,7 @@ async def save_order(request:Request,
                                         status="Created",details=my_name)
     db.add(new_orderstatus)
     db.commit()
+    less_stock(db,order_id)
     db.close()
     
     url = app.url_path_for("list_orders")
