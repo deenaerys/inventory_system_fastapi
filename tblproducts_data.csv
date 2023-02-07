@@ -1,0 +1,2074 @@
+"barcode";"brand";"caption";"product_name";"description";"size";"unit";"category";"supplier";"cost";"price_standard";"price_discounted";"price_dealer";"price_customer";"price_notax";"price_special";"stock_in";"stock_out";"stock_alert";"item_code";"item_name";"image";"warehouse";"remarks";"create_time";"created_by";"update_time";"updated_by"
+"3915261122";"GLOMED";"Mint Green ";"Gloves";"Mint Green ";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;99;0;0;"GLO00003";"Glomed  Gloves S";"";"Clover Care";"";"2022-11-26 15:40:47";"Clover Care";"2023-02-05 16:56:30";"081675587370"
+"3209031222";"GLOMED";"Regular Latex";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00006";"Glomed  Gloves L";"";"Clover Care";"REPACKED 
+
+DISTRIBUTED BY:
+
+
+
+";"2022-12-03 09:37:09";"Clover Care";"";""
+"2011031222";"GLOMED";"Regular Latex";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Clover Care";"";"2022-12-03 11:22:42";"Clover Care";"";""
+"2411031222";"GLOMED";"Regular Latex ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Clover Care";"";"2022-12-03 11:26:32";"Clover Care";"";""
+"2911031222";"GLOMED";"Regular Latex";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Clover Care";"";"2022-12-03 11:31:30";"Clover Care";"";""
+"3511031222";"GLOMED";"Regular Latex ";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Clover Care";"";"2022-12-03 11:36:54";"Clover Care";"";""
+"4911031222";"GLOMED";"Black Latex";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Clover Care";"";"2022-12-03 11:51:14";"Clover Care";"";""
+"5111031222";"GLOMED";"Black Latex";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00023";"Glomed Gloves M";"";"Clover Care";"";"2022-12-03 11:51:36";"Clover Care";"";""
+"2313031222";"GLOMED";"Black Latex ";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00028";"Glomed  Gloves L";"";"Clover Care";"";"2022-12-03 13:25:03";"Clover Care";"";""
+"2613031222";"GLOMED";"Mint Green ";"Gloves";"Powder Free";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00029";"Glomed  Gloves Xs";"";"Clover Care";"";"2022-12-03 13:26:56";"Clover Care";"";""
+"2813031222";"GLOMED";"Mint Green ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00033";"Glomed  Gloves S";"";"Clover Care";"";"2022-12-03 13:28:46";"Clover Care";"";""
+"2913031222";"GLOMED";"Mint Green ";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00035";"Glomed  Gloves M";"";"Clover Care";"";"2022-12-03 13:29:54";"Clover Care";"";""
+"3013031222";"GREAT GLOVE";"Latex Examination ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00036";"Great Glove Gloves S";"";"Clover Care";"";"2022-12-03 13:31:23";"Clover Care";"";""
+"3113031222";"GREAT GLOVE";"Latex Examination ";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00037";"Great Glove Gloves M";"";"Clover Care";"";"2022-12-03 13:31:42";"Clover Care";"";""
+"3213031222";"GREAT GLOVE";"Latex Examination ";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00039";"Great Glove Gloves L";"";"Clover Care";"";"2022-12-03 13:32:18";"Clover Care";"";""
+"3313031222";"HCD";"Latex Examination ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00040";"Hcd Gloves S";"";"Clover Care";"";"2022-12-03 13:33:16";"Clover Care";"";""
+"3413031222";"HCD";"Latex Examination ";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00043";"Hcd Gloves M";"";"Clover Care";"";"2022-12-03 13:34:14";"Clover Care";"";""
+"3513031222";"GLOMED";"Slim Blue Nitrile ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00044";"Glomed  Gloves S";"";"Clover Care";"";"2022-12-03 13:35:41";"Clover Care";"";""
+"3613031222";"GLOMED";"Slim Blue Nitrile ";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00046";"Glomed  Gloves M";"";"Clover Care";"";"2022-12-03 13:36:35";"Clover Care";"";""
+"3713031222";"GLOMED";"Slim Blue Nitrile ";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00048";"Glomed  Gloves L";"";"Clover Care";"";"2022-12-03 13:37:42";"Clover Care";"";""
+"3813031222";"GLOMED";"Synthetic Nitrile ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00050";"Glomed  Gloves S";"";"Clover Care";"";"2022-12-03 13:38:51";"Clover Care";"";""
+"3913031222";"GLOMED";"Synthetic Nitrile ";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00051";"Glomed  Gloves M";"";"Clover Care";"";"2022-12-03 13:39:18";"Clover Care";"";""
+"4013031222";"GLOMED";"Synthetic Nitrile ";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00056";"Glomed  Gloves L";"";"Clover Care";"";"2022-12-03 13:40:41";"Clover Care";"";""
+"4213031222";"GREAT GLOVE";"Nitrile";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00057";"Great Glove Gloves S";"";"Clover Care";"";"2022-12-03 13:42:42";"Clover Care";"";""
+"4313031222";"GREAT GLOVE";"Nitrile";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00059";"Great Glove Gloves M";"";"Clover Care";"";"2022-12-03 13:43:17";"Clover Care";"";""
+"5213031222";"GREAT GLOVE";"Nitrile";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00065";"Great Glove Gloves L";"";"Clover Care";"";"2022-12-03 13:52:39";"Clover Care";"";""
+"5313031222";"HCD";"Nitrile";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00067";"Hcd Gloves S";"";"Clover Care";"";"2022-12-03 13:53:34";"Clover Care";"";""
+"5413031222";"HCD";"Nitrile";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00070";"Hcd Gloves M";"";"Clover Care";"";"2022-12-03 13:54:10";"Clover Care";"";""
+"5513031222";"GREAT GLOVE";"Vinyl Examination";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00071";"Great Glove Gloves S";"";"Clover Care";"";"2022-12-03 13:57:26";"Clover Care";"";""
+"5713031222";"GREAT GLOVE";"Vinyl Examination";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00072";"Great Glove Gloves M";"";"Clover Care";"";"2022-12-03 13:57:45";"Clover Care";"";""
+"5813031222";"GREAT GLOVE";"Vinyl Examination";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00073";"Great Glove Gloves L";"";"Clover Care";"";"2022-12-03 13:58:13";"Clover Care";"";""
+"5913031222";"GLOMED";"Vinyl Examination";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00075";"Glomed  Gloves S";"";"Clover Care";"";"2022-12-03 13:59:06";"Clover Care";"";""
+"0014031222";"GLOMED";"Vinyl Examination";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00078";"Glomed  Gloves M";"";"Clover Care";"";"2022-12-03 14:00:02";"Clover Care";"";""
+"0114031222";"GLOMED";"Vinyl Examination";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00079";"Glomed  Gloves L";"";"Clover Care";"";"2022-12-03 14:01:48";"Clover Care";"";""
+"0214031222";"GLOMED";"Vinyl Examination";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00081";"Glomed  Gloves L";"";"Clover Care";"";"2022-12-03 14:02:03";"Clover Care";"";""
+"0314031222";"TOP MASK ";"FACEMASK ";"";"Powder Free";"ADULT";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00082";"Top Mask   Adult";"";"Clover Care";"";"2022-12-03 14:03:27";"Clover Care";"";""
+"0814031222";"TRUSTMOMED ";"";"Syringe w/ Needle";"Disposable";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TRU00084";"Trustmomed  Syringe W/ Needle 3Ml";"";"Clover Care";"";"2022-12-03 14:08:44";"Clover Care";"";""
+"0914031222";"TRUSTMOMED ";"";"Syringe w/ Needle";"Disposable";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TRU00085";"Trustmomed  Syringe W/ Needle 5Ml";"";"Clover Care";"";"2022-12-03 14:09:12";"Clover Care";"";""
+"3014031222";"ALGINPLUS ";"";"Alginate";"Extra High Precision";"453g";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ALG00087";"Trustmomed  Syringe W/ Needle 5Ml";"";"Clover Care";"";"2022-12-03 14:30:18";"Clover Care";"";""
+"3114031222";"RUBBERCARE";"Latex Examination ";"Gloves";"Powder Free";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00088";"Rubbercare Gloves Xs";"";"Clover Care";"";"2022-12-03 14:31:47";"Clover Care";"";""
+"3214031222";"RUBBERCARE";"Latex Examination ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00089";"Rubbercare Gloves S";"";"Clover Care";"";"2022-12-03 14:32:07";"Clover Care";"";""
+"3314031222";"RUBBERCARE";"Latex Examination ";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00091";"Rubbercare Gloves M";"";"Clover Care";"";"2022-12-03 14:33:31";"Clover Care";"";""
+"3414031222";"RUBBERCARE";"Latex Examination ";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00092";"Rubbercare Gloves M";"";"Clover Care";"";"2022-12-03 14:34:33";"Clover Care";"";""
+"3514031222";"SCHULLERMED";"Latex Examination ";"Gloves";"Powder Free";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SCH00093";"Schullermed Gloves Xs";"";"Clover Care";"";"2022-12-03 14:35:10";"Clover Care";"";""
+"3614031222";"SCHULLERMED";"Latex Examination ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SCH00095";"Schullermed Gloves S";"";"Clover Care";"";"2022-12-03 14:36:24";"Clover Care";"";""
+"3714031222";"SCHULLERMED";"Latex Examination ";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SCH00097";"Schullermed Gloves M";"";"Clover Care";"";"2022-12-03 14:37:05";"Clover Care";"";""
+"3814031222";"SCHULLERMED";"Latex Examination ";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SCH00101";"Schullermed Gloves L";"";"Clover Care";"";"2022-12-03 14:38:08";"Clover Care";"";""
+"3914031222";"GLO PRO ";"Latex Examination ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00103";"Glo Pro  Gloves S";"";"Clover Care";"";"2022-12-03 14:39:03";"Clover Care";"";""
+"4014031222";"GLO PRO ";"Latex Examination ";"Gloves";"Powder Free";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00105";"Glo Pro  Gloves Xs";"";"Clover Care";"";"2022-12-03 14:40:05";"Clover Care";"";""
+"4114031222";"GLO PRO ";"Latex Examination ";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00110";"Glo Pro  Gloves M";"";"Clover Care";"";"2022-12-03 14:41:06";"Clover Care";"";""
+"4214031222";"CAREPLUS";"Syringe w/ Needle ";"";"Insulin";"1cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00111";"Careplus  1Cc";"";"Clover Care";"";"2022-12-03 14:42:08";"Clover Care";"";""
+"4314031222";"CAREPLUS";"Syringe w/ Needle ";"";"Disposable";"1ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00112";"Careplus  1Ml";"";"Clover Care";"";"2022-12-03 14:43:34";"Clover Care";"";""
+"4414031222";"CAREPLUS";"Syringe w/ Needle ";"";"Disposable";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00113";"Careplus  3Ml";"";"Clover Care";"";"2022-12-03 14:44:09";"Clover Care";"";""
+"4514031222";"CAREPLUS";"Syringe w/ Needle ";"";"Disposable";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00116";"Careplus  5Ml";"";"Clover Care";"";"2022-12-03 14:45:08";"Clover Care";"";""
+"4614031222";"CAREPLUS";"Syringe w/ Needle ";"";"Disposable";"10ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00120";"Careplus  10Ml";"";"Clover Care";"";"2022-12-03 14:46:11";"Clover Care";"";""
+"4714031222";"GLOMED";" Gauze Swab";"";"STERILE";"4x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00121";"Glomed   4X4";"";"Clover Care";"";"2022-12-03 14:47:54";"Clover Care";"";""
+"5014031222";"GLOMED";"Gauze Roll";"";"ABSORBENT";"24x28";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Clover Care";"";"2022-12-03 14:52:30";"Clover Care";"";""
+"5414031222";"OREX ";"Latex Examination ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00123";"Orex  Gloves S";"";"Clover Care";"";"2022-12-03 14:54:36";"Clover Care";"";""
+"5514031222";"OREX ";"Latex Examination ";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00124";"Orex  Gloves L";"";"Clover Care";"";"2022-12-03 14:55:06";"Clover Care";"";""
+"5614031222";"OREX ";"Latex Examination ";"Gloves";"Powder Free";"XL";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00128";"Orex  Gloves Xl";"";"Clover Care";"";"2022-12-03 14:56:08";"Clover Care";"";""
+"5814031222";"OREX ";"Nitrile Examination ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00130";"Orex  Gloves S";"";"Clover Care";"";"2022-12-03 14:58:20";"Clover Care";"";""
+"5914031222";"OREX ";"Nitrile Examination ";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00133";"Orex  Gloves M";"";"Clover Care";"";"2022-12-03 14:59:04";"Clover Care";"";""
+"0715031222";"OREX ";"Vinyl Examination ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00135";"Orex  Gloves S";"";"Clover Care";"";"2022-12-03 15:08:01";"Clover Care";"";""
+"0815031222";"OREX ";"Vinyl Examination ";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00136";"Orex  Gloves M";"";"Clover Care";"";"2022-12-03 15:08:16";"Clover Care";"";""
+"0915031222";"OREX ";"Vinyl Examination ";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00140";"Orex  Gloves L";"";"Clover Care";"";"2022-12-03 15:09:03";"Clover Care";"";""
+"1015031222";"OREX ";"Vinyl Examination ";"Gloves";"Powder Free";"XL";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00145";"Orex  Gloves Xl";"";"Clover Care";"";"2022-12-03 15:10:05";"Clover Care";"";""
+"1115031222";"OREX ";"Nitrile-Vinyl Examination ";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00146";"Orex  Gloves S";"";"Clover Care";"";"2022-12-03 15:11:45";"Clover Care";"";""
+"1215031222";"OREX ";"Nitrile-Vinyl Examination ";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00147";"Orex  Gloves M";"";"Clover Care";"";"2022-12-03 15:12:02";"Clover Care";"";""
+"1415031222";"OREX ";"Nitrile-Vinyl Examination ";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00149";"Orex  Gloves L";"";"Clover Care";"";"2022-12-03 15:14:17";"Clover Care";"";""
+"1515031222";"OREX ";"Gauze Pad";"";"NON-STERILE";"4x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00150";"Orex   4X4";"";"Clover Care";"";"2022-12-03 15:15:48";"Clover Care";"";""
+"1615031222";"OREX ";"Gauze Pad";"";"STERILE";"2x2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00151";"Orex   2X2";"";"Clover Care";"";"2022-12-03 15:16:09";"Clover Care";"";""
+"1715031222";"OREX ";"Gauze Pad";"";"STERILE";"3x3";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00154";"Orex   3X3";"";"Clover Care";"";"2022-12-03 15:17:03";"Clover Care";"";""
+"1815031222";"OREX ";"Gauze Pad";"";"STERILE";"4x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00158";"Orex   4X4";"";"Clover Care";"";"2022-12-03 15:18:02";"Clover Care";"";""
+"2215031222";"OREX ";"Gauze Bandage";"";"Roll";"2x10";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00159";"Orex   2X10";"";"Clover Care";"";"2022-12-03 15:22:10";"Clover Care";"";""
+"2315031222";"OREX ";"Gauze Bandage";"";"Set
+
+ Buy 1 Get 1";"2x10";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00161";"Orex   2X10";"";"Clover Care";"";"2022-12-03 15:23:07";"Clover Care";"";""
+"2415031222";"OREX ";"Gauze Bandage";"";"Roll";"3x10";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00165";"Orex   3X10";"";"Clover Care";"";"2022-12-03 15:24:05";"Clover Care";"";""
+"2515031222";"OREX ";"Gauze Bandage";"";"Set
+
+Buy 1 Get 1";"3x10";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00169";"Orex   3X10";"";"Clover Care";"";"2022-12-03 15:25:04";"Clover Care";"";""
+"3215031222";"OREX ";"Elastic Bandage ";"";"Roll";"2x5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00170";"Orex   2X5";"";"Clover Care";"";"2022-12-03 15:33:02";"Clover Care";"";""
+"3315031222";"OREX ";"Elastic Bandage ";"";"Set
+
+Buy 1 Get 1";"2x5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00171";"Orex   2X5";"";"Clover Care";"";"2022-12-03 15:33:28";"Clover Care";"";""
+"3415031222";"OREX ";"Elastic Bandage ";"";"Roll";"3x5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00173";"Orex   3X5";"";"Clover Care";"";"2022-12-03 15:34:05";"Clover Care";"";""
+"3515031222";"OREX ";"Elastic Bandage ";"";"Set 
+
+Buy 1 get 1";"3x5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00177";"Orex   3X5";"";"Clover Care";"";"2022-12-03 15:35:04";"Clover Care";"";""
+"3715031222";"OREX ";"Elastic Bandage ";"";"Roll";"4x5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00180";"Orex   4X5";"";"Clover Care";"";"2022-12-03 15:37:10";"Clover Care";"";""
+"4015031222";"OREX ";"Elastic Bandage ";"";"Set
+
+Buy 1 Get 1";"4x5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00182";"Orex   4X5";"";"Clover Care";"";"2022-12-03 15:40:11";"Clover Care";"";""
+"4215031222";"OREX ";"Alcohol Pad ";"";"Box";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00183";"Orex   ";"";"Clover Care";"";"2022-12-03 15:42:36";"Clover Care";"";""
+"4315031222";"OREX ";"Alcohol Pad ";"";"100pcs";"box";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00184";"Orex   ";"";"Clover Care";"";"2022-12-03 15:43:54";"Clover Care";"";""
+"4415031222";"OREX ";"Povidone Pad ";"";"100pcs";"box";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00185";"Orex   Box";"";"Clover Care";"";"2022-12-03 15:44:56";"Clover Care";"";""
+"2916031222";"OREX ";"Lubricationg Jelly ";"";"100/pcs
+
+Box";"3g";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00187";"Orex   3G";"";"Clover Care";"";"2022-12-03 16:29:12";"Clover Care";"";""
+"3716031222";"OREX ";"Lubricationg Jelly ";"";"100/pcs
+
+Box";"5g";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00189";"Orex   5G";"";"Clover Care";"";"2022-12-03 16:37:06";"Clover Care";"";""
+"3816031222";"OREX ";"Lubricationg Jelly ";"";"Box";"113g";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00191";"Orex   113G";"";"Clover Care";"";"2022-12-03 16:38:03";"Clover Care";"";""
+"4116031222";"OREX ";"Ultrasound ";"Transmission Gel ";"Gallon";"5Liters";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00192";"Orex  Transmission Gel  5Liters";"";"Clover Care";"";"2022-12-03 16:41:25";"Clover Care";"";""
+"4216031222";"OREX ";"Ultrasound ";"Transmission Gel ";"Gallon";"250ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00194";"Orex  Transmission Gel  250Ml";"";"Clover Care";"";"2022-12-03 16:42:02";"Clover Care";"";""
+"4316031222";"Floxycare ";"Underpads";"";"10pcs/pack";"90x60";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"FLO00195";"Floxycare   90X60";"";"Clover Care";"";"2022-12-03 16:43:47";"Clover Care";"";""
+"4416031222";"Fresh ";"Disposable ";"Underpads";"10pcs/pack";"90x60";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"FRE00196";"Fresh  Underpads 90X60";"";"Clover Care";"";"2022-12-03 16:44:45";"Clover Care";"";""
+"4516031222";"Fresh ";"Disposable ";"Underpads";"10pcs/pack";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"FRE00197";"Fresh  Underpads L";"";"Clover Care";"";"2022-12-03 16:45:49";"Clover Care";"";""
+"4716031222";"OREX ";"";"Shoecover";"Non Woven ";"100pcs";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00198";"Orex  Shoecover 100Pcs";"";"Clover Care";"";"2022-12-03 16:47:34";"Clover Care";"";""
+"4916031222";"OREX ";"";"Bouffant Cap/HeadCover";"Non Woven ";"100pcs";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00199";"Orex  Bouffant Cap/Headcover 100Pcs";"";"Clover Care";"";"2022-12-03 16:49:24";"Clover Care";"";""
+"5016031222";"OREX ";"";"Face Mask ";"3 Ply Disposable";"ADULT";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00200";"Orex  Face Mask  Adult";"";"Clover Care";"";"2022-12-03 16:51:39";"Clover Care";"";""
+"1517031222";"SURGITECH ";"";"Baby Nebulizer";"Nebulizers can be an alternative to inhalers. These devices deliver short bursts of medication when a person inhales. Nebulizers deliver medication over a course of time, usually 10 to 15 minutes.";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00201";"Surgitech  Baby Nebulizer ";"";"Clover Care";"";"2022-12-03 17:15:45";"Clover Care";"";""
+"1817031222";"SURGITECH ";"";"Ultrasonic Nebulizer";"Quiet treatment
+
+Compact and Portable";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00202";"Surgitech  Ultrasonic Nebulizer ";"";"Clover Care";"";"2022-12-03 17:18:28";"Clover Care";"";""
+"2117031222";"SURGITECH ";"w/ Adaptor";"Digital Bp Monitor ";"Fully automatic blood pressure measurement and pulseon the upperarm";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00203";"Surgitech  Digital Bp Monitor  ";"";"Clover Care";"";"2022-12-03 17:21:42";"Clover Care";"";""
+"3809051222";"CAREPLUS ";"Vacuum Blood ";"Collection Tube";"Purple Top Edta";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00205";"Careplus  Collection Tube 3Ml";"";"Clover Care";"";"2022-12-05 09:38:40";"Clover Care";"";""
+"3909051222";"CAREPLUS ";"Vacuum Blood ";"Collection Tube";"Purple Top Edta";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00206";"Careplus  Collection Tube 5Ml";"";"Clover Care";"";"2022-12-05 09:39:09";"Clover Care";"";""
+"4009051222";"CAREPLUS ";"Vacuum Blood ";"Collection Tube";"Red Top ";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00207";"Careplus  Collection Tube 3Ml";"";"Clover Care";"";"2022-12-05 09:40:06";"Clover Care";"";""
+"4109051222";"CAREPLUS ";"Vacuum Blood ";"Collection Tube";"Red Top ";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00210";"Careplus  Collection Tube 5Ml";"";"Clover Care";"";"2022-12-05 09:41:17";"Clover Care";"";""
+"4209051222";"CAREPLUS ";"Vacuum Blood ";"Collection Tube";"Red Top ";"10ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00211";"Careplus  Collection Tube 10Ml";"";"Clover Care";"";"2022-12-05 09:42:17";"Clover Care";"";""
+"4909051222";"CAREPLUS ";"Vacuum Blood ";"Collection Tube";"Blue Top";"1.8ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00212";"Careplus  Collection Tube 1.8Ml";"";"Clover Care";"";"2022-12-05 09:49:09";"Clover Care";"";""
+"5009051222";"CAREPLUS ";"Vacuum Blood ";"Collection Tube";"Black Top ";"2.4ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00213";"Careplus  Collection Tube 2.4Ml";"";"Clover Care";"";"2022-12-05 09:50:09";"Clover Care";"";""
+"1410051222";"Partners";"Surgical Blades";"";"100pcs/box";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00214";"Partners  ";"";"Clover Care";"";"2022-12-05 10:14:22";"Clover Care";"";""
+"1510051222";"Partners";"Surgical Tape";"";"12rolls/Box";"1x5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00215";"Partners  1X5";"";"Clover Care";"";"2022-12-05 10:15:40";"Clover Care";"";""
+"1610051222";"Partners";"Surgical Tape";"";"12rolls/Box";"1x10";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00217";"Partners  1X10";"";"Clover Care";"";"2022-12-05 10:16:06";"Clover Care";"";""
+"1710051222";"Partners";"Blood Lancent";"";"200pc/box";"28g";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00218";"Partners  28G";"";"Clover Care";"";"2022-12-05 10:17:16";"Clover Care";"";""
+"2510051222";"Partners";"3 Way Stop Cock ";"";"Per piece";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00220";"Partners  ";"";"Clover Care";"";"2022-12-05 10:25:18";"Clover Care";"";""
+"2710051222";"Partners";"Anti Bed Sore Air Mattress";"";"- Sturdy steel motor
+
+- Quiet pump, low noise, low vibration, low temperature";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00221";"Partners  ";"";"Clover Care";"";"2022-12-05 10:27:34";"Clover Care";"";""
+"2810051222";"Partners";"Gauze Pad";"";"STERILE";"2x2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00222";"Partners  2X2";"";"Clover Care";"";"2022-12-05 10:28:51";"Clover Care";"";""
+"3610051222";"Partners";"Gauze Pad";"";"STERILE";"3x3";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00223";"Partners  3X3";"";"Clover Care";"";"2022-12-05 10:36:31";"Clover Care";"";""
+"3810051222";"Partners";"Gauze Pad";"";"STERILE";"4x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00224";"Partners  4X4";"";"Clover Care";"";"2022-12-05 10:38:12";"Clover Care";"";""
+"3910051222";"Partners";"Gauze Pad";"";"NON-STERILE";"4x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00226";"Partners  4X4";"";"Clover Care";"";"2022-12-05 10:39:11";"Clover Care";"";""
+"4010051222";"Partners";"Lap Sponge w/Xray Line";"";"Per piece";"8x12";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00227";"Partners  8X12";"";"Clover Care";"";"2022-12-05 10:40:38";"Clover Care";"";""
+"4110051222";"Partners";"Rubber Suction / Ear Syringe ";"";"Per piece";"30ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00228";"Partners  30Ml";"";"Clover Care";"";"2022-12-05 10:41:33";"Clover Care";"";""
+"4210051222";"Partners";"Rubber Suction / Ear Syringe ";"";"Buy 1 Get 1";"30ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00230";"Partners  30Ml";"";"Clover Care";"";"2022-12-05 10:42:16";"Clover Care";"";""
+"5310051222";"Partners";"Rubber Suction / Ear Syringe ";"";"Per piece";"60ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00231";"Partners  60Ml";"";"Clover Care";"";"2022-12-05 10:53:40";"Clover Care";"";""
+"5410051222";"Partners";"Rubber Suction / Ear Syringe ";"";"Buy 1 Get 1";"60ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00233";"Partners  60Ml";"";"Clover Care";"";"2022-12-05 10:54:02";"Clover Care";"";""
+"5510051222";"Partners";"Electric Breast Pump ";"";"1 unit";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00235";"Partners  ";"";"Clover Care";"";"2022-12-05 10:55:10";"Clover Care";"";""
+"5610051222";"Partners";"Urine Pregnancy Test";"";"100pcs/Box";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00236";"Partners  ";"";"Clover Care";"";"2022-12-05 10:56:07";"Clover Care";"";""
+"5810051222";"Partners";"Urine Pregnancy Test";"";"Per piece";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00237";"Partners  ";"";"Clover Care";"";"2022-12-05 10:58:23";"Clover Care";"";""
+" 5810051222";"Partners";"Urine Pregnancy Test";"";"Buy 1 Get 1";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00238";"Partners  ";"";"Clover Care";"";"2022-12-05 11:11:10";"Clover Care";"";""
+"1411051222";"3M";"";"Steri Strip";"Blue
+
+6-Strips";"1/2 in x 4 in";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00238";"3M Steri Strip 1/2 In X 4 In";"";"Clover Care";"";"2022-12-05 11:14:48";"Clover Care";"";""
+"1511051222";"3M";"";"Steri Strip";"Orange
+
+10-Strips";"1/4 in x 4 in";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00238";"3M Steri Strip 1/4 In X 4 In";"";"Clover Care";"";"2022-12-05 11:15:31";"Clover Care";"";""
+"1611051222";"PANAMED";"";"KN95-W";"20pc/Box";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00242";"Panamed Kn95-W Adult";"";"Clover Care";"";"2022-12-05 11:16:59";"Clover Care";"";""
+"1711051222";"PANAMED";"";"KN95-W";"Per Piece";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00243";"Panamed Kn95-W Adult";"";"Clover Care";"";"2022-12-05 11:17:13";"Clover Care";"";""
+"1811051222";"PANAMED";"";"KN95-W";"20pcs/Box";"Kids";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00244";"Panamed Kn95-W Kids";"";"Clover Care";"";"2022-12-05 11:18:04";"Clover Care";"";""
+"2611051222";"SURGITECH ";"";"Nebulizing Kit ";"Per Piece";"10cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00246";"Surgitech  Nebulizing Kit  10Cc";"";"Clover Care";"";"2022-12-05 11:26:31";"Clover Care";"";""
+"2711051222";"SURGITECH ";"";"Nebulizing Kit w/ Mask ";"Per Piece";"Pedia";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00247";"Surgitech  Nebulizing Kit W/ Mask  Pedia";"";"Clover Care";"";"2022-12-05 11:27:09";"Clover Care";"";""
+"2312051222";"SURGITECH ";"";"Nebulizing Kit w/ Mask ";"Per Piece";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00250";"Surgitech  Nebulizing Kit W/ Mask  Pedia";"";"Clover Care";"";"2022-12-05 12:23:32";"Clover Care";"";""
+"2512051222";"SAILBRAND ";"";"Microscope Slides ";"Box";"7105";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SAI00251";"Sailbrand  Microscope Slides  7105";"";"Clover Care";"";"2022-12-05 12:25:13";"Clover Care";"";""
+"2612051222";"SAILBRAND ";"";"Microscope Slides ";"Box";"7102";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SAI00254";"Sailbrand  Microscope Slides  7102";"";"Clover Care";"";"2022-12-05 12:26:06";"Clover Care";"";""
+"2712051222";"SAILBRAND ";"";"Microscope Slides ";"Box";"7101";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SAI00258";"Sailbrand  Microscope Slides  7102";"";"Clover Care";"";"2022-12-05 12:27:06";"Clover Care";"";""
+"2812051222";"SURGITECH ";"Latex Examintaion ";"Gloves";"100pcs/Box";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00259";"Surgitech  Gloves S";"";"Clover Care";"";"2022-12-05 12:28:25";"Clover Care";"";""
+"2912051222";"SURGITECH ";"Latex Examintaion ";"Gloves";"100pcs/Box";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00261";"Surgitech  Gloves M";"";"Clover Care";"";"2022-12-05 12:29:02";"Clover Care";"";""
+"3612051222";"SURGITECH ";"Latex Examintaion ";"Gloves";"100pcs/Box";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00266";"Surgitech  Gloves L";"";"Clover Care";"";"2022-12-05 12:36:19";"Clover Care";"";""
+"4213051222";"OREX ";"Ultrasound Transmission Gel ";"";"• Slow Drying 
+
+• Water Soluble
+
+• 5 Liters
+
+";"5Liters";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00268";"Orex   5Liters";"";"Clover Care";"";"2022-12-05 13:42:58";"Clover Care";"";""
+"4313051222";"OREX ";"Ultrasound Transmission Gel ";"";"• Slow Drying 
+
+• Water Soluble
+
+
+
+";"250ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00269";"Orex   250Ml";"";"Clover Care";"";"2022-12-05 13:43:24";"Clover Care";"";""
+"4513051222";"SIMPLEX ";"Disposable Needle ";"";"STERILE";"30gx1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00270";"Simplex   30Gx1/2";"";"Clover Care";"";"2022-12-05 13:45:08";"Clover Care";"";""
+"4713051222";"SIMPLEX ";"Disposable Needle ";"";"STERILE";"18gx1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00271";"Simplex   18Gx1/2";"";"Clover Care";"";"2022-12-05 13:47:47";"Clover Care";"";""
+"4813051222";"SIMPLEX ";"Disposable Needle ";"";"STERILE";"19gx1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00271";"Simplex   19Gx1/2";"";"Clover Care";"";"2022-12-05 13:48:02";"Clover Care";"";""
+"4913051222";"SIMPLEX ";"Disposable Needle ";"";"STERILE";"20gx1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00277";"Simplex   20Gx1";"";"Clover Care";"";"2022-12-05 13:49:08";"Clover Care";"";""
+"5113051222";"SIMPLEX ";"Disposable Needle ";"";"STERILE";"21gx1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00278";"Simplex   21Gx1";"";"Clover Care";"";"2022-12-05 13:51:31";"Clover Care";"";""
+"5213051222";"SIMPLEX ";"Disposable Needle ";"";"STERILE";"22gx1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00280";"Simplex   22Gx1";"";"Clover Care";"";"2022-12-05 13:52:05";"Clover Care";"";""
+"5713051222";"SIMPLEX ";"Disposable Needle ";"";"STERILE";"23gx1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00281";"Simplex   23Gx1";"";"Clover Care";"";"2022-12-05 13:57:29";"Clover Care";"";""
+"5813051222";"SIMPLEX ";"Disposable Needle";"";"STERILE";"24gx1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00282";"Simplex   24Gx1";"";"Clover Care";"";"2022-12-05 13:58:03";"Clover Care";"";""
+"1014051222";"SIMPLEX ";"Disposable Needle";"";"STERILE";"25gx1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00284";"Simplex   25Gx1";"";"Clover Care";"";"2022-12-05 14:10:58";"Clover Care";"";""
+"1114051222";"SIMPLEX ";"Disposable Needle";"";"STERILE";"25gx5/8";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00285";"Simplex   25Gx1";"";"Clover Care";"";"2022-12-05 14:11:18";"Clover Care";"";""
+"1214051222";"SIMPLEX ";"Disposable Needle";"";"STERILE";"26gx1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00286";"Simplex   26Gx1/2";"";"Clover Care";"";"2022-12-05 14:12:02";"Clover Care";"";""
+"3714051222";"SIMPLEX ";"Disposable Needle";"";"STERILE";"27gx1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00288";"Simplex   27Gx1/2";"";"Clover Care";"";"2022-12-05 14:37:54";"Clover Care";"";""
+"3914051222";"SURGITECH ";"Nasal Oxygen Cannula";"";"Per Piece";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00289";"Surgitech   Adult";"";"Clover Care";"";"2022-12-05 14:39:52";"Clover Care";"";""
+"4014051222";"SURGITECH ";"Nasal Oxygen Cannula";"";"Per Piece";"Neonate";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00290";"Surgitech   Neonate";"";"Clover Care";"";"2022-12-05 14:40:23";"Clover Care";"";""
+"4814051222";"SURGITECH ";"Nasal Oxygen Cannula";"";"Per Piece";"Pedia";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00292";"Surgitech   Pedia";"";"Clover Care";"";"2022-12-05 14:48:53";"Clover Care";"";""
+"3315051222";"OREX ";"";"Lubricating Jelly ";"Per Piece";"Pedia";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00293";"Surgitech   Pedia";"";"Clover Care";"";"2022-12-05 15:33:05";"Clover Care";"";""
+"3515051222";"TOPCARE";"";"Tongue Depressor ";"Non-Sterile";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00295";"Topcare Tongue Depressor  ";"";"Clover Care";"";"2022-12-05 15:35:17";"Clover Care";"";""
+"3715051222";"MEDPRO ";"";"Cotton Applicator ";"- Wooden 6 Inches Long
+
+- For Single Use Single";"Small Head";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"MED00296";"Medpro  Cotton Applicator  Small Head";"";"Clover Care";"";"2022-12-05 15:37:41";"Clover Care";"";""
+"3815051222";"MEDPRO ";"";"Cotton Applicator ";"- Wooden 6 Inches Long
+
+- For Single Use Single";"Big Head";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"MED00297";"Medpro  Cotton Applicator  Big Head";"";"Clover Care";"";"2022-12-05 15:38:02";"Clover Care";"";""
+"3915051222";"CAREPLUS ";"";"Insulin Syringe";"100pcs/Box";"1cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00298";"Careplus  Insulin Syringe 1Cc";"";"Clover Care";"";"2022-12-05 15:39:24";"Clover Care";"";""
+"4115051222";"TRANSGEL ";"";"Ultrasound Transmission Gel";"• Water Based Contact Medium for ultrasonic Transmission 
+
+• 1 Gallon
+
+• comes with free 250ml empty bottle";"1Gallon";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TRA00299";"Transgel  Ultrasound Transmission Gel 1Gallon";"";"Clover Care";"";"2022-12-05 15:41:14";"Clover Care";"";""
+"4315051222";"SIMPLEX ";"";"ECG PAPER";"Per Roll";"50x30";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00300";"Simplex  Ecg Paper 50X30";"";"Clover Care";"";"2022-12-05 15:43:49";"Clover Care";"";""
+"4515051222";"SURGITECH ";"";"Urine Strips ";"Reagent Strips for Urinalysis
+
+";"URS-4SG";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00301";"Surgitech  Urine Strips  Urs-4Sg";"";"Clover Care";"";"2022-12-05 15:45:44";"Clover Care";"";""
+"4915051222";"ORMED ";"";"Sterile Lap Sponges B.P";"Per Piece
+
+";"12x12";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORM00302";"Ormed  Sterile Lap Sponges B.P 12X12";"";"Clover Care";"";"2022-12-05 15:49:14";"Clover Care";"";""
+"5215051222";"SURESHOT ";"";"Disposable Syringe";"STERILE";"3cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00304";"Sureshot  Disposable Syringe 3Cc";"";"Clover Care";"";"2022-12-05 15:52:14";"Clover Care";"";""
+"0716051222";"SIMPLEX ";"";"Feeding Tube ";"Blue";"Fr8";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00305";"Simplex  Feeding Tube  Fr8";"";"Clover Care";"";"2022-12-05 16:07:25";"Clover Care";"";""
+"4611061222";"3M ";"";"Transpore Surgical Tape ";"Box";"1inch";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"3M 00307";"3M  Transpore Surgical Tape  1Inch";"";"Clover Care";"";"2022-12-06 11:46:15";"Clover Care";"";""
+"0014061222";"TOPCARE ";"Surgical Tape ";"";"Non-Woven 
+
+Hypo Allergenic";"1x10yd";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00310";"Topcare   1X10yd";"";"Clover Care";"";"2022-12-06 14:03:14";"Clover Care";"";""
+"0314061222";"TOPCARE ";"Surgical Tape ";"";"Non-Woven 
+
+Hypo Allergenic";"1/2x10";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00311";"Topcare   1/2X10";"";"Clover Care";"";"2022-12-06 14:03:28";"Clover Care";"";""
+"0414061222";"ROSSMAX ";"Digital Bp App ";"";"ARM";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ROS00312";"Rossmax   Adult";"";"Clover Care";"";"2022-12-06 14:04:53";"Clover Care";"";""
+"0514061222";"TOPCARE ";"Sphygmomanometer";"";"Velcro Cuff
+
+Blue";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00313";"Topcare   Adult";"";"Clover Care";"";"2022-12-06 14:05:51";"Clover Care";"";""
+"0614061222";"TOPCARE ";"Sphygmomanometer";"";"Velcro Cuff
+
+Red";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00314";"Topcare   Adult";"";"Clover Care";"";"2022-12-06 14:06:02";"Clover Care";"";""
+"5214061222";"TOPCARE ";"Sphygmomanometer";"";"Metal Cuff";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00316";"Topcare   Adult";"";"Clover Care";"";"2022-12-06 14:52:43";"Clover Care";"";""
+"5314061222";"TOPCARE ";"Sphygmomanometer";"";"Desk Type";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00317";"Topcare   Adult";"";"Clover Care";"";"2022-12-06 14:53:36";"Clover Care";"";""
+"5514061222";"BAXTEL ";"";"Sphygmomanometer";"APG Aneroid";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"BAX00318";"Baxtel  Sphygmomanometer Adult";"";"Clover Care";"";"2022-12-06 14:55:34";"Clover Care";"";""
+"5614061222";"MTI FRANCE";"";"Sphygmomanometer";"Adult";"0-300 mmHg";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"MTI00319";"Mti France Sphygmomanometer 0-300 Mmhg";"";"Clover Care";"";"2022-12-06 14:56:48";"Clover Care";"";""
+"5814061222";"TOPCARE ";"";"Stethoscope ";"• Perfect Spring Action 
+
+• Joint Less Tube";"Pedia";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00320";"Topcare  Stethoscope  Pedia";"";"Clover Care";"";"2022-12-06 14:58:33";"Clover Care";"";""
+"5914061222";"TOPCARE ";"";"Stethoscope ";"• Perfect Spring Action 
+
+• Joint Less Tube";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00322";"Topcare  Stethoscope  Adult";"";"Clover Care";"";"2022-12-06 14:59:03";"Clover Care";"";""
+"5615061222";"BAXTEL DELUXE";"";"Stethoscope ";" Finest Craft finish 
+
+multi patents";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"BAX00323";"Baxtel Deluxe Stethoscope  Adult";"";"Clover Care";"";"2022-12-06 15:56:38";"Clover Care";"";""
+"5715061222";"BAXTEL DELUXE";"";"Stethoscope ";" Finest Craft finish 
+
+multi patents";"Pedia";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"BAX00326";"Baxtel Deluxe Stethoscope  Pedia";"";"Clover Care";"";"2022-12-06 15:57:06";"Clover Care";"";""
+"5915061222";"TOPCARE ";"";"BP PARTS";"Cuff with Bladder";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00327";"Topcare  Bp Parts Adult";"";"Clover Care";"";"2022-12-06 15:59:09";"Clover Care";"";""
+"0016061222";"TOPCARE ";"";"BP PARTS";"Cuff with Bladder";"Obese";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00332";"Topcare  Bp Parts Obese";"";"Clover Care";"";"2022-12-06 16:00:04";"Clover Care";"";""
+"0116061222";"TOPCARE ";"";"BP PARTS";"Cuff with Bladder";"Neonate";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00333";"Topcare  Bp Parts Obese";"";"Clover Care";"";"2022-12-06 16:01:50";"Clover Care";"";""
+"0216061222";"CGF ";"";"Douderm ";"Extra Thin ";"4x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CGF00334";"Cgf  Douderm  4X4";"";"Clover Care";"";"2022-12-06 16:02:43";"Clover Care";"";""
+"0316061222";"CGF ";"";"Douderm ";"Per piece";"4x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CGF00335";"Cgf  Douderm  4X4";"";"Clover Care";"";"2022-12-06 16:03:03";"Clover Care";"";""
+"0416061222";"OPSITEPOST-OP";"";"";"Per piece";"9.5cm x 8.5cm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"OPS00336";"Opsitepost-Op  9.5Cm X 8.5Cm";"";"Clover Care";"";"2022-12-06 16:04:54";"Clover Care";"";""
+"0516061222";"OPSITEPOST-OP";"";"";"Per piece";"15.cm x 8.5cm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"OPS00337";"Opsitepost-Op  15.Cm X 8.5Cm";"";"Clover Care";"";"2022-12-06 16:05:26";"Clover Care";"";""
+"0816061222";"OPSITEPOST-OP";"";"";"Per piece";"20cm x 10cm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"OPS00338";"Opsitepost-Op  20Cm X 10Cm";"";"Clover Care";"";"2022-12-06 16:08:30";"Clover Care";"";""
+"3716061222";"BACTIGRAS ";"";"";"Per piece";"10cm x 10cm ";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"OPS00338";"Opsitepost-Op  20Cm X 10Cm";"";"Clover Care";"";"2022-12-06 16:37:38";"Clover Care";"";""
+"4316061222";"3M ";"";"Tegaderm ";"Per piece";"2x2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"3M 00341";"3M  Tegaderm  2X2";"";"Clover Care";"";"2022-12-06 16:43:12";"Clover Care";"";""
+"4416061222";"3M ";"";"Tegaderm ";"Per piece";"4x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"3M 00342";"3M  Tegaderm  4X4";"";"Clover Care";"";"2022-12-06 16:44:19";"Clover Care";"";""
+"4516061222";"3M ";"";"Tegaderm ";"1626";"4x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"3M 00345";"3M  Tegaderm  4X4";"";"Clover Care";"";"2022-12-06 16:45:03";"Clover Care";"";""
+"4616061222";"3M ";"";"Tegaderm ";"1624";"2x2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"3M 00348";"3M  Tegaderm  2X2";"";"Clover Care";"";"2022-12-06 16:46:04";"Clover Care";"";""
+"4816061222";"3M ";"";"Tegaderm ";"1627";"4x10";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"3M 00349";"3M  Tegaderm  4X10";"";"Clover Care";"";"2022-12-06 16:48:05";"Clover Care";"";""
+"5016061222";"COSMED ";"";"Syringe w/ Needle ";"Disposable 
+
+Non- Toxic";"1cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00350";"Cosmed  Syringe W/ Needle  4X10";"";"Clover Care";"";"2022-12-06 16:50:34";"Clover Care";"";""
+"5116061222";"COSMED ";"";"Syringe w/ Needle ";"Disposable 
+
+Non - Toxic";"3cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00351";"Cosmed  Syringe W/ Needle  3Cc";"";"Clover Care";"";"2022-12-06 16:51:59";"Clover Care";"";""
+"5216061222";"COSMED ";"";"Syringe w/ Needle ";"Disposable 
+
+Non - Toxic";"5cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00352";"Cosmed  Syringe W/ Needle  5Cc";"";"Clover Care";"";"2022-12-06 16:52:17";"Clover Care";"";""
+"5316061222";"COSMED ";"";"Syringe w/ Needle ";"Disposable 
+
+Non - Toxic";"10cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00353";"Cosmed  Syringe W/ Needle  10Cc";"";"Clover Care";"";"2022-12-06 16:53:22";"Clover Care";"";""
+"5516061222";"SURE SHOT ";"";"Insulin Syringe ";"Non-Toxic , Non-pyrogenic";"29g x1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00354";"Sure Shot  Insulin Syringe  29G X1/2";"";"Clover Care";"";"2022-12-06 16:55:31";"Clover Care";"";""
+"5616061222";"SURE SHOT ";"";"Syringe w/ Needle ";"Non-Toxic , Non-pyrogenic";"1cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00355";"Sure Shot  Syringe W/ Needle  1Cc";"";"Clover Care";"";"2022-12-06 16:56:22";"Clover Care";"";""
+"5716061222";"SURE SHOT ";"";"Syringe w/ Needle ";"Non-Toxic  Non-pyrogenic";"3cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00357";"Sure Shot  Syringe W/ Needle  3Cc";"";"Clover Care";"";"2022-12-06 16:57:08";"Clover Care";"";""
+"5816061222";"SURE SHOT ";"";"Syringe w/ Needle ";"Non-Toxic  Non-pyrogenic";"5cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00359";"Sure Shot  Syringe W/ Needle  5Cc";"";"Clover Care";"";"2022-12-06 16:58:08";"Clover Care";"";""
+"5916061222";"SURE SHOT ";"";"Syringe w/ Needle ";"Non-Toxic  Non-pyrogenic";"10cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00361";"Sure Shot  Syringe W/ Needle  10Cc";"";"Clover Care";"";"2022-12-06 16:59:41";"Clover Care";"";""
+"0117061222";"TOP ";"";"Spinal Needle";"Non-Toxic  Non-pyrogenic";"23g";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00362";"Top  Spinal Needle 23G";"";"Clover Care";"";"2022-12-06 17:01:06";"Clover Care";"";""
+"0617061222";"TOP ";"";"Spinal Needle";"Non-Toxic  Non-pyrogenic";"25g";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00362";"Top  Spinal Needle 23G";"";"Clover Care";"";"2022-12-06 17:06:11";"Clover Care";"";""
+"5116071222";"DR. CARE ";"";"Kidney Basin ";"Stainless";"6inches";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"DR.00366";"Dr. Care  Kidney Basin  6Inches";"";"Clover Care";"";"2022-12-07 16:56:03";"Clover Care";"";""
+"5716071222";"DR. CARE ";"";"Kidney Basin ";"Stainless";"8inches";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"DR.00367";"Dr. Care  Kidney Basin  8Inches";"";"Clover Care";"";"2022-12-07 16:57:13";"Clover Care";"";""
+"5113031222";"GLOMED";"SYNTHETIC BLUE";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00003";"Glomed  S";"";"JadeOne Medical ";"REPACKED &
+
+DISTRIBUTED BY:";"2022-12-03 13:51:53";"JadeOne Medical ";"";""
+"5613031222";"GLOMED";"SLIM BLUE";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00003";"Glomed  S";"";"JadeOne Medical ";"REPACKED &
+
+DISTRIBUTED BY:";"2022-12-03 13:57:20";"JadeOne Medical ";"";""
+"0414031222";"NITRILECARE";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00003";"Glomed  S";"";"JadeOne Medical ";"REPACKED &
+
+DISTRIBUTED BY:";"2022-12-03 14:04:02";"JadeOne Medical ";"";""
+"0514031222";"NITRILECARE";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00003";"Glomed  S";"";"JadeOne Medical ";"REPACKED &
+
+DISTRIBUTED BY:";"2022-12-03 14:05:30";"JadeOne Medical ";"";""
+"0614031222";"NITRILECARE";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"XL";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00003";"Glomed  S";"";"JadeOne Medical ";"REPACKED &
+
+DISTRIBUTED BY:";"2022-12-03 14:06:02";"JadeOne Medical ";"";""
+"0714031222";"GREAT GLOVE";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00003";"Glomed  S";"";"JadeOne Medical ";"REPACKED &
+
+DISTRIBUTED BY:";"2022-12-03 14:07:15";"JadeOne Medical ";"";""
+"2714031222";"GREAT GLOVE";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00061";"Great Glove Nitrile Examination Gloves M";"";"JadeOne Medical ";"";"2022-12-03 14:28:06";"JadeOne Medical ";"";""
+"2814031222";"GREAT GLOVE";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00062";"Great Glove Nitrile Examination Gloves L";"";"JadeOne Medical ";"";"2022-12-03 14:28:25";"JadeOne Medical ";"";""
+"2615031222";"HCD";"BLUE ";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"XL";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00085";"Hcd Nitrile Examination Gloves Xl";"";"JadeOne Medical ";"";"2022-12-03 15:26:50";"JadeOne Medical ";"";""
+"2715031222";"SURE-GUARD";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00086";"Sure-Guard Nitrile Examination Gloves Xs";"";"JadeOne Medical ";"";"2022-12-03 15:27:43";"JadeOne Medical ";"";""
+"2815031222";"SURE-GUARD";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00090";"Sure-Guard Nitrile Examination Gloves S";"";"JadeOne Medical ";"";"2022-12-03 15:28:06";"JadeOne Medical ";"";""
+"4515031222";"SURE-GUARD";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00097";"Sure-Guard Nitrile Examination Gloves L";"";"JadeOne Medical ";"";"2022-12-03 15:45:04";"JadeOne Medical ";"";""
+"3011061222";"SURGITECH";"";"BLUE NITRILE EXAMINATION GLOVES";"POWDER FREE";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00098";"Surgitech Blue Nitrile Examination Gloves Xs";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:30:45";"JadeOne Medical ";"";""
+"3111061222";"SURGITECH";"";"BLUE NITRILE EXAMINATION GLOVES";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00099";"Surgitech Blue Nitrile Examination Gloves S";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:31:07";"JadeOne Medical ";"";""
+"3211061222";"SURGITECH";"";"BLUE NITRILE EXAMINATION GLOVES";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00101";"Surgitech Blue Nitrile Examination Gloves M";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:32:10";"JadeOne Medical ";"";""
+"3311061222";"SURGITECH";"";"BLUE NITRILE EXAMINATION GLOVES";"POWDER FREE";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00102";"Surgitech Blue Nitrile Examination Gloves L";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:33:55";"JadeOne Medical ";"";""
+"3411061222";"SURGITECH";"";"BLUE NITRILE EXAMINATION GLOVES";"POWDER FREE";"XL";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00104";"Surgitech Blue Nitrile Examination Gloves Xl";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:34:26";"JadeOne Medical ";"";""
+"3611061222";"SURE-GUARD";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"XL";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00105";"Sure-Guard Nitrile Examination Gloves Xl";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:36:23";"JadeOne Medical ";"";""
+"3711061222";"SURGITECH";"WHITE";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00106";"Surgitech Nitrile Examination Gloves S";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:37:24";"JadeOne Medical ";"";""
+"3811061222";"SURGITECH";"WHITE";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00107";"Surgitech Nitrile Examination Gloves Xs";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:38:49";"JadeOne Medical ";"";""
+"4011061222";"SURGITECH";"WHITE";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00108";"Surgitech Nitrile Examination Gloves M";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:40:03";"JadeOne Medical ";"";""
+"4111061222";"SURGITECH";"WHITE";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00109";"Surgitech Nitrile Examination Gloves L";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:41:13";"JadeOne Medical ";"";""
+"4211061222";"SURGITECH";"WHITE";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"XL";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00111";"Surgitech Nitrile Examination Gloves Xl";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:42:55";"JadeOne Medical ";"";""
+"4311061222";"PANAMED";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00112";"Panamed Nitrile Examination Gloves Xs";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:43:53";"JadeOne Medical ";"";""
+"4411061222";"PANAMED";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00113";"Panamed Nitrile Examination Gloves S";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:44:15";"JadeOne Medical ";"";""
+"4511061222";"PANAMED";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00114";"Panamed Nitrile Examination Gloves M";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:45:04";"JadeOne Medical ";"";""
+"4711061222";"PANAMED";"";"NITRILE EXAMINATION GLOVES";"POWDER FREE";"XL";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00116";"Panamed Nitrile Examination Gloves Xl";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:47:11";"JadeOne Medical ";"";""
+"5111061222";"OREX";"";"LATEX EXAMINATION GLOVES";"POWDER FREE";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00117";"Orex Latex Examination Gloves Xs";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:51:59";"JadeOne Medical ";"";""
+"5211061222";"OREX";"";"LATEX EXAMINATION GLOVES";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00118";"Orex Latex Examination Gloves S";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:52:25";"JadeOne Medical ";"";""
+"5311061222";"OREX";"";"LATEX EXAMINATION GLOVES";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00119";"Orex Latex Examination Gloves M";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:53:44";"JadeOne Medical ";"";""
+"5411061222";"OREX";"";"LATEX EXAMINATION GLOVES";"POWDER FREE";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00121";"Orex Latex Examination Gloves L";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:54:14";"JadeOne Medical ";"";""
+"5511061222";"OREX";"";"LATEX EXAMINATION GLOVES";"POWDER FREE";"XL";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00122";"Orex Latex Examination Gloves Xl";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:55:17";"JadeOne Medical ";"";""
+"5611061222";"RUBBERCARE";"";"LATEX EXAMINATION GLOVES";"POWDER FREE";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00124";"Rubbercare Latex Examination Gloves Xs";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 11:56:20";"JadeOne Medical ";"";""
+"0112061222";"RUBBERCARE";"";"LATEX EXAMINATION GLOVES";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00125";"Rubbercare Latex Examination Gloves S";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 12:01:02";"JadeOne Medical ";"";""
+"0512061222";"RUBBERCARE";"";"LATEX EXAMINATION GLOVES";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00126";"Rubbercare Latex Examination Gloves M";"";"JadeOne Medical ";"REPACKED & 
+
+DISTRUBUTED BY:";"2022-12-06 12:05:20";"JadeOne Medical ";"";""
+"5213261122";"OREX";"Bouffant Cap";"";"NON-WOVEN FABRIC";"PINK";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"Repacked && Distributed 
+
+by:";"2022-11-26 14:11:55";"Xavier Medical Supply";"";""
+"2215261122";"OREX";"";"Bouffant Cap";"NON-WOVEN FABRIC";"PINK";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-11-26 15:28:32";"Xavier Medical Supply";"";""
+"4215261122";"OREX";"";"Bouffant Cap";"NON-WOVEN FABRIC";"PINK";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-11-26 15:46:38";"Xavier Medical Supply";"";""
+"5215261122";"OREX";"";"Bouffant Cap";"NON-WOVEN FABRIC";"PINK";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-11-26 15:53:59";"Xavier Medical Supply";"";""
+"3509031222";"GLOMED";"Regular";"Latex Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 09:39:27";"Xavier Medical Supply";"";""
+"1911031222";"GLOMED";"Regular Latex";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 11:21:50";"Xavier Medical Supply";"";""
+"2311031222";"GLOMED";"Regular Latex";"Gloves";"Powder Free";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 11:25:23";"Xavier Medical Supply";"";""
+"2811031222";"GLOMED";"Regular Latex";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 11:28:08";"Xavier Medical Supply";"";""
+"3111031222";"GLOMED";"Regular Latex";"Gloves";"Powder Free
+
+10 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 11:33:30";"Xavier Medical Supply";"";""
+"3411031222";"GLOMED";"Regular Latex";"Gloves";"Powder Free
+
+20 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 11:34:33";"Xavier Medical Supply";"";""
+"4211031222";"GLOMED";"Regular Latex";"Gloves";"Powder Free
+
+10 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 11:42:37";"Xavier Medical Supply";"";""
+"4311031222";"GLOMED";"Regular Latex";"Gloves";"Powder Free
+
+20 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 11:43:15";"Xavier Medical Supply";"";""
+"5011031222";"GLOMED";"Regular Latex";"Gloves";"Powder Free
+
+10 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 11:50:24";"Xavier Medical Supply";"";""
+"1013031222";"GLOMED";"Black Latex";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 13:35:37";"Xavier Medical Supply";"";""
+"1213031222";"GLOMED";"Black Latex";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 13:13:44";"Xavier Medical Supply";"";""
+"1513031222";"GLOMED";"Black Latex";"Gloves";"Powder Free
+
+10 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 13:15:21";"Xavier Medical Supply";"";""
+"1713031222";"GLOMED";"Black Latex";"Gloves";"Powder Free
+
+20 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 13:17:43";"Xavier Medical Supply";"";""
+"1813031222";"GLOMED";"Black Latex";"Gloves";"Powder Free
+
+10 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 13:18:34";"Xavier Medical Supply";"";""
+"1913031222";"GLOMED";"Black Latex";"Gloves";"Powder Free
+
+20 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 13:19:24";"Xavier Medical Supply";"";""
+"2013031222";"GLOMED";"Black Latex";"Gloves";"Powder Free
+
+20 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 13:20:27";"Xavier Medical Supply";"";""
+"2113031222";"GLOMED";"Black Latex";"Gloves";"Powder Free
+
+10 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 13:21:11";"Xavier Medical Supply";"";""
+"2213031222";"GLOMED";"Mint Green Latex";"Gloves";"Powder Free
+
+";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 13:22:38";"Xavier Medical Supply";"";""
+"2413031222";"GLOMED";"Mint Green Latex";"Gloves";"Powder Free
+
+";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 13:24:49";"Xavier Medical Supply";"";""
+"2513031222";"GLOMED";"Mint Green Latex";"Gloves";"Powder Free
+
+10 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"";"2022-12-03 13:26:04";"Xavier Medical Supply";"";""
+"4413031222";"HCD";"Regular Latex";"Gloves";"Powder Free
+
+";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00088";"Hcd Gloves L";"";"Xavier Medical Supply";"";"2022-12-03 13:44:11";"Xavier Medical Supply";"";""
+"4513031222";"HCD";"Regular Latex";"Gloves";"Powder Free
+
+10 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00089";"Hcd Gloves S";"";"Xavier Medical Supply";"";"2022-12-03 13:45:10";"Xavier Medical Supply";"";""
+"4613031222";"HCD";"Regular Latex";"Gloves";"Powder Free
+
+20 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00091";"Hcd Gloves S";"";"Xavier Medical Supply";"";"2022-12-03 13:46:42";"Xavier Medical Supply";"";""
+"4913031222";"HCD";"Regular Latex";"Gloves";"Powder Free
+
+20 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00092";"Hcd Gloves M";"";"Xavier Medical Supply";"";"2022-12-03 13:49:29";"Xavier Medical Supply";"";""
+"1114031222";"GLOMED";"Mint Green Latex";"Gloves";"Powder Free
+
+10 PAIRS";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 14:11:15";"Xavier Medical Supply";"";""
+"1314031222";"GLOMED";"Mint Green Latex";"Gloves";"Powder Free
+
+20 PAIRS";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 14:13:24";"Xavier Medical Supply";"";""
+"2014031222";"GLOMED";"Slim Blue Nitrile";"Gloves";"Powder Free
+
+";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00103";"Glomed Gloves S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 14:24:50";"Xavier Medical Supply";"";""
+"2514031222";"GLOMED";"Slim Blue Nitrile";"Gloves";"Powder Free
+
+";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00104";"Glomed Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 14:25:59";"Xavier Medical Supply";"";""
+"2614031222";"GLOMED";"Slim Blue Nitrile";"Gloves";"Powder Free
+
+";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00104";"Glomed Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 14:26:56";"Xavier Medical Supply";"";""
+"4914031222";"GLOMED";"Synthetic Nitrile";"Gloves";"Powder Free
+
+20 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00134";"Glomed Gloves L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 14:49:21";"Xavier Medical Supply";"";""
+"5214031222";"GREAT GLOVE";"Nitrile";"Gloves";"Powder Free";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00135";"Great Glove Gloves S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 14:52:55";"Xavier Medical Supply";"";""
+"5314031222";"GREAT GLOVE";"Nitrile";"Gloves";"Powder Free";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00135";"Great Glove Gloves S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 14:53:09";"Xavier Medical Supply";"";""
+"5714031222";"GREAT GLOVE";"Nitrile";"Gloves";"Powder Free
+
+20 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00138";"Great Glove Gloves Xl";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 14:57:16";"Xavier Medical Supply";"";""
+"0015031222";"GREAT GLOVE";"Nitrile";"Gloves";"Powder Free
+
+20 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00138";"Great Glove Gloves Xl";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:00:14";"Xavier Medical Supply";"";""
+"0115031222";"GREAT GLOVE";"Nitrile";"Gloves";"Powder Free
+
+20 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00138";"Great Glove Gloves Xl";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:01:10";"Xavier Medical Supply";"";""
+"0215031222";"GREAT GLOVE";"Nitrile";"Gloves";"Powder Free
+
+10 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00138";"Great Glove Gloves Xl";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:02:10";"Xavier Medical Supply";"";""
+"1915031222";"HCD";"Nitrile";"Gloves";"Powder Free
+
+20 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00189";"Hcd Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:19:15";"Xavier Medical Supply";"";""
+"2015031222";"HCD";"Nitrile";"Gloves";"Powder Free
+
+10 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00193";"Hcd Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:20:09";"Xavier Medical Supply";"";""
+"2115031222";"HCD";"Nitrile";"Gloves";"Powder Free
+
+10 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"HCD00194";"Hcd Gloves L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:22:02";"Xavier Medical Supply";"";""
+"2915031222";"GREAT GLOVE";"Vinyl";"Gloves";"Powder Free
+
+10 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00212";"Great Glove Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:29:36";"Xavier Medical Supply";"";""
+"3015031222";"GREAT GLOVE";"Vinyl";"Gloves";"Powder Free
+
+10 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00212";"Great Glove Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:30:44";"Xavier Medical Supply";"";""
+"3115031222";"GREAT GLOVE";"Vinyl";"Gloves";"Powder Free
+
+20 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00219";"Great Glove Gloves L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:31:19";"Xavier Medical Supply";"";""
+"3615031222";"GLOMED";"Vinyl";"Gloves";"Powder Free
+
+20 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00230";"Glomed Gloves S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:36:05";"Xavier Medical Supply";"";""
+"3815031222";"GLOMED";"Vinyl";"Gloves";"Powder Free
+
+10 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00241";"Glomed Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:38:06";"Xavier Medical Supply";"";""
+"3915031222";"GLOMED";"Vinyl";"Gloves";"Powder Free
+
+10 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00246";"Glomed Gloves L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:39:22";"Xavier Medical Supply";"";""
+"4615031222";"GLOMED";"Sterile Latex";"Gloves";"Powder Free
+
+";"6.5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00256";"Glomed Gloves 6.5";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:46:07";"Xavier Medical Supply";"";""
+"4715031222";"GLOMED";"Sterile Latex";"Gloves";"Powder Free
+
+";"7.0";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00256";"Glomed Gloves 6.5";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:47:09";"Xavier Medical Supply";"";""
+"4815031222";"GLOMED";"Sterile Latex";"Gloves";"Powder Free
+
+";"7.5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00267";"Glomed Gloves 7.5";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:48:16";"Xavier Medical Supply";"";""
+"5015031222";"GLOMED";"Sterile Latex";"Gloves";"Powder Free
+
+";"8.0";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00268";"Glomed Gloves 8.0";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:50:38";"Xavier Medical Supply";"";""
+"5115031222";"GREAT GLOVE";"Sterile Latex";"Gloves";"Powder Free
+
+";"6.0";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GLO00268";"Glomed Gloves 8.0";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:52:13";"Xavier Medical Supply";"";""
+"5215031222";"GREAT GLOVE";"Sterile Latex";"Gloves";"Powder Free
+
+";"6.5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00270";"Great Glove Gloves 6.5";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:52:56";"Xavier Medical Supply";"";""
+"5315031222";"GREAT GLOVE";"Sterile Latex";"Gloves";"Powder Free
+
+";"7.0";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00271";"Great Glove Gloves 7.0";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:53:32";"Xavier Medical Supply";"";""
+"5615031222";"GREAT GLOVE";"Sterile Latex";"Gloves";"Powder Free
+
+";"7.5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00273";"Great Glove Gloves 7.5";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:56:31";"Xavier Medical Supply";"";""
+"5715031222";"GREAT GLOVE";"Sterile Latex";"Gloves";"Powder Free
+
+";"8.0";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"GRE00274";"Great Glove Gloves 8.0";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:57:07";"Xavier Medical Supply";"";""
+"5915031222";"TRUSTMOMED";"Syringe w/Needle";"Gloves";"STERILE
+
+";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TRU00276";"Trustmomed Gloves 3Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 15:59:15";"Xavier Medical Supply";"";""
+"0016031222";"TRUSTMOMED";"Syringe w/Needle";"Gloves";"STERILE
+
+";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TRU00278";"Trustmomed Gloves 5Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:00:20";"Xavier Medical Supply";"";""
+"0116031222";"TRUSTMOMED";"Syringe w/Needle";"Gloves";"
+
+STERILE
+
+10's
+
+";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TRU00280";"Trustmomed Gloves 5Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:01:21";"Xavier Medical Supply";"";""
+"0316031222";"TRUSTMOMED";"Syringe w/Needle";"Gloves";"
+
+STERILE
+
+20's
+
+";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TRU00282";"Trustmomed Gloves 3Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:03:49";"Xavier Medical Supply";"";""
+"0416031222";"TRUSTMOMED";"Syringe w/Needle";"Gloves";"
+
+STERILE
+
+20's
+
+";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TRU00283";"Trustmomed Gloves 5Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:04:16";"Xavier Medical Supply";"";""
+"0516031222";"TRUSTMOMED";"Syringe w/Needle";"Gloves";"STERILE
+
+10's";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TRU00285";"Trustmomed Gloves 5Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:05:12";"Xavier Medical Supply";"";""
+"1016031222";"CONTEC";"Pulse Oximeter";"Gloves";"Bluetooth";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CON00287";"Contec Gloves Adult";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:10:58";"Xavier Medical Supply";"";""
+"1116031222";"ALGINPLUS";"Alginate";"Gloves";"Extra High
+
+Precision
+
+Alginate";"453g";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ALG00289";"Alginplus Gloves 453G";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:13:16";"Xavier Medical Supply";"";""
+"1316031222";"TOOTH DOCTOR";"Paper Cups";"Gloves";"Disposable";"6oz";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOO00290";"Tooth Doctor Gloves 6Oz";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:15:13";"Xavier Medical Supply";"";""
+"1916031222";"WORLD WORK";"Saliva Ejector";"Gloves";"Non-Toxic";"";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"WOR00292";"World Work Gloves ";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:19:08";"Xavier Medical Supply";"";""
+"2016031222";"RUBBERCARE";"Latex Gloves";"Gloves";"Powder Free";"xs";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00294";"Rubbercare Gloves Xs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:20:58";"Xavier Medical Supply";"";""
+"2116031222";"RUBBERCARE";"Latex Gloves";"Gloves";"Powder Free
+
+10 PAIRS";"xs";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00296";"Rubbercare Gloves Xs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:21:38";"Xavier Medical Supply";"";""
+"2216031222";"RUBBERCARE";"Latex Gloves";"Gloves";"Powder Free
+
+20 PAIRS";"xs";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00297";"Rubbercare Gloves Xs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:22:05";"Xavier Medical Supply";"";""
+"2316031222";"RUBBERCARE";"Latex Gloves";"Gloves";"Powder Free
+
+";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00302";"Rubbercare Gloves S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:23:08";"Xavier Medical Supply";"";""
+"2416031222";"RUBBERCARE";"Latex Gloves";"Gloves";"Powder Free
+
+10 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00305";"Rubbercare Gloves S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:24:02";"Xavier Medical Supply";"";""
+"2516031222";"RUBBERCARE";"Latex Gloves";"Gloves";"Powder Free
+
+20 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00310";"Rubbercare Gloves S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:25:03";"Xavier Medical Supply";"";""
+"2616031222";"RUBBERCARE";"Latex Gloves";"Gloves";"Powder Free
+
+";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00315";"Rubbercare Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:26:11";"Xavier Medical Supply";"";""
+"2716031222";"RUBBERCARE";"Latex Gloves";"Gloves";"Powder Free
+
+10 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00318";"Rubbercare Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:27:16";"Xavier Medical Supply";"";""
+"2816031222";"RUBBERCARE";"Latex Gloves";"Gloves";"Powder Free
+
+20 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00320";"Rubbercare Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:29:12";"Xavier Medical Supply";"";""
+"3016031222";"RUBBERCARE";"Latex Gloves";"Gloves";"Powder Free
+
+10 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00322";"Rubbercare Gloves L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:30:14";"Xavier Medical Supply";"";""
+"3116031222";"RUBBERCARE";"Latex Gloves";"Gloves";"Powder Free
+
+20 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00324";"Rubbercare Gloves L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:31:02";"Xavier Medical Supply";"";""
+"3216031222";"SCHULLERMED";"Latex Gloves";"Gloves";"Powder Free
+
+";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"RUB00324";"Rubbercare Gloves L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:32:05";"Xavier Medical Supply";"";""
+"3316031222";"SCHULLERMED";"Latex Gloves";"Gloves";"Powder Free
+
+10 PAIRS";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SCH00328";"Schullermed Gloves Xs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:33:10";"Xavier Medical Supply";"";""
+"3416031222";"SCHULLERMED";"Latex Gloves";"Gloves";"Powder Free
+
+20 PAIRS";"XS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SCH00333";"Schullermed Gloves Xs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:34:06";"Xavier Medical Supply";"";""
+"3516031222";"SCHULLERMED";"Latex Gloves";"Gloves";"Powder Free
+
+";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SCH00335";"Schullermed Gloves S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:35:07";"Xavier Medical Supply";"";""
+"3616031222";"SCHULLERMED";"Latex Gloves";"Gloves";"Powder Free
+
+10 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SCH00340";"Schullermed Gloves S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:36:20";"Xavier Medical Supply";"";""
+"3916031222";"SCHULLERMED";"Latex Gloves";"Gloves";"Powder Free
+
+10 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SCH00348";"Schullermed Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:39:20";"Xavier Medical Supply";"";""
+"4016031222";"SCHULLERMED";"Latex Gloves";"Gloves";"Powder Free
+
+";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SCH00348";"Schullermed Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:40:09";"Xavier Medical Supply";"";""
+"4616031222";"NITRILE CARE";"Nitrile Gloves";"Gloves";"Powder Free
+
+10 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"NIT00362";"Nitrile Care Gloves S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:46:20";"Xavier Medical Supply";"";""
+"4816031222";"NITRILE CARE";"Nitrile Gloves";"Gloves";"Powder Free
+
+10 PAIRS";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"NIT00368";"Nitrile Care Gloves M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:48:11";"Xavier Medical Supply";"";""
+"5116031222";"NITRILE CARE";"Nitrile Gloves";"Gloves";"Powder Free
+
+";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"NIT00375";"Nitrile Care Gloves L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:51:16";"Xavier Medical Supply";"";""
+"5216031222";"NITRILE CARE";"Nitrile Gloves";"Gloves";"Powder Free
+
+10 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"NIT00376";"Nitrile Care Gloves L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:52:03";"Xavier Medical Supply";"";""
+"5316031222";"NITRILE CARE";"Nitrile Gloves";"Gloves";"Powder Free
+
+20 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"NIT00378";"Nitrile Care Gloves L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 16:53:22";"Xavier Medical Supply";"";""
+"0417031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Purple Top
+
+EDTA";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00382";"Careplus Collection Tube 3Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:04:17";"Xavier Medical Supply";"";""
+"0517031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Purple Top
+
+EDTA
+
+10's";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00383";"Careplus Collection Tube 3Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:05:20";"Xavier Medical Supply";"";""
+"0617031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Purple Top
+
+EDTA";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00385";"Careplus Collection Tube 5Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:06:15";"Xavier Medical Supply";"";""
+"0717031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Purple Top
+
+EDTA
+
+10's";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00387";"Careplus Collection Tube 5Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:07:48";"Xavier Medical Supply";"";""
+"0917031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Red Top";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00389";"Careplus Collection Tube 3Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:09:09";"Xavier Medical Supply";"";""
+"1017031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Red Top
+
+10's";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00392";"Careplus Collection Tube 3Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:10:36";"Xavier Medical Supply";"";""
+"1117031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Red Top";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00393";"Careplus Collection Tube 5Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:11:04";"Xavier Medical Supply";"";""
+"1217031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Red Top
+
+10's";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00395";"Careplus Collection Tube 5Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:12:27";"Xavier Medical Supply";"";""
+"1317031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Red Top";"10ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00396";"Careplus Collection Tube 10Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:13:08";"Xavier Medical Supply";"";""
+"1417031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Red Top
+
+10's";"10ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00397";"Careplus Collection Tube 10Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:14:19";"Xavier Medical Supply";"";""
+"1717031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Yellow Top
+
+10's";"4ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00402";"Careplus Collection Tube 4Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:17:13";"Xavier Medical Supply";"";""
+"1917031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Blue Top
+
+10's";"1.8ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00405";"Careplus Collection Tube 1.8Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:19:09";"Xavier Medical Supply";"";""
+"2017031222";"CAREPLUS";"Vacuum Blood";"Collection Tube";"Black Top";"2.4ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00407";"Careplus Collection Tube 2.4Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:20:06";"Xavier Medical Supply";"";""
+"2617031222";"CAREPLUS";"Insulin";"Syringe w/Needle";"STERILE
+
+NON-TOXIC";"1CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00411";"Careplus Syringe W/Needle 1Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:28:02";"Xavier Medical Supply";"";""
+"2917031222";"CAREPLUS";"Syringe w/Needle";"Syringe w/Needle";"STERILE
+
+NON-TOXIC";"1ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00413";"Careplus Syringe W/Needle 1Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:30:01";"Xavier Medical Supply";"";""
+"3117031222";"CAREPLUS";"Insulin";"Syringe w/Needle";"STERILE
+
+NON-TOXIC
+
+10's";"1cc";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00414";"Careplus Syringe W/Needle 1Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:31:35";"Xavier Medical Supply";"";""
+"3217031222";"CAREPLUS";"Insulin";"Syringe w/Needle";"STERILE
+
+NON-TOXIC
+
+10's";"1ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00419";"Careplus Syringe W/Needle 1Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:33:00";"Xavier Medical Supply";"";""
+"3317031222";"CAREPLUS";"Insulin";"Syringe w/Needle";"STERILE
+
+NON-TOXIC
+
+10's";"1ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00420";"Careplus Syringe W/Needle 1Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:33:35";"Xavier Medical Supply";"";""
+"3517031222";"CAREPLUS";"Insulin";"Syringe w/Needle";"STERILE
+
+NON-TOXIC
+
+";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00422";"Careplus Syringe W/Needle 3Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:35:44";"Xavier Medical Supply";"";""
+"3617031222";"CAREPLUS";"Insulin";"Syringe w/Needle";"STERILE
+
+NON-TOXIC
+
+10's";"3ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"CAR00423";"Careplus Syringe W/Needle 3Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-03 17:36:27";"Xavier Medical Supply";"";""
+"0509051222";"CAREPLUS";"Syringe w/Needle";"";"STERILE
+
+NON-TOXIC";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 09:10:18";"Xavier Medical Supply";"";""
+"1209051222";"CAREPLUS";"Syringe w/Needle";"";"STERILE
+
+NON-TOXIC
+
+10's";"5ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 09:12:06";"Xavier Medical Supply";"";""
+"1309051222";"CAREPLUS";"Syringe w/Needle";"";"STERILE
+
+NON-TOXIC";"10ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 09:16:26";"Xavier Medical Supply";"";""
+"1609051222";"CAREPLUS";"Syringe w/Needle";"";"STERILE
+
+NON-TOXIC";"10ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 09:16:35";"Xavier Medical Supply";"";""
+"5809051222";"CAREPLUS";"Syringe w/Needle";"";"STERILE
+
+NON-TOXIC
+
+10's";"10ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 10:00:35";"Xavier Medical Supply";"";""
+"0510051222";"GLOMED";"Gauze Pad";"";"STERILE";"4''x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 10:06:58";"Xavier Medical Supply";"";""
+"1310051222";"GLOMED";"Gauze Pad";"";"STERILE
+
+5's";"4''x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 10:15:09";"Xavier Medical Supply";"";""
+"3410051222";"3M";"Micropore Surgical Tape";"";"GOOD ADHESION TO SKIN && TUBING";"""1x10''""""""";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 10:37:56";"Xavier Medical Supply";"";""
+"4310051222";"3M";"Transpore Surgical Tape";"";"GOOD ADHESION TO SKIN && TUBING";"""1x10''""""""";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"3M  ""1X10''""""""";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 10:43:26";"Xavier Medical Supply";"";""
+"4410051222";"3M";"Transpore Surgical Tape";"";"GOOD ADHESION TO SKIN && TUBING
+
+5's";"""1x10''""""""";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"3M  ""1X10''""""""";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 10:44:09";"Xavier Medical Supply";"";""
+"4510051222";"3M";"Transpore Surgical Tape";"";"GOOD ADHESION TO SKIN && TUBING
+
+10's";"""1x10''""""""";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"3M  ""1X10''""""""";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 10:45:15";"Xavier Medical Supply";"";""
+"4610051222";"TOPCARE";"Surgical Tape";"";"NON-WOVEN
+
+HYPO-ALLERGENIC
+
+";"""1x10''""""""";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"3M  ""1X10''""""""";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 10:47:42";"Xavier Medical Supply";"";""
+"4810051222";"TOPCARE";"Surgical Tape";"";"
+
+NON-WOVEN
+
+HYPO-ALLERGENIC
+
+5's
+
+";"""1x10''""""""";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"3M  ""1X10''""""""";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 10:49:01";"Xavier Medical Supply";"";""
+"4910051222";"TOPCARE";"Surgical Tape";"";"
+
+NON-WOVEN
+
+HYPO-ALLERGENIC
+
+10's
+
+";"""1x10''""""""";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00456";"Topcare  ""1X10''""""""";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 10:49:28";"Xavier Medical Supply";"";""
+"5010051222";"TOPCARE";"Surgical Tape";"";"
+
+NON-WOVEN
+
+HYPO-ALLERGENIC
+
+
+
+";"""1/2x10""""""";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00456";"Topcare  ""1X10''""""""";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 10:50:32";"Xavier Medical Supply";"";""
+"5110051222";"TOPCARE";"Surgical Tape";"";"
+
+NON-WOVEN
+
+HYPO-ALLERGENIC
+
+5's
+
+";"""1/2x10""""""";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00460";"Topcare  ""1/2X10""""""";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 10:51:33";"Xavier Medical Supply";"";""
+"5210051222";"TOPCARE";"Surgical Tape";"";"
+
+NON-WOVEN
+
+HYPO-ALLERGENIC
+
+10's
+
+";"""1/2x10""""""";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00461";"Topcare  ""1/2X10""""""";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 10:52:04";"Xavier Medical Supply";"";""
+"5710051222";"PARA-TULLE";"Chlorhexidine";"Gauze Dressing";"ANTI-SEPTIC
+
+TULLE GRAS
+
+DRESSING FOR
+
+WOUND
+
+5's";"10cmx10cm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00463";"Para-Tulle Gauze Dressing 10Cmx10cm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 10:57:18";"Xavier Medical Supply";"";""
+"0011051222";"COSMED";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+PYROGEN FREE";"1ML/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00466";"Cosmed Gauze Dressing 1Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:00:29";"Xavier Medical Supply";"";""
+"0111051222";"COSMED";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+PYROGEN FREE
+
+10's";"1ML/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00467";"Cosmed Gauze Dressing 1Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:01:08";"Xavier Medical Supply";"";""
+"0211051222";"COSMED";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+PYROGEN FREE
+
+";"3ML/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00469";"Cosmed Gauze Dressing 3Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:02:17";"Xavier Medical Supply";"";""
+"0311051222";"COSMED";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+PYROGEN FREE
+
+10's";"3ML/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00475";"Cosmed Gauze Dressing 3Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:03:23";"Xavier Medical Supply";"";""
+"0411051222";"COSMED";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+PYROGEN FREE
+
+";"5ML/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00477";"Cosmed Gauze Dressing 5Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:04:12";"Xavier Medical Supply";"";""
+"0511051222";"COSMED";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+PYROGEN FREE
+
+10's";"5ML/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00480";"Cosmed Gauze Dressing 5Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:05:11";"Xavier Medical Supply";"";""
+"0611051222";"COSMED";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+PYROGEN FREE
+
+";"10ML/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00482";"Cosmed Gauze Dressing 10Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:06:13";"Xavier Medical Supply";"";""
+"0711051222";"COSMED";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+PYROGEN FREE
+
+10's";"10ML/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"COS00484";"Cosmed Gauze Dressing 10Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:07:10";"Xavier Medical Supply";"";""
+"0911051222";"SURESHOT";"Insulin Syringe";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+NON-PYROGENIC";"1ml G-29x1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00485";"Sureshot Gauze Dressing 1Ml G-29X1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:12:42";"Xavier Medical Supply";"";""
+"1311051222";"SURESHOT";"Insulin Syringe";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+NON-PYROGENIC
+
+10's";"1ml G-29x1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00486";"Sureshot Gauze Dressing 1Ml G-29X1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:13:10";"Xavier Medical Supply";"";""
+"1911051222";"SURESHOT";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+NON-PYROGENIC
+
+10's";"5ml/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00497";"Sureshot Gauze Dressing 5Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:19:14";"Xavier Medical Supply";"";""
+"2011051222";"SURESHOT";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+NON-PYROGENIC";"10ml/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00498";"Sureshot Gauze Dressing 10Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:20:06";"Xavier Medical Supply";"";""
+"2111051222";"SURESHOT";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+NON-TOXIC
+
+NON-PYROGENIC
+
+10's";"10ml/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SUR00500";"Sureshot Gauze Dressing 10Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:21:27";"Xavier Medical Supply";"";""
+"2411051222";"TERUMO";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+LATEX FREE";"3ml/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TER00501";"Terumo Gauze Dressing 3Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:24:27";"Xavier Medical Supply";"";""
+"2511051222";"TERUMO";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+LATEX FREE
+
+10's";"3ml/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TER00503";"Terumo Gauze Dressing 3Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:25:09";"Xavier Medical Supply";"";""
+"2811051222";"TERUMO";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+LATEX FREE";"10ml/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TER00510";"Terumo Gauze Dressing 10Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:28:32";"Xavier Medical Supply";"";""
+"2911051222";"TERUMO";"Syringe w/Needle";"Gauze Dressing";"STERILE
+
+LATEX FREE
+
+10's";"10ml/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TER00511";"Terumo Gauze Dressing 10Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY";"2022-12-05 11:29:43";"Xavier Medical Supply";"";""
+"3312051222";"TOP";"Spinal Needle";"";"STERILE";"25Gx89mm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"";"";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 12:36:10";"Xavier Medical Supply";"";""
+"3712051222";"TOP";"Spinal Needle";"";"STERILE
+
+10's";"25Gx89mm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00514";"Top  25Gx89mm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 12:37:16";"Xavier Medical Supply";"";""
+"3812051222";"TOP";"Spinal Needle";"";"STERILE
+
+20's";"25Gx89mm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00516";"Top  25Gx89mm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 12:38:04";"Xavier Medical Supply";"";""
+"1313051222";"TOP";"Spinal Needle";"";"STERILE";"23Gx89mm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00518";"Top  23Gx89mm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:13:22";"Xavier Medical Supply";"";""
+"1413051222";"TOP";"Spinal Needle";"";"STERILE
+
+5's";"23Gx89mm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00521";"Top  23Gx89mm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:14:17";"Xavier Medical Supply";"";""
+"1513051222";"TOP";"Spinal Needle";"";"STERILE
+
+10's";"23Gx89mm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00524";"Top  23Gx89mm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:15:06";"Xavier Medical Supply";"";""
+"1613051222";"TOP";"Spinal Needle";"";"STERILE
+
+20's";"23Gx89mm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00526";"Top  23Gx89mm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:16:12";"Xavier Medical Supply";"";""
+"2113051222";"TOPCARE";"Tongue Deppresor";"";"NON-STERILE";"6inc.";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00527";"Topcare  6Inc.";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:21:20";"Xavier Medical Supply";"";""
+"2213051222";"TOPCARE";"Tongue Deppresor";"";"NON-STERILE
+
+10's";"6inc.";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00528";"Topcare  6Inc.";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:22:22";"Xavier Medical Supply";"";""
+"2313051222";"TOPCARE";"Tongue Deppresor";"";"NON-STERILE
+
+20's";"6inc.";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00529";"Topcare  6Inc.";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:23:15";"Xavier Medical Supply";"";""
+"2513051222";"TOPCARE";"Alcohol Pad";"";"70% ISOPROPYL
+
+ALCOHOL";"For disinfection use";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00531";"Topcare  For Disinfection Use";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:25:22";"Xavier Medical Supply";"";""
+"2613051222";"TOPCARE";"Alcohol Pad";"";"70% ISOPROPYL
+
+ALCOHOL
+
+10's";"For disinfection use";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00532";"Topcare  For Disinfection Use";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:26:13";"Xavier Medical Supply";"";""
+"2713051222";"TOPCARE";"Alcohol Pad";"";"70% ISOPROPYL
+
+ALCOHOL
+
+20's";"For disinfection use";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00535";"Topcare  For Disinfection Use";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:27:39";"Xavier Medical Supply";"";""
+"2813051222";"TOPCARE";"Povidone Pad";"";"ANTISEPTIC";"10% Povidone Iodine";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00537";"Topcare  10% Povidone Iodine";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:31:51";"Xavier Medical Supply";"";""
+"3213051222";"TOPCARE";"Povidone Pad";"";"ANTISEPTIC
+
+10's";"10% Povidone Iodine";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00539";"Topcare  10% Povidone Iodine";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:32:47";"Xavier Medical Supply";"";""
+"3313051222";"TOPCARE";"Povidone Pad";"";"ANTISEPTIC
+
+20's";"10% Povidone Iodine";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00540";"Topcare  10% Povidone Iodine";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:33:35";"Xavier Medical Supply";"";""
+"3913051222";"MEDICINE TRAY";"Povidone Pad";"Plastic";"LOCALLY MADE";"20cm x 12cm x 2cm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"MED00541";"Medicine Tray Plastic 20Cm X 12Cm X 2Cm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:39:11";"Xavier Medical Supply";"";""
+"4413051222";"TOPCARE";"Povidone Pad";"Adult Pull-Ups";"SUPER ABSORBENT
+
+MICROBEADS
+
+2's";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00545";"Topcare Adult Pull-Ups M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:44:43";"Xavier Medical Supply";"";""
+"4613051222";"TOPCARE";"";"Adult Pull-Ups";"SUPER ABSORBENT
+
+MICROBEADS
+
+2's";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00547";"Topcare Adult Pull-Ups L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:46:15";"Xavier Medical Supply";"";""
+"5013051222";"TOPCARE";"";"Adult Diapers";"SUPER ABSORBENT
+
+POLYMER";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00554";"Topcare Adult Diapers L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:50:59";"Xavier Medical Supply";"";""
+"5313051222";"TOPCARE";"";"Adult Diapers";"SUPER ABSORBENT
+
+POLYMER
+
+2's";"XL";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00559";"Topcare Adult Diapers Xl";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:53:03";"Xavier Medical Supply";"";""
+"5513051222";"TOPCARE";"";"Underpads";"SUPER ABSORBENT
+
+GEL";"900 x 600mm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00560";"Topcare Underpads 900 X 600Mm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:56:00";"Xavier Medical Supply";"";""
+"5613051222";"TOPCARE";"";"Underpads";"SUPER ABSORBENT
+
+GEL
+
+5's";"900 x 600mm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00561";"Topcare Underpads 900 X 600Mm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 13:56:31";"Xavier Medical Supply";"";""
+"0114051222";"TOPCARE";"";"Flat Rubber Tourniquet";"SUPERIOR
+
+ELASTICITY";"46cm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00563";"Topcare Flat Rubber Tourniquet 46Cm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:01:12";"Xavier Medical Supply";"";""
+"0214051222";"TOPCARE";"";"Flat Rubber Tourniquet";"SUPERIOR
+
+ELASTICITY
+
+5's";"46cm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00565";"Topcare Flat Rubber Tourniquet 46Cm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:02:38";"Xavier Medical Supply";"";""
+"0314051222";"TOPCARE";"";"Flat Rubber Tourniquet";"SUPERIOR
+
+ELASTICITY
+
+10's";"46cm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00566";"Topcare Flat Rubber Tourniquet 46Cm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:03:40";"Xavier Medical Supply";"";""
+"0914051222";"AMB";"";"3 Way Stopcock";"NON-PYROGENIC";"3-Way Flow";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"AMB00567";"Amb 3 Way Stopcock 3-Way Flow";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:12:41";"Xavier Medical Supply";"";""
+"1514051222";"AMB";"";"3 Way Stopcock";"NON-PYROGENIC
+
+5's";"3-Way Flow";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"AMB00568";"Amb 3 Way Stopcock 3-Way Flow";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:15:06";"Xavier Medical Supply";"";""
+"1614051222";"AMB";"";"3 Way Stopcock";"NON-PYROGENIC
+
+10's";"3-Way Flow";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"AMB00570";"Amb 3 Way Stopcock 3-Way Flow";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:16:06";"Xavier Medical Supply";"";""
+"1714051222";"INDOPLAS";"";"3 Way Stopcock";"STERILE
+
+NON-TOXIC";"3-Way Flow";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"IND00572";"Indoplas 3 Way Stopcock 3-Way Flow";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:17:37";"Xavier Medical Supply";"";""
+"1814051222";"INDOPLAS";"";"3 Way Stopcock";"STERILE
+
+NON-TOXIC
+
+5's";"3-Way Flow";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"IND00574";"Indoplas 3 Way Stopcock 3-Way Flow";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:18:15";"Xavier Medical Supply";"";""
+"1914051222";"INDOPLAS";"";"3 Way Stopcock";"STERILE
+
+NON-TOXIC
+
+10's";"3-Way Flow";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"IND00576";"Indoplas 3 Way Stopcock 3-Way Flow";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:19:36";"Xavier Medical Supply";"";""
+"2214051222";"TOPCARE";"";"Measuring Cups";"POLYPROPYLENE MATERIAL";"30ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00577";"Topcare Measuring Cups 30Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:22:56";"Xavier Medical Supply";"";""
+"2414051222";"TOPCARE";"";"Measuring Cups";"POLYPROPYLENE MATERIAL
+
+5's";"30ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00578";"Topcare Measuring Cups 30Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:24:49";"Xavier Medical Supply";"";""
+"2514051222";"TOPCARE";"";"Measuring Cups";"POLYPROPYLENE MATERIAL
+
+10's";"30ml";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00579";"Topcare Measuring Cups 30Ml";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:25:20";"Xavier Medical Supply";"";""
+"2714051222";"TOPCARE";"";"Dental Bib";"SOFT, HIGHLY ABSORBENT
+
+TISSUE";"2 Ply Paper + Ply PE Film";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00580";"Topcare Dental Bib 2 Ply Paper + Ply Pe Film";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:28:03";"Xavier Medical Supply";"";""
+"2814051222";"TOPCARE";"";"Dental Bib";"SOFT, HIGHLY ABSORBENT
+
+TISSUE
+
+25's";"2 Ply Paper + Ply PE Film";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00581";"Topcare Dental Bib 2 Ply Paper + Ply Pe Film";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:28:41";"Xavier Medical Supply";"";""
+"3014051222";"TOPCARE";"";"Wooden Applicator Stick";"STERILE";"6''Inc.";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00582";"Topcare Wooden Applicator Stick 6''Inc.";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:30:54";"Xavier Medical Supply";"";""
+"3114051222";"TOPCARE";"";"Wooden Applicator Stick";"STERILE
+
+10's";"6''Inc.";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00583";"Topcare Wooden Applicator Stick 6''Inc.";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:31:15";"Xavier Medical Supply";"";""
+"3314051222";"TOPCARE";"";"Wooden Applicator Stick";"STERILE
+
+20's";"6''Inc.";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"TOP00585";"Topcare Wooden Applicator Stick 6''Inc.";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 14:33:31";"Xavier Medical Supply";"";""
+"5714051222";"SIMPLEX";"Needle";"";"STERILE";"18G x 1 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00586";"Simplex  18G X 1 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:01:26";"Xavier Medical Supply";"";""
+"0215051222";"SIMPLEX";"Needle";"";"STERILE
+
+10's";"18G x 1 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00587";"Simplex  18G X 1 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:02:20";"Xavier Medical Supply";"";""
+"0315051222";"SIMPLEX";"Needle";"";"STERILE
+
+20's";"18G x 1 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00589";"Simplex  18G X 1 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:03:06";"Xavier Medical Supply";"";""
+"0415051222";"SIMPLEX";"Needle";"";"STERILE";"19G x 1 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00591";"Simplex  19G X 1 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:04:30";"Xavier Medical Supply";"";""
+"0515051222";"SIMPLEX";"Needle";"";"STERILE
+
+10's";"19G x 1 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00593";"Simplex  19G X 1 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:05:22";"Xavier Medical Supply";"";""
+"0615051222";"SIMPLEX";"Needle";"";"STERILE
+
+20's";"19G x 1 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00594";"Simplex  19G X 1 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:06:15";"Xavier Medical Supply";"";""
+"0715051222";"SIMPLEX";"Needle";"";"STERILE";"20G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00595";"Simplex  20G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:07:21";"Xavier Medical Supply";"";""
+"0815051222";"SIMPLEX";"Needle";"";"STERILE
+
+10's";"20G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00598";"Simplex  20G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:08:11";"Xavier Medical Supply";"";""
+"0915051222";"SIMPLEX";"Needle";"";"STERILE
+
+20's";"20G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00600";"Simplex  20G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:09:46";"Xavier Medical Supply";"";""
+"1015051222";"SIMPLEX";"Needle";"";"STERILE";"21G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00601";"Simplex  21G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:11:01";"Xavier Medical Supply";"";""
+"1115051222";"SIMPLEX";"Needle";"";"STERILE
+
+10's";"21G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00602";"Simplex  21G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:11:46";"Xavier Medical Supply";"";""
+"1215051222";"SIMPLEX";"Needle";"";"STERILE
+
+20's";"21G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00603";"Simplex  21G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:12:43";"Xavier Medical Supply";"";""
+"1315051222";"SIMPLEX";"Needle";"";"STERILE";"22G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00604";"Simplex  22G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:13:54";"Xavier Medical Supply";"";""
+"1415051222";"SIMPLEX";"Needle";"";"STERILE
+
+10's";"22G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00605";"Simplex  22G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:14:27";"Xavier Medical Supply";"";""
+"1515051222";"SIMPLEX";"Needle";"";"STERILE
+
+20's";"22G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00607";"Simplex  22G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:15:10";"Xavier Medical Supply";"";""
+"1615051222";"SIMPLEX";"Needle";"";"STERILE";"23G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00611";"Simplex  23G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:16:43";"Xavier Medical Supply";"";""
+"1715051222";"SIMPLEX";"Needle";"";"STERILE
+
+10's";"23G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00612";"Simplex  23G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:17:51";"Xavier Medical Supply";"";""
+"1815051222";"SIMPLEX";"Needle";"";"STERILE
+
+20's";"23G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00613";"Simplex  23G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:19:13";"Xavier Medical Supply";"";""
+"2115051222";"SIMPLEX";"Needle";"";"STERILE";"24G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00614";"Simplex  24G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:21:27";"Xavier Medical Supply";"";""
+"2215051222";"SIMPLEX";"Needle";"";"STERILE
+
+10's";"24G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00616";"Simplex  24G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:22:19";"Xavier Medical Supply";"";""
+"2315051222";"SIMPLEX";"Needle";"";"STERILE
+
+20's";"24G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00617";"Simplex  24G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:23:27";"Xavier Medical Supply";"";""
+"2415051222";"SIMPLEX";"Needle";"";"STERILE";"25G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00618";"Simplex  25G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:24:17";"Xavier Medical Supply";"";""
+"2515051222";"SIMPLEX";"Needle";"";"STERILE
+
+10's";"25G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00620";"Simplex  25G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:25:25";"Xavier Medical Supply";"";""
+"2615051222";"SIMPLEX";"Needle";"";"STERILE
+
+20's";"25G x 1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00621";"Simplex  25G X 1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:26:04";"Xavier Medical Supply";"";""
+"3015051222";"SIMPLEX";"Needle";"";"STERILE";"25G x 5/8";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00622";"Simplex  25G X 5/8";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:30:59";"Xavier Medical Supply";"";""
+"3215051222";"SIMPLEX";"Needle";"";"STERILE
+
+10's";"25G x 5/8";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00623";"Simplex  25G X 5/8";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:32:26";"Xavier Medical Supply";"";""
+"4015051222";"SIMPLEX";"Needle";"";"STERILE
+
+20's";"26G x 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00629";"Simplex  26G X 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:40:52";"Xavier Medical Supply";"";""
+"4415051222";"SIMPLEX";"Needle";"";"STERILE";"27G x 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00630";"Simplex  27G X 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:44:23";"Xavier Medical Supply";"";""
+"4615051222";"SIMPLEX";"Needle";"";"STERILE
+
+20's";"27G x 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00633";"Simplex  27G X 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:46:10";"Xavier Medical Supply";"";""
+"4715051222";"SIMPLEX";"Needle";"";"STERILE";"30G x 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00634";"Simplex  30G X 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:47:06";"Xavier Medical Supply";"";""
+"4815051222";"SIMPLEX";"Needle";"";"STERILE
+
+10's";"30G x 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00638";"Simplex  30G X 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 15:48:20";"Xavier Medical Supply";"";""
+"0116051222";"PANAMED";"Nitrile Gloves";"";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00645";"Panamed  S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:01:12";"Xavier Medical Supply";"";""
+"0316051222";"PANAMED";"Nitrile Gloves";"";"POWDER FREE
+
+10 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00649";"Panamed  S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:05:13";"Xavier Medical Supply";"";""
+"0516051222";"PANAMED";"Nitrile Gloves";"";"POWDER FREE
+
+20 PAIRS";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00650";"Panamed  S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:05:37";"Xavier Medical Supply";"";""
+"0616051222";"PANAMED";"Nitrile Gloves";"";"POWDER FREE
+
+";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00651";"Panamed  M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:06:04";"Xavier Medical Supply";"";""
+"0816051222";"PANAMED";"Nitrile Gloves";"";"POWDER FREE
+
+20 PAIRS
+
+";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00656";"Panamed  M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:08:43";"Xavier Medical Supply";"";""
+"0916051222";"PANAMED";"Nitrile Gloves";"";"POWDER FREE
+
+";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00657";"Panamed  L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:09:21";"Xavier Medical Supply";"";""
+"1016051222";"PANAMED";"Nitrile Gloves";"";"POWDER FREE
+
+10 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00658";"Panamed  L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:10:18";"Xavier Medical Supply";"";""
+"1116051222";"PANAMED";"Nitrile Gloves";"";"POWDER FREE
+
+20 PAIRS";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00660";"Panamed  L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:11:13";"Xavier Medical Supply";"";""
+"1516051222";"PANAMED";"N95 Mask";"";"95%
+
+FILTRATION";"BOX OF 20'S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00661";"Panamed  Box Of 20'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:15:50";"Xavier Medical Supply";"";""
+"1716051222";"PANAMED";"N95 Mask";"";"95%
+
+FILTRATION";"5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00662";"Panamed  5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:17:09";"Xavier Medical Supply";"";""
+"1916051222";"PANAMED";"N95 Mask";"";"95%
+
+FILTRATION";"10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00664";"Panamed  10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:19:21";"Xavier Medical Supply";"";""
+"2216051222";"PANAMED";"KN95-H Mask";"";"95%
+
+FILTRATION";"Box Of 20's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00665";"Panamed  Box Of 20'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:22:10";"Xavier Medical Supply";"";""
+"2316051222";"PANAMED";"KN95-H Mask";"";"95%
+
+FILTRATION";"5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00668";"Panamed  5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:24:08";"Xavier Medical Supply";"";""
+"2416051222";"PANAMED";"KN95-H Mask";"";"95%
+
+FILTRATION";"10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00669";"Panamed  10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:24:55";"Xavier Medical Supply";"";""
+"2616051222";"PANAMED";"KN95-W Mask";"";"95%
+
+FILTRATION";"Kids  5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00670";"Panamed  Kids  5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:26:25";"Xavier Medical Supply";"";""
+"2716051222";"PANAMED";"KN95-W Mask";"";"95%
+
+FILTRATION";"Kids  10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00671";"Panamed  Kids  10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:27:30";"Xavier Medical Supply";"";""
+"2816051222";"PANAMED";"KN95-W Mask";"";"95%
+
+FILTRATION";"Adult  5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00672";"Panamed  Adult  5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:28:19";"Xavier Medical Supply";"";""
+"2916051222";"PANAMED";"KN95-W Mask";"";"95%
+
+FILTRATION";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00673";"Panamed  Adult";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:29:17";"Xavier Medical Supply";"";""
+"3016051222";"PANAMED";"KN95-W Mask";"";"95%
+
+FILTRATION";"Adult 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00674";"Panamed  Adult 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:30:14";"Xavier Medical Supply";"";""
+"3416051222";"PANAMED";"Facemask";"";"95%
+
+FILTRATION";"Kids 50's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00675";"Panamed  Kids 50'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:34:46";"Xavier Medical Supply";"";""
+"3516051222";"PANAMED";"Facemask";"";"95%
+
+FILTRATION";"Kids 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00676";"Panamed  Kids 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:35:22";"Xavier Medical Supply";"";""
+"3616051222";"PANAMED";"Facemask";"";"95%
+
+FILTRATION";"Kids 20's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00677";"Panamed  Kids 20'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:36:32";"Xavier Medical Supply";"";""
+"3716051222";"PANAMED";"Facemask";"";"95%
+
+FILTRATION";"Adult 50's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00678";"Panamed  Adult 50'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:37:39";"Xavier Medical Supply";"";""
+"3816051222";"PANAMED";"Facemask";"";"95%
+
+FILTRATION";"Adult 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00679";"Panamed  Adult 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:38:24";"Xavier Medical Supply";"";""
+"3916051222";"PANAMED";"Facemask";"";"95%
+
+FILTRATION";"Adult 20's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAN00680";"Panamed  Adult 20'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:39:40";"Xavier Medical Supply";"";""
+"4116051222";"SIMPLEX";"Feeding Tube";"";"SOFT ROUNDED TIP";"FR 8";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00681";"Simplex  Fr 8";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:42:05";"Xavier Medical Supply";"";""
+"4216051222";"SIMPLEX";"Feeding Tube";"";"SOFT ROUNDED TIP";"FR 8 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00682";"Simplex  Fr 8 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:42:47";"Xavier Medical Supply";"";""
+"4316051222";"SIMPLEX";"Feeding Tube";"";"SOFT ROUNDED TIP";"FR 8 20's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00683";"Simplex  Fr 8 20'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:43:30";"Xavier Medical Supply";"";""
+"4516051222";"SIMPLEX";"Feeding Tube";"";"SOFT ROUNDED TIP";"FR 8    Buy1Get1";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00684";"Simplex  Fr 8    Buy1get1";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:45:34";"Xavier Medical Supply";"";""
+"5016051222";"SIMPLEX";"Cotton Tip Applicator";"";"100% 
+
+PURE COTTON TIP";"6''Small Head";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00685";"Simplex  6''Small Head";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:50:14";"Xavier Medical Supply";"";""
+"5116051222";"SIMPLEX";"Cotton Tip Applicator";"";"100% 
+
+PURE COTTON TIP";"6''Small Head  10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00686";"Simplex  6''Small Head  10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:51:10";"Xavier Medical Supply";"";""
+"5216051222";"SIMPLEX";"Cotton Tip Applicator";"";"100% 
+
+PURE COTTON TIP";"6''Small Head  20's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00688";"Simplex  6''Small Head  20'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:52:12";"Xavier Medical Supply";"";""
+"5316051222";"SIMPLEX";"ECG Paper";"";"GRID PATERN OF 1mm SQUARES";"50'' x 30";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00689";"Simplex  50'' X 30";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:55:30";"Xavier Medical Supply";"";""
+"5616051222";"SIMPLEX";"ECG Paper";"";"GRID PATERN OF 1mm SQUARES";"50'' x 30 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00690";"Simplex  50'' X 30 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:56:06";"Xavier Medical Supply";"";""
+"5716051222";"SIMPLEX";"ECG Paper";"";"GRID PATERN OF 1mm SQUARES";"50'' x 30 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00691";"Simplex  50'' X 30 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:57:05";"Xavier Medical Supply";"";""
+"5816051222";"SIMPLEX";"ECG Paper";"";"GRID PATERN OF 1mm SQUARES";"80'' x 20";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00693";"Simplex  80'' X 20";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:58:54";"Xavier Medical Supply";"";""
+"5916051222";"SIMPLEX";"ECG Paper";"";"GRID PATERN OF 1mm SQUARES";"80'' x 20 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00694";"Simplex  80'' X 20 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 16:59:33";"Xavier Medical Supply";"";""
+"0017051222";"SIMPLEX";"ECG Paper";"";"GRID PATERN OF 1mm SQUARES";"80'' x 20 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00695";"Simplex  80'' X 20 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:00:18";"Xavier Medical Supply";"";""
+"0217051222";"SIMPLEX";"Insulin Syringe";"";"LATEX FREE";"29G x 1/2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00697";"Simplex  29G X 1/2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:02:52";"Xavier Medical Supply";"";""
+"0417051222";"SIMPLEX";"Insulin Syringe";"";"LATEX FREE";"29G x 1/2 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00698";"Simplex  29G X 1/2 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:04:29";"Xavier Medical Supply";"";""
+"0717051222";"SIMPLEX";"Syringe w/Needle";"";"LATEX FREE
+
+NON-TOXIC";"3CC   (23G x 1)";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00699";"Simplex  3Cc   (23G X 1)";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:07:49";"Xavier Medical Supply";"";""
+"0817051222";"SIMPLEX";"Syringe w/Needle";"";"LATEX FREE
+
+NON-TOXIC";"3CC   (23G x 1) 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00700";"Simplex  3Cc   (23G X 1) 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:08:52";"Xavier Medical Supply";"";""
+"1017051222";"SIMPLEX";"Syringe w/Needle";"";"LATEX FREE
+
+NON-TOXIC";"1CC (25G x 5/8) 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00701";"Simplex  1Cc (25G X 5/8) 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:11:13";"Xavier Medical Supply";"";""
+"1917051222";"SIMPLEX";"Syringe w/Needle";"";"LATEX FREE
+
+NON-TOXIC";"1CC (25G x 5/8)";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00704";"Simplex  1Cc (25G X 5/8)";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:19:27";"Xavier Medical Supply";"";""
+"2217051222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"3CC  (Leur Lock)";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00706";"Simplex  3Cc  (Leur Lock)";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:22:22";"Xavier Medical Supply";"";""
+"2317051222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"3CC  (LeurLock) 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00707";"Simplex  3Cc  (Leurlock) 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:23:45";"Xavier Medical Supply";"";""
+"2717051222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"3CC  (LeurLock) 20's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00708";"Simplex  3Cc  (Leurlock) 20'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:31:21";"Xavier Medical Supply";"";""
+"3217051222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"5CC  (LeurLock)";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00709";"Simplex  5Cc  (Leurlock)";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:32:09";"Xavier Medical Supply";"";""
+"3317051222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"5CC  (LeurLock) 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00712";"Simplex  5Cc  (Leurlock) 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:33:15";"Xavier Medical Supply";"";""
+"3417051222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"5CC  (LeurLock) 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00713";"Simplex  5Cc  (Leurlock) 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:34:52";"Xavier Medical Supply";"";""
+"3617051222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"10CC  (LeurLock) 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00714";"Simplex  10Cc  (Leurlock) 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:36:50";"Xavier Medical Supply";"";""
+"3717051222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"10CC  (LeurLock) 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00716";"Simplex  10Cc  (Leurlock) 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-05 17:37:37";"Xavier Medical Supply";"";""
+"4911061222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"20ml/CC 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00719";"Simplex  20Ml/Cc 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 11:49:26";"Xavier Medical Supply";"";""
+"5011061222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"20ml/CC 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00720";"Simplex  20Ml/Cc 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 11:50:09";"Xavier Medical Supply";"";""
+"5811061222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"50ml/CC 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00728";"Simplex  50Ml/Cc 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 11:58:39";"Xavier Medical Supply";"";""
+"5911061222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"50ml/CC 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00729";"Simplex  50Ml/Cc 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 11:59:38";"Xavier Medical Supply";"";""
+"5612061222";"SIMPLEX";"Syringe";"";"LATEX FREE
+
+NON-TOXIC";"60ml/CC 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00732";"Simplex  60Ml/Cc 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 12:59:03";"Xavier Medical Supply";"";""
+"0013061222";"SIMPLEX";"Toomy Syringe";"";"LATEX FREE
+
+NON-TOXIC";"60ml/CC 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00734";"Simplex  60Ml/Cc 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:00:21";"Xavier Medical Supply";"";""
+"0113061222";"SIMPLEX";"Toomy Syringe";"";"LATEX FREE
+
+NON-TOXIC";"60ml/CC";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00735";"Simplex  60Ml/Cc";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:03:23";"Xavier Medical Supply";"";""
+"0413061222";"SIMPLEX";"Toomy Syringe";"";"LATEX FREE
+
+NON-TOXIC";"60ml/CC 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"SIM00736";"Simplex  60Ml/Cc 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:04:24";"Xavier Medical Supply";"";""
+"1613061222";"OREX";"Latex Gloves";"";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00738";"Orex  S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:22:56";"Xavier Medical Supply";"";""
+"2313061222";"OREX";"Latex Gloves";"";"POWDER FREE";"      S         10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00740";"Orex        S         10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:25:43";"Xavier Medical Supply";"";""
+"2613061222";"OREX";"Latex Gloves";"";"POWDER FREE";"      S         20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00741";"Orex        S         20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:26:06";"Xavier Medical Supply";"";""
+"2713061222";"OREX";"Latex Gloves";"";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00744";"Orex  M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:27:16";"Xavier Medical Supply";"";""
+"2813061222";"OREX";"Latex Gloves";"";"POWDER FREE";"M 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00746";"Orex  M 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:28:33";"Xavier Medical Supply";"";""
+"2913061222";"OREX";"Latex Gloves";"";"POWDER FREE";"M 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00747";"Orex  M 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:29:10";"Xavier Medical Supply";"";""
+"3013061222";"OREX";"Latex Gloves";"";"POWDER FREE";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00749";"Orex  L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:30:04";"Xavier Medical Supply";"";""
+"3113061222";"OREX";"Latex Gloves";"";"POWDER FREE";"L 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00752";"Orex  L 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:31:04";"Xavier Medical Supply";"";""
+"3213061222";"OREX";"Latex Gloves";"";"POWDER FREE";"L 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00754";"Orex  L 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:32:12";"Xavier Medical Supply";"";""
+"3313061222";"OREX";"Latex Gloves";"";"POWDER FREE";"XL";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00756";"Orex  Xl";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:33:09";"Xavier Medical Supply";"";""
+"3413061222";"OREX";"Latex Gloves";"";"POWDER FREE";"XL 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00757";"Orex  Xl 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:34:13";"Xavier Medical Supply";"";""
+"3513061222";"OREX";"Latex Gloves";"";"POWDER FREE";"XL 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00759";"Orex  Xl 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:35:10";"Xavier Medical Supply";"";""
+"3613061222";"OREX";"Nitrile Gloves";"";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00760";"Orex  S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:37:00";"Xavier Medical Supply";"";""
+"3713061222";"OREX";"Nitrile Gloves";"";"POWDER FREE";"S 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00762";"Orex  S 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:37:34";"Xavier Medical Supply";"";""
+"3813061222";"OREX";"Nitrile Gloves";"";"POWDER FREE";"S 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00763";"Orex  S 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:38:06";"Xavier Medical Supply";"";""
+"3913061222";"OREX";"Nitrile Gloves";"";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00765";"Orex  M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:39:05";"Xavier Medical Supply";"";""
+"4013061222";"OREX";"Nitrile Gloves";"";"POWDER FREE";"M 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00767";"Orex  M 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:40:08";"Xavier Medical Supply";"";""
+"4113061222";"OREX";"Nitrile Gloves";"";"POWDER FREE";"M 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00768";"Orex  M 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:41:47";"Xavier Medical Supply";"";""
+"4213061222";"OREX";"Nitrile Gloves";"";"POWDER FREE";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00769";"Orex  L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:42:09";"Xavier Medical Supply";"";""
+"4313061222";"OREX";"Nitrile Gloves";"";"POWDER FREE";"L 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00770";"Orex  L 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:43:26";"Xavier Medical Supply";"";""
+"4413061222";"OREX";"Nitrile Gloves";"";"POWDER FREE";"L 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00771";"Orex  L 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:44:46";"Xavier Medical Supply";"";""
+"4613061222";"OREX";"Vinyl Gloves";"";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00772";"Orex  S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:46:16";"Xavier Medical Supply";"";""
+"4713061222";"OREX";"Vinyl Gloves";"";"POWDER FREE";"S 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00774";"Orex  S 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:47:26";"Xavier Medical Supply";"";""
+"4813061222";"OREX";"Vinyl Gloves";"";"POWDER FREE";"S 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00775";"Orex  S 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:48:49";"Xavier Medical Supply";"";""
+"4913061222";"OREX";"Vinyl Gloves";"";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00776";"Orex  M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:49:23";"Xavier Medical Supply";"";""
+"5113061222";"OREX";"Vinyl Gloves";"";"POWDER FREE";"M 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00777";"Orex  M 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:51:20";"Xavier Medical Supply";"";""
+"5213061222";"OREX";"Vinyl Gloves";"";"POWDER FREE";"M 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00778";"Orex  M 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:52:26";"Xavier Medical Supply";"";""
+"5313061222";"OREX";"Vinyl Gloves";"";"POWDER FREE";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00780";"Orex  L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:53:13";"Xavier Medical Supply";"";""
+"5413061222";"OREX";"Vinyl Gloves";"";"POWDER FREE";"L 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00783";"Orex  L 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:54:59";"Xavier Medical Supply";"";""
+"5513061222";"OREX";"Vinyl Gloves";"";"POWDER FREE";"L 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00784";"Orex  L 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:55:19";"Xavier Medical Supply";"";""
+"5613061222";"OREX";"Nitrile-Vinyl Gloves";"Blue";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00785";"Orex Blue S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:56:57";"Xavier Medical Supply";"";""
+"5713061222";"OREX";"Nitrile-Vinyl Gloves";"Blue";"POWDER FREE";"S 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00786";"Orex Blue S 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:57:21";"Xavier Medical Supply";"";""
+"5813061222";"OREX";"Nitrile-Vinyl Gloves";"Blue";"POWDER FREE";"S 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00787";"Orex Blue S 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:59:09";"Xavier Medical Supply";"";""
+"5913061222";"OREX";"Nitrile-Vinyl Gloves";"Blue";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00788";"Orex Blue M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 13:59:38";"Xavier Medical Supply";"";""
+"0114061222";"OREX";"Nitrile-Vinyl Gloves";"Blue";"POWDER FREE";"M 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00790";"Orex Blue M 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:01:31";"Xavier Medical Supply";"";""
+"0214061222";"OREX";"Nitrile-Vinyl Gloves";"Blue";"POWDER FREE";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00791";"Orex Blue L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:02:19";"Xavier Medical Supply";"";""
+"0714061222";"OREX";"Nitrile-Vinyl Gloves";"Blue";"POWDER FREE";"XL 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00797";"Orex Blue Xl 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:07:06";"Xavier Medical Supply";"";""
+"0814061222";"OREX";"Nitrile-Vinyl Gloves";"Blue";"POWDER FREE";"XL 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00799";"Orex Blue Xl 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:08:09";"Xavier Medical Supply";"";""
+"0914061222";"OREX";"Nitrile-Vinyl Gloves";"Black";"POWDER FREE";"S";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00800";"Orex Black S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:09:40";"Xavier Medical Supply";"";""
+"1014061222";"OREX";"Nitrile-Vinyl Gloves";"Black";"POWDER FREE";"S 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00801";"Orex Black S 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:10:07";"Xavier Medical Supply";"";""
+"1114061222";"OREX";"Nitrile-Vinyl Gloves";"Black";"POWDER FREE";"S 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00804";"Orex Black S 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:11:06";"Xavier Medical Supply";"";""
+"1214061222";"OREX";"Nitrile-Vinyl Gloves";"Black";"POWDER FREE";"M";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00805";"Orex Black M";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:12:34";"Xavier Medical Supply";"";""
+"1314061222";"OREX";"Nitrile-Vinyl Gloves";"Black";"POWDER FREE";"M 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00806";"Orex Black M 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:13:44";"Xavier Medical Supply";"";""
+"1414061222";"OREX";"Nitrile-Vinyl Gloves";"Black";"POWDER FREE";"M 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00807";"Orex Black M 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:14:08";"Xavier Medical Supply";"";""
+"1514061222";"OREX";"Nitrile-Vinyl Gloves";"Black";"POWDER FREE";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00810";"Orex Black L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:15:06";"Xavier Medical Supply";"";""
+"1614061222";"OREX";"Nitrile-Vinyl Gloves";"Black";"POWDER FREE";"L 10PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00812";"Orex Black L 10Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:16:47";"Xavier Medical Supply";"";""
+"1714061222";"OREX";"Nitrile-Vinyl Gloves";"Black";"POWDER FREE";"L 20PAIRS";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00813";"Orex Black L 20Pairs";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:17:14";"Xavier Medical Supply";"";""
+"1814061222";"OREX";"Gauze Pad";"Black";"STERILE";"2''x2";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00814";"Orex Black 2''X2";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:18:31";"Xavier Medical Supply";"";""
+"1914061222";"OREX";"Gauze Pad";"Black";"STERILE";"2''x2 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00816";"Orex Black 2''X2 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:19:21";"Xavier Medical Supply";"";""
+"2014061222";"OREX";"Gauze Pad";"Black";"STERILE";"2''x2 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00817";"Orex Black 2''X2 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:20:32";"Xavier Medical Supply";"";""
+"4214061222";"OREX";"Gauze Pad";"Black";"STERILE";"3''x3";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00818";"Orex Black 3''X3";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:42:24";"Xavier Medical Supply";"";""
+"4314061222";"OREX";"Gauze Pad";"Black";"STERILE";"3''x3 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00820";"Orex Black 3''X3 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:43:10";"Xavier Medical Supply";"";""
+"4414061222";"OREX";"Gauze Pad";"Black";"STERILE";"3''x3 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00821";"Orex Black 3''X3 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:44:07";"Xavier Medical Supply";"";""
+"4514061222";"OREX";"Gauze Pad";"Black";"STERILE";"4''x4";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00822";"Orex Black 4''X4";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:45:06";"Xavier Medical Supply";"";""
+"4614061222";"OREX";"Gauze Pad";"Black";"STERILE";"4''x4 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00824";"Orex Black 4''X4 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:46:35";"Xavier Medical Supply";"";""
+"4714061222";"OREX";"Gauze Pad";"Black";"STERILE";"4''x4 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00825";"Orex Black 4''X4 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:47:22";"Xavier Medical Supply";"";""
+"5414061222";"OREX";"Gauze Bandage";"Black";"MADE OF 100% COTTON";"2''x10 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00829";"Orex Black 2''X10 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:54:18";"Xavier Medical Supply";"";""
+"5714061222";"OREX";"Gauze Bandage";"Black";"MADE OF 100% COTTON";"3''x10";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00832";"Orex Black 3''X10";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 14:57:10";"Xavier Medical Supply";"";""
+"0015061222";"OREX";"Gauze Bandage";"Black";"MADE OF 100% COTTON";"3''x10 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00835";"Orex Black 3''X10 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:00:30";"Xavier Medical Supply";"";""
+"0115061222";"OREX";"Gauze Bandage";"Black";"MADE OF 100% COTTON";"3''x10 (BUY1GET1)";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00836";"Orex Black 3''X10 (Buy1get1)";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:01:40";"Xavier Medical Supply";"";""
+"0415061222";"OREX";"Elastic Bandage";"Black";"-MADE OF COTTON
+
+-ELASTIC";"2''x5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00837";"Orex Black 2''X5";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:06:21";"Xavier Medical Supply";"";""
+"0715061222";"OREX";"Elastic Bandage";"Black";"-MADE OF COTTON
+
+-ELASTIC";"2''x5 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00838";"Orex Black 2''X5 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:07:06";"Xavier Medical Supply";"";""
+"0815061222";"OREX";"Elastic Bandage";"Black";"-MADE OF COTTON
+
+-ELASTIC";"2''x5 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00840";"Orex Black 2''X5 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:08:30";"Xavier Medical Supply";"";""
+"3115061222";"OREX";"Elastic Bandage";"";"-MADE OF COTTON
+
+-ELASTIC";"2''x5 (BUY1GET1)";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00842";"Orex  2''X5 (Buy1get1)";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:34:27";"Xavier Medical Supply";"";""
+"3715061222";"OREX";"Elastic Bandage";"";"-MADE OF COTTON
+
+-ELASTIC";"3''x 5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00843";"Orex  3''X 5";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:37:45";"Xavier Medical Supply";"";""
+"4015061222";"OREX";"Elastic Bandage";"";"-MADE OF COTTON
+
+-ELASTIC";"3''x 5 5s";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00844";"Orex  3''X 5 5S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:40:35";"Xavier Medical Supply";"";""
+"4115061222";"OREX";"Elastic Bandage";"";"-MADE OF COTTON
+
+-ELASTIC";"3''x 5 10s";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00845";"Orex  3''X 5 10S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:41:05";"Xavier Medical Supply";"";""
+"4215061222";"OREX";"Elastic Bandage";"";"-MADE OF COTTON
+
+-ELASTIC";"3''x 5 (BUY1GET1)";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00846";"Orex  3''X 5 (Buy1get1)";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:42:08";"Xavier Medical Supply";"";""
+"4315061222";"OREX";"Elastic Bandage";"";"-MADE OF COTTON
+
+-ELASTIC";"4''x 5";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00848";"Orex  4''X 5";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:43:08";"Xavier Medical Supply";"";""
+"4415061222";"OREX";"Elastic Bandage";"";"-MADE OF COTTON
+
+-ELASTIC";"4''x 5 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00850";"Orex  4''X 5 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:44:11";"Xavier Medical Supply";"";""
+"4515061222";"OREX";"Elastic Bandage";"";"-MADE OF COTTON
+
+-ELASTIC";"4''x 5 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00853";"Orex  4''X 5 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:45:15";"Xavier Medical Supply";"";""
+"4615061222";"OREX";"Elastic Bandage";"";"-MADE OF COTTON
+
+-ELASTIC";"4''x 5 (BUY1GET1)";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00854";"Orex  4''X 5 (Buy1get1)";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:48:30";"Xavier Medical Supply";"";""
+"5315061222";"OREX";"Alcohol Pad";"";"70%
+
+ISOPROPYL ALCOHOL";"For First Aid to decrease germs in minor cuts";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00856";"Orex  For First Aid To Decrease Germs In Minor Cuts";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:53:59";"Xavier Medical Supply";"";""
+"5415061222";"OREX";"Alcohol Pad";"";"70%
+
+ISOPROPYL ALCOHOL
+
+10's";"For First Aid to decrease germs in minor cuts";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00857";"Orex  For First Aid To Decrease Germs In Minor Cuts";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:55:01";"Xavier Medical Supply";"";""
+"5515061222";"OREX";"Alcohol Pad";"";"70%
+
+ISOPROPYL ALCOHOL
+
+20's";"For First Aid to decrease germs in minor cuts";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00858";"Orex  For First Aid To Decrease Germs In Minor Cuts";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 15:55:22";"Xavier Medical Supply";"";""
+"0716061222";"OREX";"Lubricating Jelly";"";"-STERILE
+
+-GREASELESS
+
+-UNSCENTED";"  3g   10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00865";"Orex    3G   10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 16:07:41";"Xavier Medical Supply";"";""
+"0916061222";"OREX";"Lubricating Jelly";"";"-STERILE
+
+-GREASELESS
+
+-UNSCENTED";"5G";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00867";"Orex  5G";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 16:09:10";"Xavier Medical Supply";"";""
+"1016061222";"OREX";"Lubricating Jelly";"";"-STERILE
+
+-GREASELESS
+
+-UNSCENTED";"  5G   10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00869";"Orex    5G   10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 16:10:06";"Xavier Medical Supply";"";""
+"1116061222";"OREX";"Lubricating Jelly";"";"-STERILE
+
+-GREASELESS
+
+-UNSCENTED";"  5G   20's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00874";"Orex    5G   20'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 16:11:07";"Xavier Medical Supply";"";""
+"2616061222";"FLOXYCARE";"Underpads";"";"ABSORBENT SHEETS";"60cm x 90cm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"FLO00875";"Floxycare  60Cm X 90Cm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 16:32:12";"Xavier Medical Supply";"";""
+"3416061222";"FLOXYCARE";"Underpads";"";"ABSORBENT SHEETS";"60cm x 90cm 5's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"FLO00877";"Floxycare  60Cm X 90Cm 5'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 16:34:18";"Xavier Medical Supply";"";""
+"3616061222";"FRESH";"Underpads";"";"ABSORBENT MIDDLE LAYER";"60cm x 90cm";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"FRE00878";"Fresh  60Cm X 90Cm";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 16:36:48";"Xavier Medical Supply";"";""
+"3916061222";"FRESH";"Adult Diaper";"";"SUPER ABSORBENT PAD";"L";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"FRE00880";"Fresh  L";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 16:39:14";"Xavier Medical Supply";"";""
+"4016061222";"FRESH";"Adult Diaper";"";"SUPER ABSORBENT PAD";"     L       2's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"FRE00882";"Fresh       L       2'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 16:40:09";"Xavier Medical Supply";"";""
+"4216061222";"FRESH";"Adult Diaper";"";"SUPER ABSORBENT PAD";"    XL     2's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"FRE00884";"Fresh      Xl     2'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 16:42:45";"Xavier Medical Supply";"";""
+"5416061222";"FRESH";"Shoe Cover";"";"NON-WOVEN";"Blue 20's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"FRE00893";"Fresh  Blue 20'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 16:55:28";"Xavier Medical Supply";"";""
+"0017061222";"OREX";"Bouffant Cap/Headcover";"";"NON-WOVEN FABRIC";"21 inc.";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00896";"Orex  21 Inc.";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 17:00:53";"Xavier Medical Supply";"";""
+"0217061222";"OREX";"Bouffant Cap/Headcover";"";"NON-WOVEN FABRIC";"21 inc. 20's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00898";"Orex  21 Inc. 20'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 17:02:47";"Xavier Medical Supply";"";""
+"0417061222";"OREX";"Facemask";"";"HYPOALLERGENIC";"Adult";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00899";"Orex  Adult";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 17:04:43";"Xavier Medical Supply";"";""
+"0517061222";"OREX";"Facemask";"";"HYPOALLERGENIC";"Adult 10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"ORE00900";"Orex  Adult 10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-06 17:05:15";"Xavier Medical Supply";"";""
+"1209071222";"INDOPLAS";"3-WAY Stopcock";"";"-NON-TOXIC
+
+-NON-PYROGENIC";"10's";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"IND00904";"Indoplas  10'S";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-07 09:18:26";"Xavier Medical Supply";"";""
+"5612141222";"PARTNERS";"3-Way Stopcock";"";"-NON-TOXIC
+
+-PYROGEN FREE";"For single use only";"";"";"";0.0;100.0;0.0;0.0;0.0;0.0;0.0;100;0;0;"PAR00907";"Partners  For Single Use Only";"";"Xavier Medical Supply";"REPACKED &&
+
+DISTRIBUTED BY:";"2022-12-14 13:01:15";"Xavier Medical Supply";"";""
