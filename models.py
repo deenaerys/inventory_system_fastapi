@@ -131,6 +131,7 @@ class Product(Base):
     created_by = Column(String(255))
     update_time = Column(DateTime, default=datetime.now())
     updated_by = Column(String(255))
+    orders =Column(BIGINT)
 # endregion
 
 # region OLDCODE

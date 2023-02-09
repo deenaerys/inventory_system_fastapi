@@ -64,6 +64,8 @@ def signout(request: Request, user_id=int, db: Session = Depends(get_db)):
 # region HOME DASHBOARD
 @app.get("/dashboard")
 def dashboard(request:Request,db:Session=Depends(get_db)):
+    products = db.query(models.Product).all()
+    db.close()
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
     my_username = request.session.get("my_username", None)
@@ -76,7 +78,8 @@ def dashboard(request:Request,db:Session=Depends(get_db)):
                        "name": my_name,
                        "username": my_username,
                        "user_id": my_id,
-                       "role": my_role}
+                       "role": my_role,
+                       "product_list":products}
     return templates.TemplateResponse("backend/index.html", context)
 
 @app.post("/home")
