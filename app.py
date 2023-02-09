@@ -116,6 +116,7 @@ def auth(request: Request, username: str = Form(...), password: str = Form(...),
 @app.post("/main")
 def main(request: Request, code: str = Form(...),db: Session = Depends(get_db)):
     d_username = db.query(models.User).filter(models.User.staff_code == code).first()
+    products = db.query(models.Product).all()
     db.close()
     
     if d_username:
@@ -132,7 +133,8 @@ def main(request: Request, code: str = Form(...),db: Session = Depends(get_db)):
                        "name": d_username.name,
                        "username": d_username.username,
                        "user_id": d_username.id,
-                       "role": d_username.role}
+                       "role": d_username.role,
+                       "product_list":products}
         return templates.TemplateResponse("backend/index.html", context)
       
     else:

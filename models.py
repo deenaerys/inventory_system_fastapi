@@ -54,6 +54,8 @@ class Warehouse(Base):
  # endregion
 
 # region ORDER
+
+
 class Order(Base):
     __tablename__ = "tblorders"
     id = Column(BIGINT, primary_key=True, index=True,
@@ -63,12 +65,12 @@ class Order(Base):
     item_name = Column(String(255))
     item_code = Column(String(255))
     quantity = Column(Float, default=1)
-    price = Column(Float,default=0)
-    amount = Column(Float,default=0)
-    total_amount = Column(Float,default=0)
-    total_count=Column(Float,default=0)
+    price = Column(Float, default=0)
+    amount = Column(Float, default=0)
+    total_amount = Column(Float, default=0)
+    total_count = Column(Float, default=0)
     buyer_name = Column(String(255))
-    buyer_address = Column(Text)   
+    buyer_address = Column(Text)
     fee = Column(Float, default=0)
     charge = Column(Float, default=0)
     sale_invoice = Column(String(255))
@@ -76,24 +78,25 @@ class Order(Base):
     create_time = Column(DateTime, default=datetime.now())
     created_by = Column(String(255))
 
+
 class OrderStatus(Base):
     __tablename__ = "tblorderstatus"
     id = Column(BIGINT, primary_key=True, index=True,
                 autoincrement=True, nullable=False)
     order_id = Column(String(255))
-    status=Column(String(255))
-    details=Column(Text)
-    update_time=Column(DateTime, default=datetime.now())  
-    total_amount = Column(Float,default=0)
-    total_count=Column(Float,default=0)
+    status = Column(String(255))
+    details = Column(Text)
+    update_time = Column(DateTime, default=datetime.now())
+    total_amount = Column(Float, default=0)
+    total_count = Column(Float, default=0)
     buyer_name = Column(String(255))
-    buyer_address = Column(Text)   
+    buyer_address = Column(Text)
     fee = Column(Float, default=0)
     charge = Column(Float, default=0)
     sale_invoice = Column(String(255))
     remarks = Column(Text)
     create_time = Column(DateTime, default=datetime.now())
-    created_by = Column(String(255))    
+    created_by = Column(String(255))
 # endregion
 
 # region PRODUCT
@@ -131,8 +134,21 @@ class Product(Base):
     created_by = Column(String(255))
     update_time = Column(DateTime, default=datetime.now())
     updated_by = Column(String(255))
-    orders =Column(BIGINT)
+    orders = Column(BIGINT)
 # endregion
+
+# region SUPPLIER
+class Supplier(Base):
+    __tablename__ = "tblsuppliers"
+    id = Column(BIGINT, primary_key=True, index=True,
+                autoincrement=True, nullable=False)
+    supplier = Column(String(255))
+    address = Column(String(25))
+    remarks = Column(String(255))
+    create_time = Column(DateTime, default=datetime.now())
+    created_by = Column(String(255))
+# endregion
+
 
 # region OLDCODE
 
