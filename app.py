@@ -65,6 +65,7 @@ def signout(request: Request, user_id=int, db: Session = Depends(get_db)):
 @app.get("/dashboard")
 def dashboard(request:Request,db:Session=Depends(get_db)):
     products = db.query(models.Product).all()
+    suppliers=db.query(models.Supplier).all()
     db.close()
     my_id = request.session.get("my_id", None)
     my_name = request.session.get("my_name", None)
@@ -79,7 +80,8 @@ def dashboard(request:Request,db:Session=Depends(get_db)):
                        "username": my_username,
                        "user_id": my_id,
                        "role": my_role,
-                       "product_list":products}
+                       "product_list":products,
+                       "supplier_list":suppliers}
     return templates.TemplateResponse("backend/index.html", context)
 
 @app.post("/home")
@@ -117,6 +119,7 @@ def auth(request: Request, username: str = Form(...), password: str = Form(...),
 def main(request: Request, code: str = Form(...),db: Session = Depends(get_db)):
     d_username = db.query(models.User).filter(models.User.staff_code == code).first()
     products = db.query(models.Product).all()
+    suppliers=db.query(models.Supplier).all()
     db.close()
     
     if d_username:
@@ -134,7 +137,8 @@ def main(request: Request, code: str = Form(...),db: Session = Depends(get_db)):
                        "username": d_username.username,
                        "user_id": d_username.id,
                        "role": d_username.role,
-                       "product_list":products}
+                       "product_list":products,
+                       "supplier_list":suppliers}
         return templates.TemplateResponse("backend/index.html", context)
       
     else:
