@@ -463,7 +463,11 @@
                                                                                         
                                     <td >{{product.id}}</td>
                                     <td>
-                                        {{product.product_name}}
+                                        <div class="d-flex align-items-center">
+                                            <div>{{product.product_name}}
+                                                <p class="mb-0"><small>{{product.barcode}}</small></p>
+                                            </div>
+                                        </div>
                                     </td>
                                     
                                     {% if product.stock_in<= product.stock_alert %}
