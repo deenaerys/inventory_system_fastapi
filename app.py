@@ -374,6 +374,17 @@ async def search_order(request:Request,db:Session=Depends(get_db),param: Optiona
     
     return templates.TemplateResponse("backend/page-list-order.html", context)
 
+@app.get("/get_productnames")
+async def get_productnames(request: Request, db: Session = Depends(get_db)):
+    productnames=db.query(models.Product).all()
+    db.close()
+    namelist=[]
+    for n in productnames:
+        namelist.append(n.product_name)
+    
+    result=jsonable_encoder(namelist)
+    return JSONResponse(content=result)
+
 
 # endregion
 
