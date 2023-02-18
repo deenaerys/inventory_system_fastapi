@@ -519,7 +519,19 @@ async def find_product(barcode: str, request: Request, db: Session = Depends(get
        
         return str(barcode)+"~"+str(item_name)+"~"+str(price_standard)
         
-    
+@app.get("/find_productname/{productname}")
+async def find_productname(productname:str,request: Request, db: Session = Depends(get_db)):
+    print(productname)
+    product=db.query(models.Product).filter(models.Product.product_name==productname).first()
+    db.close()
+    if not product:
+        return "NOTFOUND"
+    else:
+        barcode=product.barcode
+        item_name=product.item_name
+        price_standard="{:.2f}".format(product.price_standard)
+        return str(barcode)+"~"+str(item_name)+"~"+str(price_standard)
+
 
 @app.get("/find_barcode/{barcode}")
 async def find_barcode(barcode: str, request: Request, db: Session = Depends(get_db)):
