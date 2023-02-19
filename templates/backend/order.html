@@ -331,7 +331,8 @@
                      <th>Item Name</th>
                      <th>Quantity</th>
                      <th>Price</th>
-                     <th>Amount</th>                   
+                     <th>Amount</th>
+                     <th>Action</th>                   
                      
                   </tr>
                </thead>
@@ -342,6 +343,7 @@
            
         </div>
         <hr>
+
         <div class="class-body">
             <form action="/save_order/{{order_id}}" method="post" data-toggle="validator">
             <div class="row">
@@ -472,16 +474,22 @@
           var cell3 = row.insertCell(2);
           var cell4 = row.insertCell(3);
           var cell5 = row.insertCell(4);
+          var cell6 = row.insertCell(5);
+
           var barcode=product[0];
           var item_name=product[1];
           var qty=product[3];
           var price=product[2];
           var amount=qty*price
+          var btn= "<div class='d-flex align-items-center list-action';><a onclick='UpdateItem()'; id='btnEdit'; class='badge bg-success mr-2'; data-toggle='tooltip'; data-placement='top'; title='' data-original-title='Update Quantity';><i class='ri-pencil-line mr-0';></i></a><a onclick='DeleteItem()'; id='btnDelete'; class='badge bg-warning mr-2'; data-toggle='tooltip'; data-placement='top'; title='' data-original-title='Delete Item';><i class='ri-delete-bin-line mr-0';></i></a></div>";
+             
+         
           cell1.innerHTML = barcode;
           cell2.innerHTML = item_name;
           cell3.innerHTML = qty;
           cell4.innerHTML = price;
           cell5.innerHTML = amount.toFixed(2);
+          cell6.innerHTML = btn;
 
           total_amount=total_amount+parseFloat(amount);
           total_count=total_count+parseFloat(qty);
@@ -546,7 +554,6 @@
 
        
     </script>
-
 
     <script>
         function autocomplete(inp, arr) {
@@ -669,7 +676,6 @@
 
         }
     </script>
-
     
     <style>
 
@@ -712,7 +718,6 @@
           color: #ffffff; 
         }
     </style>
-
     
     <script>
         function find_productname(){
@@ -737,7 +742,100 @@
         
     </script>
 
-    
+    <script>
+       function UpdateItem(){
+        var table = document.getElementById("datatable"),rIndex,cIndex;
+        var current_qty=1;
+        var current_order='0';
+        var current_barcode='0';
+        var current_item='0';
+        // table rows
+        for(var i = 1; i < table.rows.length; i++)
+        {
+            // row cells
+            for(var j = 0; j < table.rows[i].cells.length; j++)
+            {
+                table.rows[i].cells[j].onclick = function()
+                {
+                    rIndex = this.parentElement.rowIndex;
+                    cIndex = this.cellIndex+1;
+                                        
+                    current_barcode = document.getElementById("datatable").rows[rIndex].cells[0].innerHTML;
+                    current_item=document.getElementById("datatable").rows[rIndex].cells[1].innerHTML;
+                    current_qty=document.getElementById("datatable").rows[rIndex].cells[2].innerHTML;
+                    current_order=document.getElementById("order_id").innerHTML
+                   
+                    Swal.fire({
+                        title: 'Update Item Order Quantity',          
+                        input: 'number',
+                        inputLabel:current_item +" "+ current_barcode ,
+                        inputAttributes: {
+                          min: 1,              
+                          step: 1
+                        },
+                        inputValue: current_qty
+                      })
+                   }
+                   
+                };
+            }
+        }
+
+       
+      
+
+    </script>
+
+    <script>
+        function DeleteItem(){
+            var table = document.getElementById("datatable"),rIndex,cIndex;
+            var current_qty=1;
+            var current_order='0';
+            var current_barcode='0';
+            var current_item='0';
+        
+            // table rows
+            for(var i = 1; i < table.rows.length; i++)
+            {
+                // row cells
+                for(var j = 0; j < table.rows[i].cells.length; j++)
+                {
+                    table.rows[i].cells[j].onclick = function()
+                    {
+                        rIndex = this.parentElement.rowIndex;
+                        cIndex = this.cellIndex+1;
+                        current_barcode = document.getElementById("datatable").rows[rIndex].cells[0].innerHTML;
+                        current_item=document.getElementById("datatable").rows[rIndex].cells[1].innerHTML;
+                        current_qty=document.getElementById("datatable").rows[rIndex].cells[2].innerHTML;
+                        current_order=document.getElementById("order_id").innerHTML
+
+                        Swal.fire({
+                            title: 'Are you sure to remove' + " " +current_item + " " +current_barcode,
+                            text: "You won't be able to revert this!",
+                            icon: 'warning',
+                            showCancelButton: true,
+                            confirmButtonColor: '#3085d6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'Yes, remove it!'
+                          }).then((result) => {
+                            if (result.isConfirmed) {
+                                $.ajax({
+                                    url: "/delete_item/"+product_id,
+                                    type:"GET",
+                                    dataType:"json",
+                                    success:function(result){console.log(result);}
+                                })                  
+                             // window.location='/list_products';
+                            }
+                          })
+
+
+                    };
+                }
+            }
+            
+        }
+    </script>
 
   </body>
 </html>
