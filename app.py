@@ -385,6 +385,19 @@ async def get_productnames(request: Request, db: Session = Depends(get_db)):
     result=jsonable_encoder(namelist)
     return JSONResponse(content=result)
 
+@app.get("/delete_order_item/{orderid}/{itemname}/{itembarcode}")
+async def delete_order_item(orderid:str,itemname:str,itembarcode:str,request: Request, db: Session = Depends(get_db)):
+    orderid=orderid.strip()
+    itemname=itemname.strip()
+    itembarcode=itembarcode.strip()   
+    item=db.query(models.Order).filter(models.Order.order_id==orderid,models.Order.item_name==itemname,models.Order.item_barcode==itembarcode).first()
+    if item:
+        db.delete(item)
+        db.commit()
+        db.close()
+        return JSONResponse(jsonable_encoder("FOUND"))
+
+       
 
 # endregion
 

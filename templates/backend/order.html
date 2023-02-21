@@ -807,10 +807,10 @@
                         current_barcode = document.getElementById("datatable").rows[rIndex].cells[0].innerHTML;
                         current_item=document.getElementById("datatable").rows[rIndex].cells[1].innerHTML;
                         current_qty=document.getElementById("datatable").rows[rIndex].cells[2].innerHTML;
-                        current_order=document.getElementById("order_id").innerHTML
+                        current_order=document.getElementById("order_id").innerHTML.replace("Order ID # ","");
 
                         Swal.fire({
-                            title: 'Are you sure to remove' + " " +current_item + " " +current_barcode,
+                            title: 'Are you sure to remove' + " " +current_item + " " +current_barcode + "for Order # " + current_order,
                             text: "You won't be able to revert this!",
                             icon: 'warning',
                             showCancelButton: true,
@@ -820,12 +820,14 @@
                           }).then((result) => {
                             if (result.isConfirmed) {
                                 $.ajax({
-                                    url: "/delete_item/"+product_id,
+                                    url: "/delete_order_item/"+current_order+"/"+current_item+"/"+current_barcode,
                                     type:"GET",
                                     dataType:"json",
-                                    success:function(result){console.log(result);}
+                                    success:function(result){
+                                       document.getElementById("datatable").deleteRow(rIndex);
+                                    }
                                 })                  
-                             // window.location='/list_products';
+                            
                             }
                           })
 
