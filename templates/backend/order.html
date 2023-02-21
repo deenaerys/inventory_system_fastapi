@@ -763,18 +763,28 @@
                     current_barcode = document.getElementById("datatable").rows[rIndex].cells[0].innerHTML;
                     current_item=document.getElementById("datatable").rows[rIndex].cells[1].innerHTML;
                     current_qty=document.getElementById("datatable").rows[rIndex].cells[2].innerHTML;
-                    current_order=document.getElementById("order_id").innerHTML
+                    current_order=document.getElementById("order_id").innerHTML.replace("Order ID # ","");
                    
                     Swal.fire({
                         title: 'Update Item Order Quantity',          
                         input: 'number',
                         inputLabel:current_item +" "+ current_barcode ,
-                        inputAttributes: {
-                          min: 1,              
-                          step: 1
-                        },
+                        inputAttributes: {min: 1,step: 1},
                         inputValue: current_qty
-                      })
+                    }).then((result) => {
+                        if (result.isConfirmed){ var updatedqty=result.value;
+                            $.ajax({
+                                url: "/update_order_item/"+current_order+"/"+current_item+"/"+current_barcode+"/"+updatedqty,
+                                type:"POST",
+                                dataType:"json",
+                                success:function(result){
+                                    document.getElementById("datatable").rows[rIndex].cells[2].innerHTML=updatedqty;
+                                }
+                            })
+
+                        }
+                        })
+                     
                    }
                    
                 };
@@ -810,7 +820,7 @@
                         current_order=document.getElementById("order_id").innerHTML.replace("Order ID # ","");
 
                         Swal.fire({
-                            title: 'Are you sure to remove' + " " +current_item + " " +current_barcode + "for Order # " + current_order,
+                            title: 'Are you sure to remove' + " " +current_item + " ?",
                             text: "You won't be able to revert this!",
                             icon: 'warning',
                             showCancelButton: true,

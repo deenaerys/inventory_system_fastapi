@@ -397,7 +397,19 @@ async def delete_order_item(orderid:str,itemname:str,itembarcode:str,request: Re
         db.close()
         return JSONResponse(jsonable_encoder("FOUND"))
 
-       
+@app.post("/update_order_item/{orderid}/{itemname}/{itembarcode}/{itemquantity}")
+async def update_order_item(orderid:str,itemname:str,itembarcode:str,itemquantity:str,request: Request, db: Session = Depends(get_db)):
+    orderid=orderid.strip()
+    itemname=itemname.strip()
+    itembarcode=itembarcode.strip()
+    itemquantity=itemquantity.strip()
+    print(f'update_order_item/',orderid,'/',itemname,'/',itembarcode,'/',itemquantity)
+    item=db.query(models.Order).filter(models.Order.order_id==orderid,models.Order.item_name==itemname,models.Order.item_barcode==itembarcode).first()
+    if item:
+        item.quantity=itemquantity
+        db.commit()
+        db.close()
+        return JSONResponse(jsonable_encoder("FOUND"))  
 
 # endregion
 
