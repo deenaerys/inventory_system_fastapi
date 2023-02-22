@@ -65,11 +65,13 @@
                                 <label>Sales Invoice: {{orderstatus.sale_invoice}}</label>
                             </div>
                             <div class="row">
-                                <label>Fee: {{orderstatus.fee}}</label>
+                               
+                                <label>Fee:  {{'%0.2f'| format(orderstatus.fee|float)}}</label>
                                 
                             </div>
                             <div class="row">
-                                <label>Charge: {{orderstatus.charge}}</label>
+                                
+                                <label>Charge: {{'%0.2f'| format(orderstatus.charge|float)}}</label>
                             </div>
                             <div class="row">
                                 <label>Remarks: {{orderstatus.remarks}}</label>
@@ -92,9 +94,10 @@
                                         <tr>
                                             <td>{{order.item_name}}</td>
                                             <td>{{order.item_barcode}}</td>
-                                            <td>{{order.quantity}}</td>
-                                            <td>{{order.price}}</td>
-                                            <td>{{order.amount}}</td>
+                                            <td> {{'%0.0f'| format(order.quantity|float)}}</td>                                          
+                                            <td> {{'%0.2f'| format(order.price|float)}}</td>
+                                            <td> {{'%0.2f'| format(order.amount|float)}}</td>
+                                           
                                         </tr>
                                         
 
@@ -104,10 +107,12 @@
                             </div>                            
                             <hr>
                              <div class="row">
-                                <label>TOTAL ITEMS: {{orderstatus.total_count}}</label>
+                                
+                                <label>TOTAL ITEMS: {{'%0.0f'| format(orderstatus.total_count|float)}}</label>
                              </div>
                             <div class="row">
-                                <label>TOTAL AMOUNT: {{orderstatus.total_amount}}</label>
+                               
+                                <label>TOTAL AMOUNT:  {{'%0.2f'| format(orderstatus.total_amount|float)}}</label>
                             </div>
                             <div class="row">
                                 <svg id="barcode"></svg>
