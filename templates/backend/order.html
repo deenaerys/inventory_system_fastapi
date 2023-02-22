@@ -547,8 +547,9 @@
         }
 
         function checktotals(){
-            document.getElementById('total_amount').value=total_amount;
-            document.getElementById('total_count').value=total_count;
+            UpdateTotals();
+           // document.getElementById('total_amount').value=total_amount;
+            //document.getElementById('total_count').value=total_count;
            
 
         }
@@ -865,7 +866,7 @@
                 amt=amt +parseFloat(table.rows[i].cells[4].innerHTML);
             }
             document.getElementById('total_count').value=qty;
-           document.getElementById('total_amount').value=amt.toFixed(2);
+            document.getElementById('total_amount').value=amt.toFixed(2);
             
 
 

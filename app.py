@@ -207,7 +207,8 @@ async def save_order(request:Request,
                     sale_invoice:str= Form(...),
                     remarks:str= Form(...),
                     db:Session=Depends(get_db)): 
-    my_name = request.session.get("my_name", None)           
+    my_name = request.session.get("my_name", None)
+    print(f'/save_order/','TOTAL AMT',total_amount,'   TOTAL CNT',total_count)           
     new_orderstatus=models.OrderStatus(order_id=order_id,
                                         total_amount=total_amount,
                                         total_count=total_count,
@@ -403,10 +404,11 @@ async def update_order_item(orderid:str,itemname:str,itembarcode:str,itemquantit
     itemname=itemname.strip()
     itembarcode=itembarcode.strip()
     itemquantity=itemquantity.strip()
-    print(f'update_order_item/',orderid,'/',itemname,'/',itembarcode,'/',itemquantity)
+    
     item=db.query(models.Order).filter(models.Order.order_id==orderid,models.Order.item_name==itemname,models.Order.item_barcode==itembarcode).first()
     if item:
         item.quantity=itemquantity
+        item.amount=float(itemquantity)*float(item.price)
         db.commit()
         db.close()
         return JSONResponse(jsonable_encoder("FOUND"))  
