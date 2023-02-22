@@ -230,26 +230,28 @@
       
                       </a>
                   </div>
-                  <div class="iq-search-bar device-search">
-                    <input autofocus id="mybarcode" onfocusout="find_item()" type="text" class="text search-input" placeholder="Scan barcode...">                     
-                  </div>
-                  <div class="iq-search-bar device-search">
+                   <div class="input-group col-sm-2">
+                        <div class="input-group-prepend">
+                           <label class="input-group-text">Quantity</label>
+                        </div>
+                        <input id="item_quantity" name="item_quantity" type="number" value="1" step="1" class="form-control" placeholder="Enter item quantity" min="1">
+                    </div>
+                <div class="iq-search-bar device-search">
                     <form action="#" class="searchbox">
                         <a class="search-link" href="#"><i class="ri-search-line"></i></a>
                         <input id="myInput" type="search" class="text search-input" placeholder="Find product...">                       
                     </form>                 
                                          
+                </div>
+                  <div class="iq-search-bar device-search">
+                    <input autofocus id="mybarcode" onfocusout="find_item()" type="text" class="text search-input" placeholder="Scan barcode...">                     
                   </div>
+                 
  
                     
                   
                       
-                      <div class="input-group col-sm-2">
-                        <div class="input-group-prepend">
-                           <label class="input-group-text">Quantity</label>
-                        </div>
-                        <input id="item_quantity" name="item_quantity" type="number" value="1" step="1" class="form-control" placeholder="Enter item quantity" min="1">
-                     </div>
+                   
                 
                   
                   <div class="d-flex align-items-center">
@@ -763,6 +765,7 @@
                     current_barcode = document.getElementById("datatable").rows[rIndex].cells[0].innerHTML;
                     current_item=document.getElementById("datatable").rows[rIndex].cells[1].innerHTML;
                     current_qty=document.getElementById("datatable").rows[rIndex].cells[2].innerHTML;
+                    current_price=document.getElementById("datatable").rows[rIndex].cells[3].innerHTML;
                     current_order=document.getElementById("order_id").innerHTML.replace("Order ID # ","");
                    
                     Swal.fire({
@@ -779,6 +782,8 @@
                                 dataType:"json",
                                 success:function(result){
                                     document.getElementById("datatable").rows[rIndex].cells[2].innerHTML=updatedqty;
+                                    document.getElementById("datatable").rows[rIndex].cells[4].innerHTML=(parseFloat(updatedqty)*parseFloat(current_price)).toFixed(2);
+                                    UpdateTotals();
                                 }
                             })
 
@@ -835,6 +840,7 @@
                                     dataType:"json",
                                     success:function(result){
                                        document.getElementById("datatable").deleteRow(rIndex);
+                                       UpdateTotals();
                                     }
                                 })                  
                             
@@ -849,6 +855,25 @@
         }
     </script>
 
+    <script>
+        function UpdateTotals(){
+            var table = document.getElementById("datatable"), qty = 0,amt=0;
+            
+            for(var i = 1; i < table.rows.length; i++)
+            {
+                qty = qty + parseFloat(table.rows[i].cells[2].innerHTML);
+                amt=amt +parseFloat(table.rows[i].cells[4].innerHTML);
+            }
+            document.getElementById('total_count').value=qty;
+           document.getElementById('total_amount').value=amt.toFixed(2);
+            
+
+
+           
+            
+            
+        }
+    </script>
   </body>
 </html>
 
