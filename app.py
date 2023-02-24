@@ -673,11 +673,12 @@ async def update_stock(request: Request,db: Session = Depends(get_db)):
     quantity=req[3]
     remarks=req[5]
     item=db.query(models.Product).filter(models.Product.barcode==barcode).first()
-    db.close()
+    
     if item:
         item.stock_in+=int(quantity)
         item.remarks=remarks
         db.commit()
+        db.close()
         result = jsonable_encoder("OK")
         
     else:
